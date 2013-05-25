@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Template xmlns="http://morfeo-project.org/2007/Template">
+    <Catalog.ResourceDescription>
+        <Vendor>CoNWeT</Vendor>
+        <Name>vending-machine-status</Name>
+        <Version>2.0</Version>
+        <DisplayName>Vending Machine Status</DisplayName>
+        <Author>Javier Serrano</Author>
+        <Mail>jserrano@conwet.com</Mail>
+        <Description>It displays the status of a vending machine. This widget should be used by a Vending Machine Technician.</Description>
+        <ImageURI>img/catalogue.png</ImageURI>
+        <iPhoneImageURI>images/cagalogue.png</iPhoneImageURI>
+        <WikiURI></WikiURI>
+        <Requirements>
+            <Feature name="NGSI"/>
+        </Requirements>
+    </Catalog.ResourceDescription>
+
+    <Platform.Wiring>
+        <InputEndpoint name="vendingMachine" type="text" description="The vending Machine that the Technician should fix." action_label="Vending Machine" label="Vending Machine" friendcode="vendingMachine" />
+    </Platform.Wiring>
+
+    <Platform.Link>
+        <XHTML href="index.html" content-type="application/xhtml+xml" cacheable="true" use-platform-style="true" />
+    </Platform.Link>
+
+    <Platform.Rendering width="6" height="25"/>
+</Template>

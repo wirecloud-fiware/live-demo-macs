@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Template xmlns="http://wirecloud.conwet.fi.upm.es/ns/template#">
+	<Catalog.ResourceDescription>
+		<Vendor>CoNWeT</Vendor>
+		<Name>technician-info</Name>
+		<DisplayName>Technician Info</DisplayName>
+		<Version>2.0.0</Version>
+		<Author>Santiago Blanco, Javier Serrano</Author>
+		<Mail>sblanco@conwet.com jserrano@conwet.com</Mail>
+        <Description>
+            This widget shows detailed info of your monitorized technicians.
+        </Description>
+        <ImageURI>images/catalogue.png</ImageURI>
+		<iPhoneImageURI>images/cataloguePhone.png</iPhoneImageURI>
+		<WikiURI>http://conwet.fi.upm.es/docs/display/wirecloud/Contact+Info</WikiURI>
+	</Catalog.ResourceDescription>
+	<Platform.Wiring>
+        <InputEndpoint
+            name="inputProfile"
+            type="text"
+            description="A contact profile in vCard format"
+            label="Technician"
+            action_label="Contact Profile (Vcard)"
+            friendcode="vCard">
+        </InputEndpoint>
+	</Platform.Wiring>
+	<Platform.Link>
+        <XHTML href="index.html" contenttype="text/html" cacheable="true" use-platform-style="true"/>
+	</Platform.Link>
+	<Platform.Rendering width="6" height="29"></Platform.Rendering>
+</Template>

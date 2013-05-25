@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Template xmlns="http://wirecloud.conwet.fi.upm.es/ns/template#">
+    <Catalog.ResourceDescription>
+        <Vendor>CoNWeT</Vendor>
+        <Name>issue-list</Name>
+        <DisplayName>Issue List</DisplayName>
+        <Author>sblanco</Author>
+        <Version>2.0.0</Version>
+        <Mail>sblanco@conwet.com</Mail>
+        <Description>This widget shows all the Vending Machine Issues coming from a Pub/Sub Service. This widget shows a table where its rows represent, each of them, a ticket sent from a Vending Machine. This ticket includes information such as Vending Machine ID, assigned technician ID, and the issue type.</Description>
+        <ImageURI>images/catalogue.png</ImageURI>
+        <iPhoneImageURI></iPhoneImageURI>
+        <WikiURI>http://conwet.fi.upm.es/docs/display/wirecloud/Issues+List</WikiURI>
+        <Requirements>
+            <Feature name="NGSI"/>
+        </Requirements>
+    </Catalog.ResourceDescription>
+
+    <Platform.Wiring>
+        <InputEndpoint
+            friendcode="issue"
+            label="Add issue"
+            description="Issue to list in the table."
+            name="inputIssue"
+            type="text"/>
+        <InputEndpoint
+            friendcode="vCard"
+            label="Add profile"
+            description="Profile of technician. A technician can be assigned to an issue"
+            name="inputVcard"
+            type="text"/>
+        <OutputEndpoint
+            friendcode="issue"
+            label="Select Issue"
+            description="Selected issue is sent when you click in the table row."
+            name="outputIssue"
+            type="text"/>
+        <OutputEndpoint
+            friendcode="vCard"
+            label="Change Technician"
+            description="Raised when a technician is selected. This doesn't mean the Technician was assigned to an issue."
+            name="outputTechnicianVCard"
+            type="text"/>
+        <OutputEndpoint
+            friendcode="route"
+            label="Select Route"
+            description="Route from technician to issue."
+            name="outputRoute"
+            type="text"/>
+        <OutputEndpoint
+            friendcode="issue"
+            label="Pick Photo"
+            description="Sends a event when the user clicks on the photo icon of an issue"
+            name="outputPhotoURL"
+            type="text"/>
+    </Platform.Wiring>
+
+    <Platform.Link>
+        <XHTML href="index.html" contenttype="text/html" cacheable="true" use-platform-style="true"/>
+    </Platform.Link>
+
+    <Platform.Rendering width="10" height="20"/>
+</Template>

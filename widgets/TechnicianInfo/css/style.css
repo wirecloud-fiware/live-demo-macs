@@ -1,0 +1,83 @@
+#personalInfoContainer{
+    width: 63%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: left;
+}
+
+.personalInfoTitle{
+    font-family: Verdana;
+    font-size: 13px;
+    font-weight: bold;
+    color: #464646;
+    margin: 3px;
+}
+
+
+.personalInfo{
+    font-weight:normal;  
+    margin-left: 3px;
+}
+
+#contactContainer{
+    width: 37%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: right;
+}
+
+#imageContainer{
+    height: 125px;
+}
+
+#imageContact{
+    width: 70px;
+    height: 93px;
+    margin: 1em;
+    margin-left: 32px;
+    border-radius: 5px;
+}
+
+.comIcon{
+    width: 18px;
+    margin-left: 32px;
+}
+
+.comDescription{
+    font-family: Verdana;
+    font-size: 12px;
+    color: #464646;
+    display:inline;
+    margin-left: 5px;
+}
+
+
+#note{
+    font-family: Verdana;
+    font-size: 13px;
+    color: #464646;
+    margin: 3px;
+}
+
+#sendSmsContainer{
+    margin-top: 10px;
+    margin-bottom: 11px;
+}
+
+#sendEmailContainer{
+    margin-bottom: 7px;
+}
+
+#initialMessageContainer{
+    margin-top: 5px;
+    position: absolute;
+}
+
+.titleInfoBox{
+    font-weight:bold;
+    font-size: 1.2em;
+}

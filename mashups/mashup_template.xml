@@ -1,0 +1,1225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:usdl="http://www.linked-usdl.org/ns/usdl-core#"
+   xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+   xmlns:wire="http://wirecloud.conwet.fi.upm.es/ns/widget#"
+   xmlns:wire_m="http://wirecloud.conwet.fi.upm.es/ns/mashup#"
+>
+  <rdf:Description rdf:nodeID="N66656b6806d74c1ebfaae62eb58ca52b">
+    <wire_m:x>1347</wire_m:x>
+    <wire_m:y>433</wire_m:y>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Position"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N55b3ecb37eb040759cf06f536fd29717">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>issueInput</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne7312c6e4bad434a852cb8424d31632b">
+    <wire_m:x>1443</wire_m:x>
+    <wire_m:y>563</wire_m:y>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Position"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3efe3628769743668ffd8ba827f40b15">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire:index>1</wire:index>
+    <rdfs:label>urlRouteMapOutput</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1d1c30532e7d4e20a59bccaca513a3ce">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>outputPoi</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N33f33288e4274c81813f0cb8396c6f91">
+    <dcterms:title>CoNWeT/issues-source/2.0</dcterms:title>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#iOperator"/>
+    <wire_m:iOperatorId>N33f33288e4274c81813f0cb8396c6f91</wire_m:iOperatorId>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3d6ae65d27b54ef6abeffc90c2a2ee46">
+    <wire:type>iwidget</wire:type>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire_m:sourceId>Na375773f20d74c5ba224d166a01c4ba6</wire_m:sourceId>
+    <wire_m:endpoint>outputIssue</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N30cafcd927e748178b6362e588597d0b">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#View"/>
+    <wire_m:hasSource rdf:nodeID="Ndcf57ae365b445d98a548b0b7b96aa22"/>
+    <wire_m:hasSource rdf:nodeID="Nb9d1c17953694b77a00622971b579345"/>
+    <wire_m:hasSource rdf:nodeID="N638042e948bf4db5a99a91619127ebb4"/>
+    <wire_m:hasSource rdf:nodeID="N3e5e26b0bcac4123b189c5effe131084"/>
+    <wire:type>widget</wire:type>
+    <wire_m:hasTarget rdf:nodeID="N149bf620c03941dda736275dfd0d2cf2"/>
+    <wire_m:hasTarget rdf:nodeID="Nc48020daf04e4a14b4c92ca91779d022"/>
+    <wire_m:hasPosition rdf:nodeID="N6fbfc19a0cb34bc59a66e18df53b23ba"/>
+    <wire:id>Na375773f20d74c5ba224d166a01c4ba6</wire:id>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8bf2f04a51244f4f9b18c898a68a21fb">
+    <wire_m:hasSource rdf:nodeID="N8b934dba6fe940a68071745c8b3014d0"/>
+    <wire_m:hasTarget rdf:nodeID="Ne9eadd648c6f46479a5c3d9c289c8bf8"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Connection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N10a6421b9b414acfa6b9550113003057">
+    <dcterms:title>inputProfile</dcterms:title>
+    <rdfs:label>Technician</rdfs:label>
+    <wire:frindcode>vCard</wire:frindcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#InputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N71843af58be346cd9f97902cb4266155">
+    <dcterms:title>routeDescriptionOutput</dcterms:title>
+    <rdfs:label>Route Description</rdfs:label>
+    <wire:friendcode>routeDescription</wire:friendcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#OutputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N694bac7d434a4353bb720989536423e4">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire:index>4</wire:index>
+    <rdfs:label>decimalCoordOutput</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb9d1c17953694b77a00622971b579345">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire:index>2</wire:index>
+    <rdfs:label>outputRoute</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8b934dba6fe940a68071745c8b3014d0">
+    <wire:type>iwidget</wire:type>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire_m:sourceId>N8ae5e5d23d2243128801362b41c7ecd2</wire_m:sourceId>
+    <wire_m:endpoint>poiOutput</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9e86e9d2e7764c26ba60bdfac4e4dc3c">
+    <wire:type>ioperator</wire:type>
+    <wire_m:targetId>N071a54c5d60247ca82ac3404110e1174</wire_m:targetId>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire_m:endpoint>inputVcard</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc92a5bae56084e659fe7af5cc898efe2">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>photoOutput</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N959faaf8367a4e649666b97d156fded9">
+    <wire_m:x>0</wire_m:x>
+    <wire_m:z>2</wire_m:z>
+    <wire_m:y>24</wire_m:y>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Position"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfe602a457f1041ef851dd73e8c91031a">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>urlSlot</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naddcfa4a45b54768a6bafd76d326ba8d">
+    <wire_m:x>672</wire_m:x>
+    <wire_m:y>600</wire_m:y>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Position"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5e1866e6a4024947b7b0a8770e06c233">
+    <wire_m:x>741</wire_m:x>
+    <wire_m:y>175</wire_m:y>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Position"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N59fa5c40959349548fa759dd974d5eab">
+    <wire:type>widget</wire:type>
+    <wire_m:hasTarget rdf:nodeID="Nf63d5ae658054fe883acf98cffc6d111"/>
+    <wire_m:hasPosition rdf:nodeID="N54ded17e8fb64d0190cf84d36cb02dc4"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#View"/>
+    <wire:id>N9217f5cb01124bcb90a17049c8f4eb77</wire:id>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nda5f35bb2f2f4aa3b537a841e0a8c1cb">
+    <foaf:name>CoNWeT</foaf:name>
+    <rdf:type rdf:resource="http://purl.org/goodrelations/v1#BussisnessEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5a6b829826084a898013386a6810d4ca">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>vCardOutput</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na7d131c81c6a4c9da2f6d088f1d30d74">
+    <wire:type>ioperator</wire:type>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire_m:sourceId>N6c430ff1d4ce4edc88e6558be8d3bb2b</wire_m:sourceId>
+    <wire_m:endpoint>outputTechnician</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naeb8cbb888e94759a856ffa6ad990076">
+    <dcterms:title>Technician List</dcterms:title>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#iWidget"/>
+    <usdl:versionInfo>2.0</usdl:versionInfo>
+    <wire_m:hasPosition rdf:nodeID="Na47011e446f64c1992fecb8f1a32b9e8"/>
+    <usdl:hasProvider rdf:nodeID="Nd413e35e92c743f59f23fbab06a13452"/>
+    <wire_m:hasiWidgetRendering rdf:nodeID="N5e1bd4c780cb4db4b6db67c60ed24190"/>
+    <wire_m:iWidgetId>Naeb8cbb888e94759a856ffa6ad990076</wire_m:iWidgetId>
+    <rdfs:label>technician-list</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N20d1b9e3911847a88ee20d87f1324d98">
+    <wire:type>iwidget</wire:type>
+    <wire_m:targetId>Na375773f20d74c5ba224d166a01c4ba6</wire_m:targetId>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire_m:endpoint>inputVcard</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N730259eeba38492faee3ec5d6616fdd4">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#View"/>
+    <wire_m:hasSource rdf:nodeID="N71f9543180d84a64989e62bf1a246390"/>
+    <wire:type>operator</wire:type>
+    <wire_m:hasTarget rdf:nodeID="N505c457b2111408a94eb9a72dd84ab38"/>
+    <wire_m:hasPosition rdf:nodeID="N47b16badc0c74fa7a7aebb1245c0428d"/>
+    <wire:id>N54872dcd477a4f9796a079685f1a8590</wire:id>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N13186e35ccb34152b67eb89aebc80d4b">
+    <foaf:name>CoNWeT</foaf:name>
+    <rdf:type rdf:resource="http://purl.org/goodrelations/v1#BussisnessEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne6598d1a7472417998230530a27bdfc5">
+    <wire_m:hasSource rdf:nodeID="N2c2f7f241fc842b09091b390305d7fb0"/>
+    <wire_m:hasTarget rdf:nodeID="Nc98a1d9fedcb47c28086158941d27a87"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Connection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd10aa982cfa64e64ad18f6fbc05eb126">
+    <wire_m:x>663</wire_m:x>
+    <wire_m:y>721</wire_m:y>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Position"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N24a2e0b59fce42789ca6da38f27fb138">
+    <wire:type>iwidget</wire:type>
+    <wire_m:targetId>N8ae5e5d23d2243128801362b41c7ecd2</wire_m:targetId>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire_m:endpoint>poiInput</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N505c457b2111408a94eb9a72dd84ab38">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>inputIssue</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4a5e22db0b66477e80aa5bf2d7f41b67">
+    <wire_m:hasSource rdf:nodeID="Nb6834da0c3a84d45a44c327cb08d1ef6"/>
+    <wire_m:hasTarget rdf:nodeID="N1b8ace3f67c74cbe8c9b7eb9ac9b3fde"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Connection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N47b16badc0c74fa7a7aebb1245c0428d">
+    <wire_m:x>705</wire_m:x>
+    <wire_m:y>75</wire_m:y>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Position"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nebd2a1dbc73c4b9d8eafd20c9986f51a">
+    <wire_m:x>131</wire_m:x>
+    <wire_m:y>73</wire_m:y>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Position"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N37c7ac67e92645338d58a2b1dc2b5e4c">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire:index>4</wire:index>
+    <rdfs:label>poiInput</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2bfed58bb72a4b66b85c66b6ceaa2afe">
+    <wire:type>ioperator</wire:type>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire_m:sourceId>Nccaabc6c54b147bd8be31623caa0b2ea</wire_m:sourceId>
+    <wire_m:endpoint>photoOutput</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2901128346e242b7bc47d6419dea0814">
+    <wire_m:hasSource rdf:nodeID="N5381802500604a66b9f5c560850aa2df"/>
+    <wire_m:hasTarget rdf:nodeID="N24a2e0b59fce42789ca6da38f27fb138"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Connection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nea08e713dd994a38be915763559d6bdf">
+    <dcterms:title>CoNWeT/poi2vcard/2.0</dcterms:title>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#iOperator"/>
+    <wire_m:iOperatorId>Nea08e713dd994a38be915763559d6bdf</wire_m:iOperatorId>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6b02b93aecc447ec89c8c4c4e40a8a1f">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>inputIssue</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5c6adcd1254b4b2b9d8fbd702ff8b838">
+    <dcterms:title>centerPreference</dcterms:title>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#iWidgetPreference"/>
+    <wire:value>Bruxelles</wire:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0262e0f707854dd8a39df69b884232c5">
+    <wire_m:hasSource rdf:nodeID="N9c522fe3466b4104898584b68620afa7"/>
+    <wire_m:hasTarget rdf:nodeID="N9ef1265bcd3e41d8a6ee58dc16492dc0"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Connection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5df3e2a9343c4d1d99ad0c6eb4991ab2">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>outputProfile</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nda322abb3762419c8996682b66309147">
+    <dcterms:title>Tab</dcterms:title>
+    <wire_m:hasiWidget rdf:nodeID="N8ae5e5d23d2243128801362b41c7ecd2"/>
+    <wire_m:hasiWidget rdf:nodeID="Naeb8cbb888e94759a856ffa6ad990076"/>
+    <wire_m:hasiWidget rdf:nodeID="Na375773f20d74c5ba224d166a01c4ba6"/>
+    <wire_m:hasiWidget rdf:nodeID="N9217f5cb01124bcb90a17049c8f4eb77"/>
+    <wire_m:hasiWidget rdf:nodeID="N3cc6ba2cfc3649789d158062a0674984"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Tab"/>
+    <wire:index>0</wire:index>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nab3aafc2319a4f65be92101a3bd5871e">
+    <dcterms:title>routeInput</dcterms:title>
+    <rdfs:label>Route</rdfs:label>
+    <wire:frindcode>route</wire:frindcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#InputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N555704bf2a4f4def80603cc6615f1ed1">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>routeDescriptionOutput</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N061fd5f53e974851966ffe92526d4bdb">
+    <dcterms:title>outputProfile</dcterms:title>
+    <rdfs:label>Technician</rdfs:label>
+    <wire:friendcode>vCard</wire:friendcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#OutputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na268255550374f59846680faa05391c5">
+    <wire:type>iwidget</wire:type>
+    <wire_m:targetId>N8ae5e5d23d2243128801362b41c7ecd2</wire_m:targetId>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire_m:endpoint>poiInputCenter</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1b8ace3f67c74cbe8c9b7eb9ac9b3fde">
+    <wire:type>ioperator</wire:type>
+    <wire_m:targetId>N0f354acbf6874a86aa1e85be094f9e82</wire_m:targetId>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire_m:endpoint>inputVcard</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N35da807abc6c41c89a60e0a961e6ec00">
+    <dcterms:title>outputRoute</dcterms:title>
+    <rdfs:label>Route preview</rdfs:label>
+    <wire:friendcode>route</wire:friendcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#OutputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne9eadd648c6f46479a5c3d9c289c8bf8">
+    <wire:type>ioperator</wire:type>
+    <wire_m:targetId>Nea08e713dd994a38be915763559d6bdf</wire_m:targetId>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire_m:endpoint>poiInput</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0a7d7f59dc0341358d01dd3d0806fa37">
+    <wire:type>iwidget</wire:type>
+    <wire_m:targetId>N9217f5cb01124bcb90a17049c8f4eb77</wire_m:targetId>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire_m:endpoint>inputProfile</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne8e1ed37be39466a88d65153fa1f59e3">
+    <dcterms:title>CoNWeT/issue2poi/2.0</dcterms:title>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#iOperator"/>
+    <wire_m:iOperatorId>Ne8e1ed37be39466a88d65153fa1f59e3</wire_m:iOperatorId>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb9b7a9345a774906a88b2d7332eb292c">
+    <wire_m:minimized>False</wire_m:minimized>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#iWidgetRendering"/>
+    <wire_m:layout>0</wire_m:layout>
+    <wire:renderingWidth>7</wire:renderingWidth>
+    <wire:renderingHeight>52</wire:renderingHeight>
+    <wire_m:fullDragboard>False</wire_m:fullDragboard>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N69d51362a0b24ef8abba941e80b2e8d1">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>inputVcard</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5381802500604a66b9f5c560850aa2df">
+    <wire:type>ioperator</wire:type>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire_m:sourceId>N54872dcd477a4f9796a079685f1a8590</wire_m:sourceId>
+    <wire_m:endpoint>outputPoi</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N77ffa390a099433aacf3147028d68ff1">
+    <wire_m:x>10</wire_m:x>
+    <wire_m:z>4</wire_m:z>
+    <wire_m:y>24</wire_m:y>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Position"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncaf811794bfc454c8897b2002ce2723f">
+    <wire_m:minimized>False</wire_m:minimized>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#iWidgetRendering"/>
+    <wire_m:layout>0</wire_m:layout>
+    <wire:renderingWidth>5</wire:renderingWidth>
+    <wire:renderingHeight>31</wire:renderingHeight>
+    <wire_m:fullDragboard>False</wire_m:fullDragboard>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N31abffb6b85e4a83aa13092cdc132b28">
+    <dcterms:title>deletePoiInput</dcterms:title>
+    <rdfs:label>Delete PoI</rdfs:label>
+    <wire:frindcode>poi</wire:frindcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#InputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0f354acbf6874a86aa1e85be094f9e82">
+    <dcterms:title>CoNWeT/vcard2poi/2.0</dcterms:title>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#iOperator"/>
+    <wire_m:iOperatorId>N0f354acbf6874a86aa1e85be094f9e82</wire_m:iOperatorId>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N641cbc50df5949ac937516ecec916bb8">
+    <wire:type>iwidget</wire:type>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire_m:sourceId>N8ae5e5d23d2243128801362b41c7ecd2</wire_m:sourceId>
+    <wire_m:endpoint>poiOutput</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N306f63b4e31b43a684a4aac5c9863d9a">
+    <dcterms:title>utmCoordOutput</dcterms:title>
+    <rdfs:label>UTM Coordinates</rdfs:label>
+    <wire:friendcode>utmCoord</wire:friendcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#OutputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc19773ac3dcb484c843acc495b943c38">
+    <wire:type>iwidget</wire:type>
+    <wire_m:targetId>N8ae5e5d23d2243128801362b41c7ecd2</wire_m:targetId>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire_m:endpoint>poiInputCenter</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nea8bfd8fedb0483cacac536a576ac4b4">
+    <dcterms:title>urlSlot</dcterms:title>
+    <rdfs:label>Photo URL</rdfs:label>
+    <wire:frindcode>url</wire:frindcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#InputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1d4ca7a997c54cbaabfac393947cbeb1">
+    <wire_m:hasSource rdf:nodeID="N7e6b082d02994c33a3b99b4720548e27"/>
+    <wire_m:hasTarget rdf:nodeID="N94823865b3c642acaf63e5ac8105f8d4"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Connection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N54872dcd477a4f9796a079685f1a8590">
+    <dcterms:title>CoNWeT/issue2poi/2.0</dcterms:title>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#iOperator"/>
+    <wire_m:iOperatorId>N54872dcd477a4f9796a079685f1a8590</wire_m:iOperatorId>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nccaabc6c54b147bd8be31623caa0b2ea">
+    <dcterms:title>CoNWeT/issue2url/2.0</dcterms:title>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#iOperator"/>
+    <wire_m:iOperatorId>Nccaabc6c54b147bd8be31623caa0b2ea</wire_m:iOperatorId>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N54ded17e8fb64d0190cf84d36cb02dc4">
+    <wire_m:x>1225</wire_m:x>
+    <wire_m:y>628</wire_m:y>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Position"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N344b9d71315b48408364594eebb9d24c">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>outputIssue</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N162b0b283ff644909a7c849dbd64431d">
+    <dcterms:title>outputPhotoURL</dcterms:title>
+    <rdfs:label>Show photo</rdfs:label>
+    <wire:friendcode>issue</wire:friendcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#OutputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na33329f032ba48ac8c4ddef0e798977a">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#View"/>
+    <wire_m:hasSource rdf:nodeID="Nf4a066ded500420f9552370f7f72c18e"/>
+    <wire:type>operator</wire:type>
+    <wire_m:hasTarget rdf:nodeID="Nd6e4ff8aca204f2686016792fdefdc96"/>
+    <wire_m:hasPosition rdf:nodeID="N67ea8fa6f99e40b0858da3362e7de25d"/>
+    <wire:id>N0f354acbf6874a86aa1e85be094f9e82</wire:id>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2fd9c708c93148eda02d45e1dff6e765">
+    <dcterms:title>zoomPreference</dcterms:title>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#iWidgetPreference"/>
+    <wire:value>13</wire:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6c430ff1d4ce4edc88e6558be8d3bb2b">
+    <dcterms:title>CoNWeT/technician-tracker/2.0</dcterms:title>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#iOperator"/>
+    <wire_m:iOperatorId>N6c430ff1d4ce4edc88e6558be8d3bb2b</wire_m:iOperatorId>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd6e4ff8aca204f2686016792fdefdc96">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>inputVcard</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N36358441fe43476ab3098a8b4a833284">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#View"/>
+    <wire_m:hasSource rdf:nodeID="N5df3e2a9343c4d1d99ad0c6eb4991ab2"/>
+    <wire:type>widget</wire:type>
+    <wire_m:hasTarget rdf:nodeID="N94644c3af4ef4874a792dbd329c6124a"/>
+    <wire_m:hasPosition rdf:nodeID="Nd10aa982cfa64e64ad18f6fbc05eb126"/>
+    <wire:id>Naeb8cbb888e94759a856ffa6ad990076</wire:id>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf118a948351e432a9807b3a2b5370cfe">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire:index>1</wire:index>
+    <rdfs:label>coordsInput</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N92d4a2152c384f9da5cc5ffa5f01c521">
+    <wire:type>iwidget</wire:type>
+    <wire_m:targetId>N3cc6ba2cfc3649789d158062a0674984</wire_m:targetId>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire_m:endpoint>urlSlot</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N30c6490bde9543348a2ab5fd12366c7b">
+    <wire:type>ioperator</wire:type>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire_m:sourceId>N6c430ff1d4ce4edc88e6558be8d3bb2b</wire_m:sourceId>
+    <wire_m:endpoint>outputTechnician</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N46cabb9e17814c2ea6d1634e5b8ce6f7">
+    <wire:type>widget</wire:type>
+    <wire_m:hasTarget rdf:nodeID="Nfe602a457f1041ef851dd73e8c91031a"/>
+    <wire_m:hasPosition rdf:nodeID="Ne7312c6e4bad434a852cb8424d31632b"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#View"/>
+    <wire:id>N3cc6ba2cfc3649789d158062a0674984</wire:id>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1105b6debed64065bb630418b037d8d6">
+    <wire_m:x>1067</wire_m:x>
+    <wire_m:y>476</wire_m:y>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Position"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne47cd784f9894151bd8fccf20cc1124f">
+    <dcterms:title>coordsInput</dcterms:title>
+    <rdfs:label>Coordinates</rdfs:label>
+    <wire:frindcode>Coords</wire:frindcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#InputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N83970042942346f68dac2054b4afcc41">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#View"/>
+    <wire_m:hasSource rdf:nodeID="Nc92a5bae56084e659fe7af5cc898efe2"/>
+    <wire:type>operator</wire:type>
+    <wire_m:hasTarget rdf:nodeID="N55b3ecb37eb040759cf06f536fd29717"/>
+    <wire_m:hasPosition rdf:nodeID="N1105b6debed64065bb630418b037d8d6"/>
+    <wire:id>Nccaabc6c54b147bd8be31623caa0b2ea</wire:id>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N520fe3621a1e4c40b225d234d42c153a">
+    <dcterms:title>CoNWeT/poi2issue/2.0</dcterms:title>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#iOperator"/>
+    <wire_m:iOperatorId>N520fe3621a1e4c40b225d234d42c153a</wire_m:iOperatorId>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd8e1a11c0d8549d98c085d27334c78dc">
+    <dcterms:title>poiInputCenter</dcterms:title>
+    <rdfs:label>Insert/Update Centered PoI</rdfs:label>
+    <wire:frindcode>poi</wire:frindcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#InputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7a559ceadea14d24b83c99a729d34f14">
+    <wire:type>iwidget</wire:type>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire_m:sourceId>Na375773f20d74c5ba224d166a01c4ba6</wire_m:sourceId>
+    <wire_m:endpoint>outputPhotoURL</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndd678a1f5ce1482a99ca2b411a637db4">
+    <wire:type>ioperator</wire:type>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire_m:sourceId>N071a54c5d60247ca82ac3404110e1174</wire_m:sourceId>
+    <wire_m:endpoint>outputPoi</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N203933f0dd2b486b8547d44ff63320bf">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#View"/>
+    <wire_m:hasSource rdf:nodeID="N40a129e252a8436a8127d054f026d051"/>
+    <wire_m:hasSource rdf:nodeID="N86dd48f2ce3d45dbb86b58737b811efb"/>
+    <wire_m:hasSource rdf:nodeID="N694bac7d434a4353bb720989536423e4"/>
+    <wire_m:hasSource rdf:nodeID="Ncb58548d49844f3b9d5609b0b18ba177"/>
+    <wire_m:hasSource rdf:nodeID="N3c5044f82eb2404daac003f2d7ddea4e"/>
+    <wire_m:hasSource rdf:nodeID="N3efe3628769743668ffd8ba827f40b15"/>
+    <wire_m:hasSource rdf:nodeID="N14e4c81348ba42d1b05a566e7970a181"/>
+    <wire_m:hasSource rdf:nodeID="N555704bf2a4f4def80603cc6615f1ed1"/>
+    <wire:type>widget</wire:type>
+    <wire_m:hasTarget rdf:nodeID="Nab76b2e74c9a471f94aa92b047a80dbc"/>
+    <wire_m:hasTarget rdf:nodeID="N37c7ac67e92645338d58a2b1dc2b5e4c"/>
+    <wire_m:hasTarget rdf:nodeID="N24e74bbe79f94a2786b00e9b68256d45"/>
+    <wire_m:hasTarget rdf:nodeID="N56a4b092d4ca4b3a85f6f4678c4db6c6"/>
+    <wire_m:hasTarget rdf:nodeID="Nf118a948351e432a9807b3a2b5370cfe"/>
+    <wire_m:hasTarget rdf:nodeID="Na91131889ee048e0ba431b08617c0850"/>
+    <wire_m:hasTarget rdf:nodeID="Nca1a14a277ab45369790a39d0200bf2a"/>
+    <wire_m:hasPosition rdf:nodeID="N600727df372a43358ebeff52d787a8c2"/>
+    <wire:id>N8ae5e5d23d2243128801362b41c7ecd2</wire:id>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd8c3933d40ba410fbdb7ac8cffa5ce5e">
+    <dcterms:title>poiInput</dcterms:title>
+    <rdfs:label>Insert/Update PoI</rdfs:label>
+    <wire:frindcode>poi</wire:frindcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#InputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na375773f20d74c5ba224d166a01c4ba6">
+    <dcterms:title>Issue List</dcterms:title>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#iWidget"/>
+    <usdl:versionInfo>2.0</usdl:versionInfo>
+    <wire_m:hasPosition rdf:nodeID="Nda2dc534331844dd9689e1a09b62b2b1"/>
+    <usdl:hasProvider rdf:nodeID="Nda5f35bb2f2f4aa3b537a841e0a8c1cb"/>
+    <wire_m:hasiWidgetRendering rdf:nodeID="N75c7833f1b33483c99db176173657230"/>
+    <wire_m:iWidgetId>Na375773f20d74c5ba224d166a01c4ba6</wire_m:iWidgetId>
+    <rdfs:label>issue-list</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6fa18bd1e2e8474aa69f984488cf696a">
+    <wire_m:hasSource rdf:nodeID="N1dc1093b3fb5436aa356909461bc4d6e"/>
+    <wire_m:hasTarget rdf:nodeID="Nc19773ac3dcb484c843acc495b943c38"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Connection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N477615e5d8324fee8a324755eb891977">
+    <wire:type>iwidget</wire:type>
+    <wire_m:targetId>Na375773f20d74c5ba224d166a01c4ba6</wire_m:targetId>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire_m:endpoint>inputIssue</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf63d5ae658054fe883acf98cffc6d111">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>inputProfile</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N638042e948bf4db5a99a91619127ebb4">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire:index>3</wire:index>
+    <rdfs:label>outputPhotoURL</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N86dd48f2ce3d45dbb86b58737b811efb">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire:index>3</wire:index>
+    <rdfs:label>utmCoordOutput</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N77d0964c6d5f4346adee59ebedbf79d0">
+    <dcterms:title>poiOutput</dcterms:title>
+    <rdfs:label>PoI selected</rdfs:label>
+    <wire:friendcode>poi</wire:friendcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#OutputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf4a066ded500420f9552370f7f72c18e">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>outputPoi</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8ae5e5d23d2243128801362b41c7ecd2">
+    <dcterms:title>Map Viewer</dcterms:title>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#iWidget"/>
+    <usdl:versionInfo>2.0.1</usdl:versionInfo>
+    <wire_m:hasPosition rdf:nodeID="Nfd1f134306684e49a5b95760ea81374b"/>
+    <usdl:hasProvider rdf:nodeID="N2acab78d409d4097be3368cef24fe6b5"/>
+    <wire_m:hasiWidgetPreference rdf:nodeID="N5c6adcd1254b4b2b9d8fbd702ff8b838"/>
+    <wire_m:hasiWidgetPreference rdf:nodeID="Ndff7406092744004a3c806ead04d36fa"/>
+    <wire_m:hasiWidgetPreference rdf:nodeID="N2fd9c708c93148eda02d45e1dff6e765"/>
+    <wire_m:hasiWidgetRendering rdf:nodeID="Nb9b7a9345a774906a88b2d7332eb292c"/>
+    <wire_m:iWidgetId>N8ae5e5d23d2243128801362b41c7ecd2</wire_m:iWidgetId>
+    <rdfs:label>MapViewer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N14e4c81348ba42d1b05a566e7970a181">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire:index>2</wire:index>
+    <rdfs:label>addressOutput</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1ca2a7be3e0242de8939c55895f6f915">
+    <dcterms:title>inputProfile</dcterms:title>
+    <rdfs:label>Technician</rdfs:label>
+    <wire:frindcode>vCard</wire:frindcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#InputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0fb30e3cddd94b2395bfdcb641c1d5ce">
+    <wire_m:hasSource rdf:nodeID="Ne9fdedac26ce44e9a034de43e8097152"/>
+    <wire_m:hasTarget rdf:nodeID="Nbc1b5f1a908042819e545e985e5e5acd"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Connection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfe9e9df96c864a2c8751aa071e4e96c9">
+    <dcterms:title>boundsOutput</dcterms:title>
+    <rdfs:label>Change Viewport</rdfs:label>
+    <wire:friendcode>viewport</wire:friendcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#OutputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N396c0a50365b42b688385849db80155f">
+    <dcterms:title>urlRouteMapOutput</dcterms:title>
+    <rdfs:label>URL Route Map</rdfs:label>
+    <wire:friendcode>url</wire:friendcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#OutputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd48bacee299741e3b834dc962836f0c4">
+    <wire_m:x>136</wire_m:x>
+    <wire_m:y>273</wire_m:y>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Position"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc5560dec53f247c79efbf41f5903dac7">
+    <foaf:name>CoNWeT</foaf:name>
+    <rdf:type rdf:resource="http://purl.org/goodrelations/v1#BussisnessEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N149bf620c03941dda736275dfd0d2cf2">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire:index>1</wire:index>
+    <rdfs:label>inputVcard</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc320c65132a44e5f840e1de689368df8">
+    <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Work"/>
+    <vcard:email>sblanco@conwet.com</vcard:email>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N335f33c86a364a498004c5299abc9924">
+    <wire_m:hasSource rdf:nodeID="Nfbd075e8df18457c9b24990ae96d8599"/>
+    <wire:type>operator</wire:type>
+    <wire_m:hasPosition rdf:nodeID="Nd48bacee299741e3b834dc962836f0c4"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#View"/>
+    <wire:id>N6c430ff1d4ce4edc88e6558be8d3bb2b</wire:id>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf28cc721fdcf47b2bdf17f71e9afcdf0">
+    <wire:hasInputEndpoint rdf:nodeID="N10a6421b9b414acfa6b9550113003057"/>
+    <wire:hasInputEndpoint rdf:nodeID="Ndcce4804beac4ffdbaaae5fb39bb663b"/>
+    <wire:hasInputEndpoint rdf:nodeID="N65f9ff74ffa04f77ba4a2efe15776003"/>
+    <wire:hasInputEndpoint rdf:nodeID="N1f131ac2bc304dce9a78fdc63d625120"/>
+    <wire:hasInputEndpoint rdf:nodeID="N86263266a81e400096e250e99b125c43"/>
+    <wire:hasInputEndpoint rdf:nodeID="Nea8bfd8fedb0483cacac536a576ac4b4"/>
+    <wire:hasInputEndpoint rdf:nodeID="Nd8e1a11c0d8549d98c085d27334c78dc"/>
+    <wire:hasInputEndpoint rdf:nodeID="Ne47cd784f9894151bd8fccf20cc1124f"/>
+    <wire:hasInputEndpoint rdf:nodeID="N1ca2a7be3e0242de8939c55895f6f915"/>
+    <wire:hasInputEndpoint rdf:nodeID="Nd8c3933d40ba410fbdb7ac8cffa5ce5e"/>
+    <wire:hasInputEndpoint rdf:nodeID="Nab3aafc2319a4f65be92101a3bd5871e"/>
+    <wire:hasInputEndpoint rdf:nodeID="N31abffb6b85e4a83aa13092cdc132b28"/>
+    <wire:hasOutputEndpoint rdf:nodeID="N306f63b4e31b43a684a4aac5c9863d9a"/>
+    <wire:hasOutputEndpoint rdf:nodeID="N35da807abc6c41c89a60e0a961e6ec00"/>
+    <wire:hasOutputEndpoint rdf:nodeID="N71843af58be346cd9f97902cb4266155"/>
+    <wire:hasOutputEndpoint rdf:nodeID="N061fd5f53e974851966ffe92526d4bdb"/>
+    <wire:hasOutputEndpoint rdf:nodeID="N1c670cee2f75476980672f1a29ff60d1"/>
+    <wire:hasOutputEndpoint rdf:nodeID="N09c8e4bb95004cd8802165c40dcfe67c"/>
+    <wire:hasOutputEndpoint rdf:nodeID="N77d0964c6d5f4346adee59ebedbf79d0"/>
+    <wire:hasOutputEndpoint rdf:nodeID="N29fbe487428641538f6cc03e38c6711f"/>
+    <wire:hasOutputEndpoint rdf:nodeID="Nc926ab78abe04697a26b1267e6cf4f95"/>
+    <wire:hasOutputEndpoint rdf:nodeID="N162b0b283ff644909a7c849dbd64431d"/>
+    <wire:hasOutputEndpoint rdf:nodeID="Nfe9e9df96c864a2c8751aa071e4e96c9"/>
+    <wire:hasOutputEndpoint rdf:nodeID="N396c0a50365b42b688385849db80155f"/>
+    <wire:hasOutputEndpoint rdf:nodeID="N03e731d40af24e1c99cbd1ec8842f0f6"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#PlatformWiring"/>
+    <wire_m:hasiOperator rdf:nodeID="N6c430ff1d4ce4edc88e6558be8d3bb2b"/>
+    <wire_m:hasiOperator rdf:nodeID="N0f354acbf6874a86aa1e85be094f9e82"/>
+    <wire_m:hasiOperator rdf:nodeID="Nea08e713dd994a38be915763559d6bdf"/>
+    <wire_m:hasiOperator rdf:nodeID="N54872dcd477a4f9796a079685f1a8590"/>
+    <wire_m:hasiOperator rdf:nodeID="Ne8e1ed37be39466a88d65153fa1f59e3"/>
+    <wire_m:hasiOperator rdf:nodeID="N071a54c5d60247ca82ac3404110e1174"/>
+    <wire_m:hasiOperator rdf:nodeID="N520fe3621a1e4c40b225d234d42c153a"/>
+    <wire_m:hasiOperator rdf:nodeID="Nccaabc6c54b147bd8be31623caa0b2ea"/>
+    <wire_m:hasiOperator rdf:nodeID="N33f33288e4274c81813f0cb8396c6f91"/>
+    <wire_m:hasWiringView rdf:nodeID="Nf283a1f15d56470f8ae37876ba0b06a6"/>
+    <wire_m:hasConnection rdf:nodeID="N4a5e22db0b66477e80aa5bf2d7f41b67"/>
+    <wire_m:hasConnection rdf:nodeID="N034987098193483ba15ca5e66e807672"/>
+    <wire_m:hasConnection rdf:nodeID="N79b6a39cc9484fc7a0f998fd5ac63f66"/>
+    <wire_m:hasConnection rdf:nodeID="N8bf2f04a51244f4f9b18c898a68a21fb"/>
+    <wire_m:hasConnection rdf:nodeID="N0808bb253b24460b81eaee8a1cde21ec"/>
+    <wire_m:hasConnection rdf:nodeID="N58f1de77f2934b549ea28316051e7efa"/>
+    <wire_m:hasConnection rdf:nodeID="N1d4ca7a997c54cbaabfac393947cbeb1"/>
+    <wire_m:hasConnection rdf:nodeID="N2901128346e242b7bc47d6419dea0814"/>
+    <wire_m:hasConnection rdf:nodeID="N5e012fe024154139a0d88ba5701e34f8"/>
+    <wire_m:hasConnection rdf:nodeID="N434ac57354cc41c1b214996757a378f8"/>
+    <wire_m:hasConnection rdf:nodeID="N0262e0f707854dd8a39df69b884232c5"/>
+    <wire_m:hasConnection rdf:nodeID="Ne6598d1a7472417998230530a27bdfc5"/>
+    <wire_m:hasConnection rdf:nodeID="N5228a2d61f28404da2dfc3ceebd24529"/>
+    <wire_m:hasConnection rdf:nodeID="N0fb30e3cddd94b2395bfdcb641c1d5ce"/>
+    <wire_m:hasConnection rdf:nodeID="N1659e689b96b4ef8aa9c3d396dc54f7d"/>
+    <wire_m:hasConnection rdf:nodeID="Nf3f9e7cb02df4fc9a9702ddd73991d29"/>
+    <wire_m:hasConnection rdf:nodeID="Nd6658ddccda442beb42e63747823fb7e"/>
+    <wire_m:hasConnection rdf:nodeID="N286a17aecabd4343a934281aafd94a6c"/>
+    <wire_m:hasConnection rdf:nodeID="N6fa18bd1e2e8474aa69f984488cf696a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6e4e08bf94d047bbab537a82b1ce3306">
+    <wire:type>ioperator</wire:type>
+    <wire_m:targetId>N520fe3621a1e4c40b225d234d42c153a</wire_m:targetId>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire_m:endpoint>inputPoi</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N56a4b092d4ca4b3a85f6f4678c4db6c6">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire:index>2</wire:index>
+    <rdfs:label>routeInput</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3cc6ba2cfc3649789d158062a0674984">
+    <dcterms:title>Photo Viewer</dcterms:title>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#iWidget"/>
+    <usdl:versionInfo>1.4</usdl:versionInfo>
+    <wire_m:hasPosition rdf:nodeID="N77ffa390a099433aacf3147028d68ff1"/>
+    <usdl:hasProvider rdf:nodeID="Nc5560dec53f247c79efbf41f5903dac7"/>
+    <wire_m:hasiWidgetRendering rdf:nodeID="Nc68f9544c24b47cd859bcc930f81cdcf"/>
+    <wire_m:iWidgetId>N3cc6ba2cfc3649789d158062a0674984</wire_m:iWidgetId>
+    <rdfs:label>Photo Viewer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N10a0373350f344419d4011521eae60ba">
+    <wire:type>iwidget</wire:type>
+    <wire_m:targetId>N8ae5e5d23d2243128801362b41c7ecd2</wire_m:targetId>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire_m:endpoint>poiInput</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N66b82c9a9f5e452885230ae1021e8138">
+    <wire:type>ioperator</wire:type>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire_m:sourceId>Nea08e713dd994a38be915763559d6bdf</wire_m:sourceId>
+    <wire_m:endpoint>vCardOutput</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5e1bd4c780cb4db4b6db67c60ed24190">
+    <wire_m:minimized>False</wire_m:minimized>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#iWidgetRendering"/>
+    <wire_m:layout>0</wire_m:layout>
+    <wire:renderingWidth>5</wire:renderingWidth>
+    <wire:renderingHeight>31</wire:renderingHeight>
+    <wire_m:fullDragboard>False</wire_m:fullDragboard>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc926ab78abe04697a26b1267e6cf4f95">
+    <dcterms:title>poiListOutput</dcterms:title>
+    <rdfs:label>PoI visibility change</rdfs:label>
+    <wire:friendcode>poiList</wire:friendcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#OutputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N65f9ff74ffa04f77ba4a2efe15776003">
+    <dcterms:title>inputIssue</dcterms:title>
+    <rdfs:label>Add issue</rdfs:label>
+    <wire:frindcode>issue</wire:frindcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#InputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N963dc45affff4a18a03ec363b81b73d0">
+    <wire:type>ioperator</wire:type>
+    <wire_m:targetId>Nccaabc6c54b147bd8be31623caa0b2ea</wire_m:targetId>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire_m:endpoint>issueInput</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3c5044f82eb2404daac003f2d7ddea4e">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire:index>6</wire:index>
+    <rdfs:label>poiListOutput</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N75c7833f1b33483c99db176173657230">
+    <wire_m:minimized>False</wire_m:minimized>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#iWidgetRendering"/>
+    <wire_m:layout>0</wire_m:layout>
+    <wire:renderingWidth>13</wire:renderingWidth>
+    <wire:renderingHeight>24</wire:renderingHeight>
+    <wire_m:fullDragboard>False</wire_m:fullDragboard>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc98a1d9fedcb47c28086158941d27a87">
+    <wire:type>ioperator</wire:type>
+    <wire_m:targetId>N54872dcd477a4f9796a079685f1a8590</wire_m:targetId>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire_m:endpoint>inputIssue</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2f3e8bc20c614079a471807ebdcfd1c2">
+    <wire_m:x>1331</wire_m:x>
+    <wire_m:y>323</wire_m:y>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Position"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc48020daf04e4a14b4c92ca91779d022">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>inputIssue</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5228a2d61f28404da2dfc3ceebd24529">
+    <wire_m:hasSource rdf:nodeID="N30c6490bde9543348a2ab5fd12366c7b"/>
+    <wire_m:hasTarget rdf:nodeID="N9e86e9d2e7764c26ba60bdfac4e4dc3c"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Connection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N286a17aecabd4343a934281aafd94a6c">
+    <wire_m:hasSource rdf:nodeID="Na7d131c81c6a4c9da2f6d088f1d30d74"/>
+    <wire_m:hasTarget rdf:nodeID="N20d1b9e3911847a88ee20d87f1324d98"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Connection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N034987098193483ba15ca5e66e807672">
+    <wire_m:hasSource rdf:nodeID="N3d6ae65d27b54ef6abeffc90c2a2ee46"/>
+    <wire_m:hasTarget rdf:nodeID="Na6adee30d33445278ca4eb3c93686261"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Connection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndff7406092744004a3c806ead04d36fa">
+    <dcterms:title>radiusPreference</dcterms:title>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#iWidgetPreference"/>
+    <wire:value>1000</wire:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na91131889ee048e0ba431b08617c0850">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire:index>3</wire:index>
+    <rdfs:label>routeStepInput</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0ffca69860f24cbc8dbcdc1b15c7493c">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#View"/>
+    <wire_m:hasSource rdf:nodeID="N1d1c30532e7d4e20a59bccaca513a3ce"/>
+    <wire:type>operator</wire:type>
+    <wire_m:hasTarget rdf:nodeID="N69d51362a0b24ef8abba941e80b2e8d1"/>
+    <wire_m:hasPosition rdf:nodeID="Naddcfa4a45b54768a6bafd76d326ba8d"/>
+    <wire:id>N071a54c5d60247ca82ac3404110e1174</wire:id>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nda2dc534331844dd9689e1a09b62b2b1">
+    <wire_m:x>0</wire_m:x>
+    <wire_m:z>3</wire_m:z>
+    <wire_m:y>0</wire_m:y>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Position"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N02725a980a174bdea15385b71e83af83">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#View"/>
+    <wire_m:hasSource rdf:nodeID="N5a6b829826084a898013386a6810d4ca"/>
+    <wire:type>operator</wire:type>
+    <wire_m:hasTarget rdf:nodeID="N4b175db41a3b484c9d0e0df6ea2540a0"/>
+    <wire_m:hasPosition rdf:nodeID="N66656b6806d74c1ebfaae62eb58ca52b"/>
+    <wire:id>Nea08e713dd994a38be915763559d6bdf</wire:id>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2acab78d409d4097be3368cef24fe6b5">
+    <foaf:name>CoNWeT</foaf:name>
+    <rdf:type rdf:resource="http://purl.org/goodrelations/v1#BussisnessEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1f131ac2bc304dce9a78fdc63d625120">
+    <dcterms:title>addressInput</dcterms:title>
+    <rdfs:label>Address</rdfs:label>
+    <wire:frindcode>address</wire:frindcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#InputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N29fbe487428641538f6cc03e38c6711f">
+    <dcterms:title>outputTechnicianVCard</dcterms:title>
+    <rdfs:label>Technician change</rdfs:label>
+    <wire:friendcode>vCard</wire:friendcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#OutputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N54fe4dfe0832431c9c340e0068ea535e">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#View"/>
+    <wire_m:hasSource rdf:nodeID="Nb5472db058b4458999449aed45fe43da"/>
+    <wire:type>operator</wire:type>
+    <wire_m:hasTarget rdf:nodeID="N3c9db6c8c7784e2faa59497efc638fbd"/>
+    <wire_m:hasPosition rdf:nodeID="N2f3e8bc20c614079a471807ebdcfd1c2"/>
+    <wire:id>N520fe3621a1e4c40b225d234d42c153a</wire:id>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N86263266a81e400096e250e99b125c43">
+    <dcterms:title>inputVcard</dcterms:title>
+    <rdfs:label>Add profile</rdfs:label>
+    <wire:frindcode>vCard</wire:frindcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#InputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4b175db41a3b484c9d0e0df6ea2540a0">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>poiInput</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N79b6a39cc9484fc7a0f998fd5ac63f66">
+    <wire_m:hasSource rdf:nodeID="Ndd678a1f5ce1482a99ca2b411a637db4"/>
+    <wire_m:hasTarget rdf:nodeID="N10a0373350f344419d4011521eae60ba"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Connection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndcce4804beac4ffdbaaae5fb39bb663b">
+    <dcterms:title>routeStepInput</dcterms:title>
+    <rdfs:label>Route Step</rdfs:label>
+    <wire:frindcode>detailStep</wire:frindcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#InputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N840ed85bf0fc4a77905efdb19a7f441b">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>outputPoi</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfbd075e8df18457c9b24990ae96d8599">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>outputTechnician</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N58f1de77f2934b549ea28316051e7efa">
+    <wire_m:hasSource rdf:nodeID="Nf42b1816eb3e49da995b822bb22bed84"/>
+    <wire_m:hasTarget rdf:nodeID="N530ff4e880ef4fd2b41cc5843bcd434d"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Connection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9ef1265bcd3e41d8a6ee58dc16492dc0">
+    <wire:type>iwidget</wire:type>
+    <wire_m:targetId>Na375773f20d74c5ba224d166a01c4ba6</wire_m:targetId>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire_m:endpoint>inputIssue</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N94644c3af4ef4874a792dbd329c6124a">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>inputProfile</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1659e689b96b4ef8aa9c3d396dc54f7d">
+    <wire_m:hasSource rdf:nodeID="N7a559ceadea14d24b83c99a729d34f14"/>
+    <wire_m:hasTarget rdf:nodeID="N963dc45affff4a18a03ec363b81b73d0"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Connection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb5472db058b4458999449aed45fe43da">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>outputIssue</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2c2f7f241fc842b09091b390305d7fb0">
+    <wire:type>ioperator</wire:type>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire_m:sourceId>N33f33288e4274c81813f0cb8396c6f91</wire_m:sourceId>
+    <wire_m:endpoint>outputIssue</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc68f9544c24b47cd859bcc930f81cdcf">
+    <wire_m:minimized>False</wire_m:minimized>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#iWidgetRendering"/>
+    <wire_m:layout>0</wire_m:layout>
+    <wire:renderingWidth>3</wire:renderingWidth>
+    <wire:renderingHeight>31</wire:renderingHeight>
+    <wire_m:fullDragboard>False</wire_m:fullDragboard>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf42b1816eb3e49da995b822bb22bed84">
+    <wire:type>iwidget</wire:type>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire_m:sourceId>Na375773f20d74c5ba224d166a01c4ba6</wire_m:sourceId>
+    <wire_m:endpoint>outputRoute</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N40a129e252a8436a8127d054f026d051">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire:index>7</wire:index>
+    <rdfs:label>boundsOutput</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N68c2c7e3a48c49f08fdd4836566c11c4">
+    <foaf:name>CoNWeT</foaf:name>
+    <rdf:type rdf:resource="http://purl.org/goodrelations/v1#BussisnessEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirecloud.conwet.fi.upm.es/ns/mashup#CoNWeT/fiware/1.0">
+    <dcterms:title>fiware</dcterms:title>
+    <foaf:page rdf:resource="http://conwet.fi.upm.es/"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Mashup"/>
+    <wire:hasImageUri rdf:resource=""/>
+    <wire_m:hasMashupWiring rdf:nodeID="Nf28cc721fdcf47b2bdf17f71e9afcdf0"/>
+    <dcterms:creator rdf:nodeID="N1ad90b2358274190826346495a061ac6"/>
+    <vcard:addr rdf:nodeID="Nc320c65132a44e5f840e1de689368df8"/>
+    <usdl:versionInfo>1.0</usdl:versionInfo>
+    <wire_m:hasTab rdf:nodeID="Nda322abb3762419c8996682b66309147"/>
+    <usdl:hasProvider rdf:nodeID="N68c2c7e3a48c49f08fdd4836566c11c4"/>
+    <wire_m:readonly>False</wire_m:readonly>
+    <dcterms:description>This is an exemple you can do in WireCloud.
+Wirecloud Mashup composed of: Map Viewer, Technician List, Technician Info, Issue List, Photo Viewer</dcterms:description>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9c522fe3466b4104898584b68620afa7">
+    <wire:type>ioperator</wire:type>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire_m:sourceId>N520fe3621a1e4c40b225d234d42c153a</wire_m:sourceId>
+    <wire_m:endpoint>outputIssue</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbc1b5f1a908042819e545e985e5e5acd">
+    <wire:type>iwidget</wire:type>
+    <wire_m:targetId>Naeb8cbb888e94759a856ffa6ad990076</wire_m:targetId>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire_m:endpoint>inputProfile</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1dc1093b3fb5436aa356909461bc4d6e">
+    <wire:type>ioperator</wire:type>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire_m:sourceId>Ne8e1ed37be39466a88d65153fa1f59e3</wire_m:sourceId>
+    <wire_m:endpoint>outputPoi</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N071a54c5d60247ca82ac3404110e1174">
+    <dcterms:title>CoNWeT/vcard2poi/2.0</dcterms:title>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#iOperator"/>
+    <wire_m:iOperatorId>N071a54c5d60247ca82ac3404110e1174</wire_m:iOperatorId>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na1e68756f6b94c7db2ec4f4e9b8d7745">
+    <wire:type>ioperator</wire:type>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire_m:sourceId>N0f354acbf6874a86aa1e85be094f9e82</wire_m:sourceId>
+    <wire_m:endpoint>outputPoi</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncb58548d49844f3b9d5609b0b18ba177">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire:index>5</wire:index>
+    <rdfs:label>poiOutput</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbb1fce2e4d514af8b1d124260ad90bff">
+    <wire:type>ioperator</wire:type>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire_m:sourceId>N33f33288e4274c81813f0cb8396c6f91</wire_m:sourceId>
+    <wire_m:endpoint>outputIssue</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf283a1f15d56470f8ae37876ba0b06a6">
+    <wire_m:hasView rdf:nodeID="N730259eeba38492faee3ec5d6616fdd4"/>
+    <wire_m:hasView rdf:nodeID="N0ffca69860f24cbc8dbcdc1b15c7493c"/>
+    <wire_m:hasView rdf:nodeID="N335f33c86a364a498004c5299abc9924"/>
+    <wire_m:hasView rdf:nodeID="N46cabb9e17814c2ea6d1634e5b8ce6f7"/>
+    <wire_m:hasView rdf:nodeID="N83970042942346f68dac2054b4afcc41"/>
+    <wire_m:hasView rdf:nodeID="N59fa5c40959349548fa759dd974d5eab"/>
+    <wire_m:hasView rdf:nodeID="Ne48c79ab78de4347bfcf5d55c24a357c"/>
+    <wire_m:hasView rdf:nodeID="N36358441fe43476ab3098a8b4a833284"/>
+    <wire_m:hasView rdf:nodeID="N203933f0dd2b486b8547d44ff63320bf"/>
+    <wire_m:hasView rdf:nodeID="Na33329f032ba48ac8c4ddef0e798977a"/>
+    <wire_m:hasView rdf:nodeID="N54fe4dfe0832431c9c340e0068ea535e"/>
+    <wire_m:hasView rdf:nodeID="N30cafcd927e748178b6362e588597d0b"/>
+    <wire_m:hasView rdf:nodeID="N02725a980a174bdea15385b71e83af83"/>
+    <wire_m:hasView rdf:nodeID="Nad2d6e9db9be4dbba4a5333fecf3388e"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#WiringView"/>
+    <rdfs:label>default</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N67ea8fa6f99e40b0858da3362e7de25d">
+    <wire_m:x>660</wire_m:x>
+    <wire_m:y>499</wire_m:y>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Position"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3c9db6c8c7784e2faa59497efc638fbd">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>inputPoi</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6fbfc19a0cb34bc59a66e18df53b23ba">
+    <wire_m:x>598</wire_m:x>
+    <wire_m:y>290</wire_m:y>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Position"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nca1a14a277ab45369790a39d0200bf2a">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire:index>5</wire:index>
+    <rdfs:label>deletePoiInput</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9217f5cb01124bcb90a17049c8f4eb77">
+    <dcterms:title>Technician Info</dcterms:title>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#iWidget"/>
+    <usdl:versionInfo>2.0</usdl:versionInfo>
+    <wire_m:hasPosition rdf:nodeID="N959faaf8367a4e649666b97d156fded9"/>
+    <usdl:hasProvider rdf:nodeID="N13186e35ccb34152b67eb89aebc80d4b"/>
+    <wire_m:hasiWidgetRendering rdf:nodeID="Ncaf811794bfc454c8897b2002ce2723f"/>
+    <wire_m:iWidgetId>N9217f5cb01124bcb90a17049c8f4eb77</wire_m:iWidgetId>
+    <rdfs:label>technician-info</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5e012fe024154139a0d88ba5701e34f8">
+    <wire_m:hasSource rdf:nodeID="N66b82c9a9f5e452885230ae1021e8138"/>
+    <wire_m:hasTarget rdf:nodeID="N0a7d7f59dc0341358d01dd3d0806fa37"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Connection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7e6b082d02994c33a3b99b4720548e27">
+    <wire:type>iwidget</wire:type>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire_m:sourceId>Naeb8cbb888e94759a856ffa6ad990076</wire_m:sourceId>
+    <wire_m:endpoint>outputProfile</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N600727df372a43358ebeff52d787a8c2">
+    <wire_m:x>1235</wire_m:x>
+    <wire_m:y>18</wire_m:y>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Position"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N71f9543180d84a64989e62bf1a246390">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>outputPoi</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na47011e446f64c1992fecb8f1a32b9e8">
+    <wire_m:x>5</wire_m:x>
+    <wire_m:z>0</wire_m:z>
+    <wire_m:y>24</wire_m:y>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Position"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3e5e26b0bcac4123b189c5effe131084">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>outputIssue</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1c670cee2f75476980672f1a29ff60d1">
+    <dcterms:title>outputIssue</dcterms:title>
+    <rdfs:label>Issue select</rdfs:label>
+    <wire:friendcode>issue</wire:friendcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#OutputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndcf57ae365b445d98a548b0b7b96aa22">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire:index>1</wire:index>
+    <rdfs:label>outputTechnicianVCard</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfd1f134306684e49a5b95760ea81374b">
+    <wire_m:x>13</wire_m:x>
+    <wire_m:z>1</wire_m:z>
+    <wire_m:y>0</wire_m:y>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Position"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1ad90b2358274190826346495a061ac6">
+    <foaf:name>sblanco</foaf:name>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb6834da0c3a84d45a44c327cb08d1ef6">
+    <wire:type>iwidget</wire:type>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire_m:sourceId>Na375773f20d74c5ba224d166a01c4ba6</wire_m:sourceId>
+    <wire_m:endpoint>outputTechnicianVCard</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd6658ddccda442beb42e63747823fb7e">
+    <wire_m:hasSource rdf:nodeID="N641cbc50df5949ac937516ecec916bb8"/>
+    <wire_m:hasTarget rdf:nodeID="N6e4e08bf94d047bbab537a82b1ce3306"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Connection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N03e731d40af24e1c99cbd1ec8842f0f6">
+    <dcterms:title>addressOutput</dcterms:title>
+    <rdfs:label>Address</rdfs:label>
+    <wire:friendcode>address</wire:friendcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#OutputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N09c8e4bb95004cd8802165c40dcfe67c">
+    <dcterms:title>decimalCoordOutput</dcterms:title>
+    <rdfs:label>Decimal Coordinates</rdfs:label>
+    <wire:friendcode>decimalCoord</wire:friendcode>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/widget#OutputEndpoint"/>
+    <wire:type>text</wire:type>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nab76b2e74c9a471f94aa92b047a80dbc">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire:index>6</wire:index>
+    <rdfs:label>poiInputCenter</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0808bb253b24460b81eaee8a1cde21ec">
+    <wire_m:hasSource rdf:nodeID="Nbb1fce2e4d514af8b1d124260ad90bff"/>
+    <wire_m:hasTarget rdf:nodeID="N477615e5d8324fee8a324755eb891977"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Connection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N24e74bbe79f94a2786b00e9b68256d45">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire:index>0</wire:index>
+    <rdfs:label>addressInput</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne9fdedac26ce44e9a034de43e8097152">
+    <wire:type>ioperator</wire:type>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Source"/>
+    <wire_m:sourceId>N6c430ff1d4ce4edc88e6558be8d3bb2b</wire_m:sourceId>
+    <wire_m:endpoint>outputTechnician</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd413e35e92c743f59f23fbab06a13452">
+    <foaf:name>CoNWeT</foaf:name>
+    <rdf:type rdf:resource="http://purl.org/goodrelations/v1#BussisnessEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N434ac57354cc41c1b214996757a378f8">
+    <wire_m:hasSource rdf:nodeID="Na1e68756f6b94c7db2ec4f4e9b8d7745"/>
+    <wire_m:hasTarget rdf:nodeID="Na268255550374f59846680faa05391c5"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Connection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N530ff4e880ef4fd2b41cc5843bcd434d">
+    <wire:type>iwidget</wire:type>
+    <wire_m:targetId>N8ae5e5d23d2243128801362b41c7ecd2</wire_m:targetId>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire_m:endpoint>routeInput</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne48c79ab78de4347bfcf5d55c24a357c">
+    <wire_m:hasSource rdf:nodeID="N344b9d71315b48408364594eebb9d24c"/>
+    <wire:type>operator</wire:type>
+    <wire_m:hasPosition rdf:nodeID="Nebd2a1dbc73c4b9d8eafd20c9986f51a"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#View"/>
+    <wire:id>N33f33288e4274c81813f0cb8396c6f91</wire:id>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na6adee30d33445278ca4eb3c93686261">
+    <wire:type>ioperator</wire:type>
+    <wire_m:targetId>Ne8e1ed37be39466a88d65153fa1f59e3</wire_m:targetId>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire_m:endpoint>inputIssue</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N94823865b3c642acaf63e5ac8105f8d4">
+    <wire:type>iwidget</wire:type>
+    <wire_m:targetId>N9217f5cb01124bcb90a17049c8f4eb77</wire_m:targetId>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Target"/>
+    <wire_m:endpoint>inputProfile</wire_m:endpoint>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nad2d6e9db9be4dbba4a5333fecf3388e">
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#View"/>
+    <wire_m:hasSource rdf:nodeID="N840ed85bf0fc4a77905efdb19a7f441b"/>
+    <wire:type>operator</wire:type>
+    <wire_m:hasTarget rdf:nodeID="N6b02b93aecc447ec89c8c4c4e40a8a1f"/>
+    <wire_m:hasPosition rdf:nodeID="N5e1866e6a4024947b7b0a8770e06c233"/>
+    <wire:id>Ne8e1ed37be39466a88d65153fa1f59e3</wire:id>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf3f9e7cb02df4fc9a9702ddd73991d29">
+    <wire_m:hasSource rdf:nodeID="N2bfed58bb72a4b66b85c66b6ceaa2afe"/>
+    <wire_m:hasTarget rdf:nodeID="N92d4a2152c384f9da5cc5ffa5f01c521"/>
+    <rdf:type rdf:resource="http://wirecloud.conwet.fi.upm.es/ns/mashup#Connection"/>
+  </rdf:Description>
+</rdf:RDF>

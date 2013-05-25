@@ -1,0 +1,56 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Salas Torres;Jacinto
+FN:Jacinto Salas Torres
+ORG:MyCompany
+GEO;TYPE=work:geo:50.846300, 4.356800
+TITLE:MV Keeper
+TEL;TYPE=WORK,VOICE:+34 621 898 316
+ADR;TYPE=WORK:Keizerslaan
+EMAIL;TYPE=PREF,INTERNET:jacinto.salas@mycompany.com
+PHOTO;VALUE=URL;TYPE=PNG:http://localhost:8000/catalogue/media/CoNWeT/vcard2poi/0.1/img/jacinto.png
+IMPP:twitter:jacinto.salas
+NOTE:Pending issues: 3 
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+N:Lorenzo Fernández;Marcos
+FN:Marcos Lorenzo Fernandez 
+ORG:MyCompany
+GEO;TYPE=work:geo:50.8159350, 4.3905250
+TITLE:MV Keeper
+TEL;TYPE=WORK,VOICE:+34 604 872 235
+ADR;TYPE=WORK:Kroonlaan 600
+EMAIL;TYPE=PREF,INTERNET:marcos.fernandez@mycompany.com
+PHOTO;VALUE=URL;TYPE=PNG:http://localhost:8000/catalogue/media/CoNWeT/vcard2poi/0.1/img/marcos.png
+IMPP:twitter:mLorenzo
+NOTE:Pending issues: 1
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+N:Willems;Hubert
+FN:Hubert Willems 
+ORG:MyCompany
+GEO;TYPE=work:geo:50.853750, 4.354080
+TITLE:MV Keeper
+TEL;TYPE=WORK,VOICE:+32 02 654 88 89
+ADR;TYPE=WORK:Boulevard Emile Jacqmain
+EMAIL;TYPE=PREF,INTERNET:hubert.willems@mycompany.com
+PHOTO;VALUE=URL;TYPE=PNG:http://localhost:8000/catalogue/media/CoNWeT/vcard2poi/0.1/img/willems.png
+IMPP:twitter:hWillems
+NOTE:Pending issues: 1
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+N:De Vos;Milan
+FN:Milan De Vos 
+ORG:MyCompany
+GEO;TYPE=work:geo:50.8482500, 4.3406800
+TITLE:MV Keeper
+TEL;TYPE=WORK,VOICE:+32 02 617 10 05
+ADR;TYPE=WORK:Rue de la Senne
+EMAIL;TYPE=PREF,INTERNET:milan.devos@mycompany.com
+PHOTO;VALUE=URL;TYPE=PNG:http://localhost:8000/catalogue/media/CoNWeT/vcard2poi/0.1/img/milan.png
+IMPP:twitter:mDeVos
+NOTE:Pending issues: 0
+END:VCARD

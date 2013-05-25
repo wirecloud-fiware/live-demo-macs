@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:usdl-core="http://www.linked-usdl.org/ns/usdl-core#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:wire="http://wirecloud.conwet.fi.upm.es/ns/widget#"
+    xmlns:vCard = "http://www.w3.org/2006/vcard/ns#"
+    xmlns:gr="http://purl.org/goodrelations/v1#">
+
+    <wire:Operator rdf:about="http://wirecloud.com/test">
+        <dcterms:title>vcard2poi</dcterms:title>
+        <wire:displayName>Vcard to Poi</wire:displayName>
+        <dcterms:description>This operator transforms a vCard to PoI</dcterms:description>
+        <dcterms:creator rdf:resource="http://creatoruri/"/>
+        <usdl-core:versionInfo>2.0</usdl-core:versionInfo>
+        <wire:hasImageUri rdf:resource="images/catalogue.png"/>
+        <usdl-core:utilizedResource rdf:resource="js/vCard.js"/>
+        <usdl-core:utilizedResource rdf:resource="js/poi.js"/>
+        <usdl-core:utilizedResource rdf:resource="js/coordinates.js"/>
+        <usdl-core:utilizedResource rdf:resource="js/main.js"/>
+        <foaf:page rdf:resource="http://conwet.fi.upm.es/docs/display/wirecloud"/>
+        <usdl-core:hasProvider rdf:resource="http://vendoruri/"/>
+
+        <vCard:addr>
+            <vCard:Work>
+                <vCard:email>sblanco@conwet.com</vCard:email>
+            </vCard:Work>
+        </vCard:addr>
+
+        <wire:hasPlatformWiring>
+            <wire:PlatformWiring rdf:ID="wiring">
+                <wire:hasInputEndpoint>
+                    <wire:InputEndpoint rdf:ID="slot_1">
+                        <dcterms:title>inputVcard</dcterms:title>
+                        <dcterms:description>vCard which contain a profile</dcterms:description>
+                        <wire:inputActionLabel>vCard to PoI</wire:inputActionLabel>
+                        <wire:type>text</wire:type>
+                        <rdfs:label>vCard</rdfs:label>
+                        <wire:friendcode>vCard</wire:friendcode>
+                    </wire:InputEndpoint>
+                </wire:hasInputEndpoint>
+                <wire:hasOutputEndpoint>
+                    <wire:OutputEndpoint rdf:ID="event_1">
+                        <dcterms:title>outputPoi</dcterms:title>
+                        <dcterms:description>Point of Interest</dcterms:description>
+                        <wire:type>text</wire:type>
+                        <rdfs:label>Point of Interest</rdfs:label>
+                        <wire:friendcode>poi</wire:friendcode>
+                    </wire:OutputEndpoint>
+                </wire:hasOutputEndpoint>
+            </wire:PlatformWiring>
+        </wire:hasPlatformWiring>
+    </wire:Operator>
+
+    <foaf:Person rdf:about="http://creatoruri/">
+        <foaf:name>sblanco</foaf:name>
+    </foaf:Person>
+
+    <gr:BusinessEntity rdf:about="http://vendoruri/">
+        <foaf:name>CoNWeT</foaf:name>
+    </gr:BusinessEntity>
+
+    <foaf:Image rdf:about="images/catalogue.png">
+        <dcterms:title>ImageURI</dcterms:title>
+    </foaf:Image>
+
+    <usdl-core:Resource rdf:about="js/vCard.js">
+        <wire:index>0</wire:index>
+    </usdl-core:Resource>
+
+    <usdl-core:Resource rdf:about="js/poi.js">
+        <wire:index>1</wire:index>
+    </usdl-core:Resource>
+
+    <usdl-core:Resource rdf:about="js/coordinates.js">
+        <wire:index>2</wire:index>
+    </usdl-core:Resource>
+
+    <usdl-core:Resource rdf:about="js/main.js">
+        <wire:index>3</wire:index>
+    </usdl-core:Resource>
+</rdf:RDF>

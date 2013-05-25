@@ -1,0 +1,49 @@
+#vendingMachinesContainer{
+    height: 100%;
+    margin: 0.5em;
+    padding: 0;
+}
+
+.vendingMachineInfoTitle{
+    font-family: Verdana;
+    font-size: 13px;
+    font-weight: bold;
+    color: #464646;
+    margin: 3px;
+}
+
+.vendingMachineInfo{
+    font-weight:normal;  
+    margin-left: 3px;
+}
+
+#note{
+    font-family: Verdana;
+    font-size: 13px;
+    color: #464646;
+    margin: 3px;
+}
+
+#commandsContainer{
+    height: 100%;
+}
+
+#buttonsContainer{
+    width: 46%;
+    margin-left: 18%;
+    margin-top: 2%;
+}
+
+
+#extraInfoContainer{
+    margin-top:1em;
+    margin-left: 18%;
+}
+
+.styled_button > div > i {
+    display: none;
+}
+
+.styled_button.waiting-response > div > i {
+    display: inline-block;
+}

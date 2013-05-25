@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Template xmlns="http://wirecloud.conwet.fi.upm.es/ns/template#">
+    <Catalog.ResourceDescription>
+        <Vendor>CoNWeT</Vendor>
+        <Name>technician-list</Name>
+        <DisplayName>Technician List</DisplayName>
+        <Author>sblanco</Author>
+        <Version>2.0.0</Version>
+        <Mail>sblanco@conwet.com</Mail>
+        <Description>Shows a list with your technicians.</Description>
+        <ImageURI>images/catalogue.png</ImageURI>
+        <iPhoneImageURI>images/cataloguePhone.png</iPhoneImageURI>
+        <WikiURI>http://conwet.fi.upm.es/docs/display/wirecloud/The+Wirecloud+Mashup+Platform</WikiURI>
+    </Catalog.ResourceDescription>
+    <Platform.Preferences>
+    </Platform.Preferences>
+    <Platform.StateProperties>
+    </Platform.StateProperties>
+    <Platform.Wiring>
+        <OutputEndpoint
+            name="outputProfile"
+            type="text"
+            description="Profile of technician (vCard)"
+            label="Technician"
+            friendcode="vCard">
+        </OutputEndpoint>
+        <InputEndpoint
+            name="inputProfile"
+            type="text"
+            description="Profile of technician (vCard)"
+            label="Technician"
+            action_label="Technician"
+            friendcode="vCard">
+        </InputEndpoint>
+    </Platform.Wiring>
+    <Platform.Context>
+    </Platform.Context>
+    <Platform.Link>
+        <XHTML href="index.html" contenttype="text/html" cacheable="true" use-platform-style="true"/>
+    </Platform.Link>
+    <Platform.Rendering width="6" height="29"/>
+</Template>
