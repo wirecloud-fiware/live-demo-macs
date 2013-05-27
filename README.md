@@ -23,9 +23,8 @@ Related docs
 * Resources for administrators
     * [**Wirecloud platform installation and administration guide**](https://forge.fi-ware.eu/plugins/mediawiki/wiki/fiware/index.php/Application_Mashup_-_Wirecloud_-_Installation_and_Administration_Guide)
     * [**Most updated version of the documentation**](https://wirecloud.conwet.fi.upm.es/docs/)
-    * [**Most recent version of the platform**]()
+    * [**Most recent version of the platform**](https://pypi.python.org/pypi/wirecloud)
 * Resources for programmers
     * [**Wirecloud platform programmers guide**](https://forge.fi-ware.eu/plugins/mediawiki/wiki/fiware/index.php/Application_Mashup_-_Wirecloud_-_User_and_Programmer_Guide%23Programmer_Guide)
     * [**Tutorial on how to develop a Widget from scratch**](http://conwet.fi.upm.es/docs/display/wirecloud/Widget+Development)
-    * [**Widgets and operators currently stored in the CoNWeT Lab's instance of Wirecloud.
     * [**Most updated version of the documentation**](https://wirecloud.conwet.fi.upm.es/docs/)
