@@ -7,3 +7,4 @@ This demo also uses other generic widgets from the Wireloud catalogue that can b
 
 * Map Viewer: https://github.com/Wirecloud/map-viewer-widget
 * Photo Viewer: https://github.com/Wirecloud/photo-viewer-widget
+* Chat: https://github.com/Wirecloud/chat-widget
