@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Template xmlns="http://morfeo-project.org/2007/Template">
+    <Catalog.ResourceDescription>
+        <Vendor>CoNWeT</Vendor>
+        <Name>lamp-post-status</Name>
+        <Version>2.3.2</Version>
+        <DisplayName>Lamp Post Status</DisplayName>
+        <Author>Álvaro Arranz</Author>
+        <Mail>aarranz@conwet.com</Mail>
+        <Description>It displays the status of a lamp post. This widget should be used by a technician.</Description>
+        <ImageURI>images/catalogue.png</ImageURI>
+        <iPhoneImageURI>images/catalogue.png</iPhoneImageURI>
+        <WikiURI></WikiURI>
+        <Requirements>
+            <Feature name="NGSI"/>
+        </Requirements>
+    </Catalog.ResourceDescription>
+
+    <Platform.Preferences>
+        <Preference name="ngsi_server" type="text" description="NGSI Server where the lamp post info is located" label="NGSI Server"  default="http://130.206.82.140:1026/"/>
+    </Platform.Preferences>
+
+    <Platform.Wiring>
+        <InputEndpoint name="lamppost" type="text" description="Show the status of the given lamp post." action_label="Show lamp post status" label="Show lamp post" friendcode="entity" />
+    </Platform.Wiring>
+
+    <Platform.Link>
+        <XHTML href="index.html" content-type="application/xhtml+xml" cacheable="true" use-platform-style="true" />
+    </Platform.Link>
+
+    <Platform.Rendering width="6" height="25"/>
+</Template>

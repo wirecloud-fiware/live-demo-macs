@@ -1,0 +1,2315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:wire="http://wirecloud.conwet.fi.upm.es/ns/widget#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:usdl="http://www.linked-usdl.org/ns/usdl-core#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:ns1="http://wirecloud.conwet.fi.upm.es/ns/mashup#"
+  xmlns:ns2="http://purl.org/goodrelations/v1#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+>
+  <ns1:Mashup rdf:about="http://wirecloud.conwet.fi.upm.es/ns/mashup#CoNWeT/SmartCityManagement/2.2">
+    <usdl:hasProvider>
+      <ns2:BusinessEntity rdf:nodeID="N5874bd4538dc4ff69858f52b3ca1f9b0">
+        <foaf:name>CoNWeT</foaf:name>
+      </ns2:BusinessEntity>
+    </usdl:hasProvider>
+    <usdl:versionInfo>2.2</usdl:versionInfo>
+    <wire:displayName>Smart City Management</wire:displayName>
+    <dcterms:creator>
+      <foaf:Person rdf:nodeID="Nd92f3e3ac7154b99a7665858a92b23f3">
+        <foaf:name>aarranz</foaf:name>
+      </foaf:Person>
+    </dcterms:creator>
+    <ns1:hasMashupWiring>
+      <wire:PlatformWiring rdf:nodeID="Nf899aca293ab4eb2872b1282f1e08705">
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="N30019ec400654cb5a696c813f7343c14">
+            <dcterms:description>None</dcterms:description>
+            <dcterms:title>urlSlot</dcterms:title>
+            <wire:inputActionLabel></wire:inputActionLabel>
+            <wire:friendcode>url</wire:friendcode>
+            <rdfs:label>Photo URL</rdfs:label>
+            <wire:type>S</wire:type>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <ns1:hasiOperator>
+          <ns1:iOperator rdf:nodeID="Nd197f75f4d91466b9921dd08061a816b">
+            <dcterms:title>CoNWeT/poi2vcard/2.3.2</dcterms:title>
+            <ns1:iOperatorId>15</ns1:iOperatorId>
+          </ns1:iOperator>
+        </ns1:hasiOperator>
+        <wire:hasOutputEndpoint>
+          <wire:OutputEndpoint rdf:nodeID="N8fb8d28a3d804e29b1c6bf5721b3ed49">
+            <dcterms:title>routeDescriptionOutput</dcterms:title>
+            <wire:friendcode>routeDescription</wire:friendcode>
+            <wire:type>S</wire:type>
+            <rdfs:label>Route Description</rdfs:label>
+            <dcterms:description>None</dcterms:description>
+          </wire:OutputEndpoint>
+        </wire:hasOutputEndpoint>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="Nfd61cabcec3e4b9599f10a91d93808bc">
+            <dcterms:title>deletePoiInput</dcterms:title>
+            <rdfs:label>Delete PoI</rdfs:label>
+            <wire:friendcode>poi</wire:friendcode>
+            <dcterms:description>None</dcterms:description>
+            <wire:type>S</wire:type>
+            <wire:inputActionLabel>Map Viewer Delete PoI</wire:inputActionLabel>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="N8987ce3acece4ceaa7e0dbc24c60357a">
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="Nbbc630040f2d4909ad9821ebc179fa9c">
+                <wire:type>iwidget</wire:type>
+                <ns1:endpoint>poiInput</ns1:endpoint>
+                <ns1:targetId>132</ns1:targetId>
+              </ns1:Target>
+            </ns1:hasTarget>
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="Ndd6642300dfb4d2f8aecdb8ebc3e179a">
+                <wire:type>ioperator</wire:type>
+                <ns1:endpoint>outputPoi</ns1:endpoint>
+                <ns1:sourceId>3</ns1:sourceId>
+              </ns1:Source>
+            </ns1:hasSource>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="Ncacad89d62404ba1923101d4a5b9b45d">
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="N95bf3bb5943b4aca9c7ade09f6d7265e">
+                <ns1:targetId>132</ns1:targetId>
+                <wire:type>iwidget</wire:type>
+                <ns1:endpoint>selectPoiInput</ns1:endpoint>
+              </ns1:Target>
+            </ns1:hasTarget>
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N43b7b2902495465eaf2ccea542a4d73a">
+                <wire:type>ioperator</wire:type>
+                <ns1:endpoint>outputPoi</ns1:endpoint>
+                <ns1:sourceId>5</ns1:sourceId>
+              </ns1:Source>
+            </ns1:hasSource>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="N9ba4f80df9e94177a75946ff41c85e8b">
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N9267c49f378d42bf952b6c7ef2b949d2">
+                <ns1:sourceId>136</ns1:sourceId>
+                <ns1:endpoint>outputRoute</ns1:endpoint>
+                <wire:type>iwidget</wire:type>
+              </ns1:Source>
+            </ns1:hasSource>
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="N4aed478337a4462db15f914f805e0b3a">
+                <wire:type>iwidget</wire:type>
+                <ns1:targetId>132</ns1:targetId>
+                <ns1:endpoint>routeInput</ns1:endpoint>
+              </ns1:Target>
+            </ns1:hasTarget>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="N6891dfc5666c463cb3dbd869ba733389">
+            <wire:type>S</wire:type>
+            <dcterms:description>None</dcterms:description>
+            <dcterms:title>inputVcard</dcterms:title>
+            <wire:inputActionLabel></wire:inputActionLabel>
+            <wire:friendcode>vCard</wire:friendcode>
+            <rdfs:label>Add profile</rdfs:label>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="Nd48e17f0e736430a8d5276274d3e7dcb">
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N68116cd408244142b9b443e93576d2ee">
+                <wire:type>ioperator</wire:type>
+                <ns1:sourceId>8</ns1:sourceId>
+                <ns1:endpoint>outputPoi</ns1:endpoint>
+              </ns1:Source>
+            </ns1:hasSource>
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="Ncc809e64823a4c47b05f873355761311">
+                <wire:type>iwidget</wire:type>
+                <ns1:endpoint>selectPoiInput</ns1:endpoint>
+                <ns1:targetId>132</ns1:targetId>
+              </ns1:Target>
+            </ns1:hasTarget>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="Ndd9a00d7f70242dc9b168c5e603e2036">
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="N8d17e6204ce447f2912e78de543b4ef3">
+                <ns1:endpoint>inputVcard</ns1:endpoint>
+                <wire:type>ioperator</wire:type>
+                <ns1:targetId>3</ns1:targetId>
+              </ns1:Target>
+            </ns1:hasTarget>
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N7b74d3c1c5bb4b9d85cae5996cb14a44">
+                <ns1:sourceId>4</ns1:sourceId>
+                <wire:type>ioperator</wire:type>
+                <ns1:endpoint>outputTechnician</ns1:endpoint>
+              </ns1:Source>
+            </ns1:hasSource>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="Naf40d8c0552741858b7bb1abc5615acf">
+            <wire:type>S</wire:type>
+            <wire:inputActionLabel>Map Viewer Coordinates</wire:inputActionLabel>
+            <dcterms:description>None</dcterms:description>
+            <dcterms:title>coordsInput</dcterms:title>
+            <wire:friendcode>Coords</wire:friendcode>
+            <rdfs:label>Coordinates</rdfs:label>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <ns1:hasiOperator>
+          <ns1:iOperator rdf:nodeID="N1c250f68b6314b7da1bd14df6e2f0bdb">
+            <ns1:iOperatorId>12</ns1:iOperatorId>
+            <dcterms:title>CoNWeT/simple-history-module2linear-graph/2.3.2</dcterms:title>
+          </ns1:iOperator>
+        </ns1:hasiOperator>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="N454547bedfde453280ca82c17d3056ec">
+            <wire:inputActionLabel></wire:inputActionLabel>
+            <rdfs:label>Add issue</rdfs:label>
+            <wire:friendcode>issue</wire:friendcode>
+            <dcterms:description>None</dcterms:description>
+            <wire:type>S</wire:type>
+            <dcterms:title>inputIssue</dcterms:title>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="Nf73414155cb64a02bc57d901de22a65a">
+            <rdfs:label>Insert mark</rdfs:label>
+            <dcterms:title>markInsertInput</dcterms:title>
+            <wire:type>S</wire:type>
+            <wire:inputActionLabel> Insert Mark into TimeLine</wire:inputActionLabel>
+            <dcterms:description>None</dcterms:description>
+            <wire:friendcode>mark</wire:friendcode>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="Nfde0d1a6123246268ea44df823dd90ff">
+            <wire:inputActionLabel>Map Viewer Delete PoI</wire:inputActionLabel>
+            <dcterms:title>deletePoiInput</dcterms:title>
+            <rdfs:label>Delete PoI</rdfs:label>
+            <wire:friendcode>poi</wire:friendcode>
+            <wire:type>S</wire:type>
+            <dcterms:description>None</dcterms:description>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <wire:hasOutputEndpoint>
+          <wire:OutputEndpoint rdf:nodeID="Nc3235ad79b184f98a9270feb393e4fe4">
+            <rdfs:label>Change Technician</rdfs:label>
+            <wire:type>S</wire:type>
+            <dcterms:description>None</dcterms:description>
+            <dcterms:title>outputTechnicianVCard</dcterms:title>
+            <wire:friendcode>vCard</wire:friendcode>
+          </wire:OutputEndpoint>
+        </wire:hasOutputEndpoint>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="N1965fe3dfa9248b99a5aa761362d5391">
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="N08c3f7a56ddd413f9fdb7fd20d71ae25">
+                <ns1:targetId>130</ns1:targetId>
+                <wire:type>iwidget</wire:type>
+                <ns1:endpoint>inputProfile</ns1:endpoint>
+              </ns1:Target>
+            </ns1:hasTarget>
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N4b608e507f794a49bf02f52267aaf963">
+                <wire:type>iwidget</wire:type>
+                <ns1:sourceId>136</ns1:sourceId>
+                <ns1:endpoint>outputTechnicianVCard</ns1:endpoint>
+              </ns1:Source>
+            </ns1:hasSource>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <ns1:hasiOperator>
+          <ns1:iOperator rdf:nodeID="Naec6777483734c82ba4229f1567b18ac">
+            <dcterms:title>CoNWeT/entity-service/2.3.2</dcterms:title>
+            <ns1:iOperatorId>13</ns1:iOperatorId>
+          </ns1:iOperator>
+        </ns1:hasiOperator>
+        <wire:hasOutputEndpoint>
+          <wire:OutputEndpoint rdf:nodeID="Nf20ac1e361704971a11d78b6a30c0966">
+            <dcterms:title>outputProfile</dcterms:title>
+            <wire:type>S</wire:type>
+            <wire:friendcode>vCard</wire:friendcode>
+            <dcterms:description>None</dcterms:description>
+            <rdfs:label>Technician</rdfs:label>
+          </wire:OutputEndpoint>
+        </wire:hasOutputEndpoint>
+        <ns1:hasWiringView>
+          <ns1:WiringView rdf:nodeID="Nef5fbd0deb6e4962aeece8872ee14a18">
+            <ns1:hasView>
+              <ns1:View rdf:nodeID="N986aa0a2302b4624a1e7bc1228acae6b">
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="Na4847ff6384e418cafa628f7d958b333">
+                    <rdfs:label>poiListOutput</rdfs:label>
+                    <wire:index>6</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N308750d59f604d61b0680ca472f0ebaa">
+                    <wire:index>5</wire:index>
+                    <rdfs:label>deletePoiInput</rdfs:label>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="Nd470a75bc7b44749bc01dee5c5501578">
+                    <wire:index>0</wire:index>
+                    <rdfs:label>addressInput</rdfs:label>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="N05683e6f828b41d597be972a8455fbe7">
+                    <wire:index>0</wire:index>
+                    <rdfs:label>routeDescriptionOutput</rdfs:label>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <wire:type>widget</wire:type>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="N22357f3c40ba4d5c9ff26bec211854a2">
+                    <rdfs:label>urlRouteMapOutput</rdfs:label>
+                    <wire:index>1</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <wire:id>132</wire:id>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="Ne08619ccf6654382a153d26f18c01ab9">
+                    <wire:index>3</wire:index>
+                    <rdfs:label>routeStepInput</rdfs:label>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="Ncb3582f0bde440d1991a95bbf2a4028e">
+                    <rdfs:label>utmCoordOutput</rdfs:label>
+                    <wire:index>3</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N91231de339ea4e4bb710d112b83db58d">
+                    <wire:index>4</wire:index>
+                    <rdfs:label>poiInput</rdfs:label>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N22af9cbda4cc4c4a95076ce7f55b8c41">
+                    <wire:index>2</wire:index>
+                    <rdfs:label>routeInput</rdfs:label>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="Nb26fd4bcfbc0412088e637591cfcb935">
+                    <rdfs:label>decimalCoordOutput</rdfs:label>
+                    <wire:index>4</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="N7dd1f9a8bb394ce5ba7e4c52c741aeaf">
+                    <wire:index>2</wire:index>
+                    <rdfs:label>addressOutput</rdfs:label>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N9583983633d64e4a9c9db3bfd0a4a390">
+                    <wire:index>1</wire:index>
+                    <rdfs:label>coordsInput</rdfs:label>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="Nd940729c45774489baa0706ee368ae40">
+                    <wire:index>7</wire:index>
+                    <rdfs:label>selectPoiInput</rdfs:label>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="N48c08772e5a7423daf92195575853692">
+                    <rdfs:label>boundsOutput</rdfs:label>
+                    <wire:index>7</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <ns1:hasPosition>
+                  <ns1:Position rdf:nodeID="N70626b33ad974f6f803ca97572b6b74d">
+                    <ns1:x>366</ns1:x>
+                    <ns1:y>348</ns1:y>
+                  </ns1:Position>
+                </ns1:hasPosition>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N5ca762832e084741a049b7b0f27ca4ff">
+                    <rdfs:label>poiInputCenter</rdfs:label>
+                    <wire:index>6</wire:index>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="Naccf37908e234dad98c244ea61c76cd1">
+                    <rdfs:label>poiOutput</rdfs:label>
+                    <wire:index>5</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+              </ns1:View>
+            </ns1:hasView>
+            <ns1:hasView>
+              <ns1:View rdf:nodeID="N5b577372139b40c68ab10251bfef8950">
+                <ns1:hasPosition>
+                  <ns1:Position rdf:nodeID="Nd74bcb7c056c4323ad253e9ee19bfacc">
+                    <ns1:y>933</ns1:y>
+                    <ns1:x>528</ns1:x>
+                  </ns1:Position>
+                </ns1:hasPosition>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N0f48c6d4a344416a8b50e8646391333b">
+                    <rdfs:label>urlSlot</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <wire:type>widget</wire:type>
+                <wire:id>134</wire:id>
+              </ns1:View>
+            </ns1:hasView>
+            <ns1:hasView>
+              <ns1:View rdf:nodeID="Naccbe2acc31943b1a77524b828447a27">
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="Nfc31a824305d49eaa131d033e780478d">
+                    <rdfs:label>addressInput</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N699afbc37e394f52bacbc1a31d2d23c1">
+                    <wire:index>5</wire:index>
+                    <rdfs:label>deletePoiInput</rdfs:label>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="Ne0f15d1f313e48fdb9d20759008451fc">
+                    <wire:index>7</wire:index>
+                    <rdfs:label>selectPoiInput</rdfs:label>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="Nfda7c1bf1f9044f4a9adaf46930c7de6">
+                    <rdfs:label>utmCoordOutput</rdfs:label>
+                    <wire:index>3</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <wire:id>137</wire:id>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N0deb237f69d14774abe3f192d3ef3313">
+                    <rdfs:label>routeInput</rdfs:label>
+                    <wire:index>2</wire:index>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="N2e4b3ce00b194c018a8124c8586ca5e4">
+                    <rdfs:label>urlRouteMapOutput</rdfs:label>
+                    <wire:index>1</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="N833079f4005d4cb39b2271934bed316a">
+                    <wire:index>0</wire:index>
+                    <rdfs:label>routeDescriptionOutput</rdfs:label>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="Nb87a91292fcd46a4b53ede7cb705676c">
+                    <rdfs:label>boundsOutput</rdfs:label>
+                    <wire:index>7</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N86dc92f458104d4b9a591af8e3486dbe">
+                    <rdfs:label>coordsInput</rdfs:label>
+                    <wire:index>1</wire:index>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="N2348db97cb35483186c5b719b9af9ab1">
+                    <rdfs:label>addressOutput</rdfs:label>
+                    <wire:index>2</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N22f8a31fc01a4c88abde8bfec5b07504">
+                    <wire:index>3</wire:index>
+                    <rdfs:label>routeStepInput</rdfs:label>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N984d8b873ac04c07a56e573aebbaa7a7">
+                    <rdfs:label>poiInput</rdfs:label>
+                    <wire:index>4</wire:index>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="Nddf0b820be2e47bbbfde622de7ee6cf2">
+                    <wire:index>4</wire:index>
+                    <rdfs:label>decimalCoordOutput</rdfs:label>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="N9c70c25ab5d4403e998fa0119068f3b1">
+                    <rdfs:label>poiListOutput</rdfs:label>
+                    <wire:index>6</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="Nf076d8779e0f4277bf99ad43a9a520f0">
+                    <wire:index>6</wire:index>
+                    <rdfs:label>poiInputCenter</rdfs:label>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasPosition>
+                  <ns1:Position rdf:nodeID="N6bc657bf4e444d40919f64cd2e5361fc">
+                    <ns1:y>28</ns1:y>
+                    <ns1:x>310</ns1:x>
+                  </ns1:Position>
+                </ns1:hasPosition>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="N7d0e430da8b04200a14d3cd9eb362cbe">
+                    <rdfs:label>poiOutput</rdfs:label>
+                    <wire:index>5</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <wire:type>widget</wire:type>
+              </ns1:View>
+            </ns1:hasView>
+            <ns1:hasView>
+              <ns1:View rdf:nodeID="Na3600c855c8a4fdbade96bfa3985289d">
+                <ns1:hasPosition>
+                  <ns1:Position rdf:nodeID="N7af7245878ad40fc815178cd23685854">
+                    <ns1:x>265</ns1:x>
+                    <ns1:y>675</ns1:y>
+                  </ns1:Position>
+                </ns1:hasPosition>
+                <wire:type>operator</wire:type>
+                <wire:id>4</wire:id>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="Nba07e7a3be4f4567bb7faadc0fe2db56">
+                    <rdfs:label>issueInput</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="N3195140c70c2469bb433046170f4b8e5">
+                    <rdfs:label>outputTechnician</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+              </ns1:View>
+            </ns1:hasView>
+            <ns1:hasView>
+              <ns1:View rdf:nodeID="N36ff72d2bdbc4c5abb402913336b20d4">
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="Na3a6d5a174ae476db0fec17c0dc04b45">
+                    <wire:index>0</wire:index>
+                    <rdfs:label>outputIssue</rdfs:label>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <ns1:hasPosition>
+                  <ns1:Position rdf:nodeID="N2edeebbdcc1a4470a14d2978c4ac761a">
+                    <ns1:y>508</ns1:y>
+                    <ns1:x>8</ns1:x>
+                  </ns1:Position>
+                </ns1:hasPosition>
+                <wire:type>operator</wire:type>
+                <wire:id>1</wire:id>
+              </ns1:View>
+            </ns1:hasView>
+            <ns1:hasView>
+              <ns1:View rdf:nodeID="Ndef0026303614129b3f9b5233c6d682e">
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N0fdfa19f140e449288a4844db4e9fd3b">
+                    <rdfs:label>issueInput</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <wire:type>operator</wire:type>
+                <wire:id>11</wire:id>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="Nc4a5bf6c478947a3abe00de6b872d5bf">
+                    <rdfs:label>markOutput</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <ns1:hasPosition>
+                  <ns1:Position rdf:nodeID="N48200b67f428499db6f0cfef9546b1ae">
+                    <ns1:x>786</ns1:x>
+                    <ns1:y>987</ns1:y>
+                  </ns1:Position>
+                </ns1:hasPosition>
+              </ns1:View>
+            </ns1:hasView>
+            <ns1:hasView>
+              <ns1:View rdf:nodeID="N88a8f37c1d10493283641610c0e71f57">
+                <ns1:hasPosition>
+                  <ns1:Position rdf:nodeID="Ncba0f39614f746c89c3f0734a2a058b7">
+                    <ns1:x>825</ns1:x>
+                    <ns1:y>554</ns1:y>
+                  </ns1:Position>
+                </ns1:hasPosition>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="N5f89c0bf44bc4717bf0d59750f79227b">
+                    <rdfs:label>vCardOutput</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <wire:id>15</wire:id>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="Ncf5b093812944cf29d5b899c4f742f26">
+                    <wire:index>0</wire:index>
+                    <rdfs:label>poiInput</rdfs:label>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <wire:type>operator</wire:type>
+              </ns1:View>
+            </ns1:hasView>
+            <ns1:hasView>
+              <ns1:View rdf:nodeID="Nd7b88f21601d4d0088dea2c20ee5bda9">
+                <wire:id>5</wire:id>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N4ddf04a22860495fb3ea90ba20d80353">
+                    <rdfs:label>inputVcard</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <wire:type>operator</wire:type>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="N7cfd0202c7bc4d41b48816a23e2d09c5">
+                    <rdfs:label>outputPoi</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <ns1:hasPosition>
+                  <ns1:Position rdf:nodeID="N1fe5eb4cae61434493f2058c9d79bd1e">
+                    <ns1:y>388</ns1:y>
+                    <ns1:x>1102</ns1:x>
+                  </ns1:Position>
+                </ns1:hasPosition>
+              </ns1:View>
+            </ns1:hasView>
+            <ns1:hasView>
+              <ns1:View rdf:nodeID="Nf6fb98382b1c4285a828a612f34f42d1">
+                <wire:type>operator</wire:type>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="Nff0fde51c1434451af5b58b6681fd812">
+                    <rdfs:label>OutputStatus</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <wire:id>12</wire:id>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N2a6f3009be9d440cb08136c2b4a96de0">
+                    <wire:index>0</wire:index>
+                    <rdfs:label>SensorIdInput</rdfs:label>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasPosition>
+                  <ns1:Position rdf:nodeID="Nee90c0ab7f0248b2b55d3d919d1acc40">
+                    <ns1:y>99</ns1:y>
+                    <ns1:x>759</ns1:x>
+                  </ns1:Position>
+                </ns1:hasPosition>
+              </ns1:View>
+            </ns1:hasView>
+            <ns1:hasView>
+              <ns1:View rdf:nodeID="Nde9940206bf44f7dac9625c49700b947">
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="Neb1e64e2492c4317a0f386993211baa3">
+                    <rdfs:label>poiOutput</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <wire:type>operator</wire:type>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="Nb39faa7e755040bf9482afd5c7dcda01">
+                    <wire:index>0</wire:index>
+                    <rdfs:label>entityInput</rdfs:label>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasPosition>
+                  <ns1:Position rdf:nodeID="Nf879f43591ba4b978e11d6858aeea8b4">
+                    <ns1:x>57</ns1:x>
+                    <ns1:y>199</ns1:y>
+                  </ns1:Position>
+                </ns1:hasPosition>
+                <wire:id>10</wire:id>
+              </ns1:View>
+            </ns1:hasView>
+            <rdfs:label>default</rdfs:label>
+            <ns1:hasView>
+              <ns1:View rdf:nodeID="Nbb9447300e284dfe9b3f6f5cf510dda5">
+                <wire:id>7</wire:id>
+                <ns1:hasPosition>
+                  <ns1:Position rdf:nodeID="N7248f51910534cfbb3851b65e746bbcc">
+                    <ns1:y>781</ns1:y>
+                    <ns1:x>1270</ns1:x>
+                  </ns1:Position>
+                </ns1:hasPosition>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N1efd333f3a6c49f684b87653bf7c0da3">
+                    <rdfs:label>markInput</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <wire:type>operator</wire:type>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="N22fc6f929d184092b224b38879bdae88">
+                    <rdfs:label>issueOutput</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+              </ns1:View>
+            </ns1:hasView>
+            <ns1:hasView>
+              <ns1:View rdf:nodeID="N04ea57dd3342487ea46227a6f2b66f53">
+                <wire:type>operator</wire:type>
+                <ns1:hasPosition>
+                  <ns1:Position rdf:nodeID="N9982683300d84710b2ef5d28e478f9e3">
+                    <ns1:y>949</ns1:y>
+                    <ns1:x>287</ns1:x>
+                  </ns1:Position>
+                </ns1:hasPosition>
+                <wire:id>9</wire:id>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="N4893f14aa5f14ec587679969e9b7da3e">
+                    <rdfs:label>photoOutput</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N802409f142b54881ab4173b2dcc6bcb9">
+                    <rdfs:label>issueInput</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Target>
+                </ns1:hasTarget>
+              </ns1:View>
+            </ns1:hasView>
+            <ns1:hasView>
+              <ns1:View rdf:nodeID="N0ffc0baeb2e14292b4f9cb2dc8b4c877">
+                <ns1:hasPosition>
+                  <ns1:Position rdf:nodeID="N3c7f09c68a7d4b2baf13698d6b0cb5ca">
+                    <ns1:x>23</ns1:x>
+                    <ns1:y>405</ns1:y>
+                  </ns1:Position>
+                </ns1:hasPosition>
+                <wire:type>operator</wire:type>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="Naeeddc615a454b1b92f9f1a7d87a1440">
+                    <wire:index>0</wire:index>
+                    <rdfs:label>issueInput</rdfs:label>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <wire:id>13</wire:id>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="Nb98670379e964a26bea3727a77be49ff">
+                    <rdfs:label>entityOutput</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+              </ns1:View>
+            </ns1:hasView>
+            <ns1:hasView>
+              <ns1:View rdf:nodeID="Nda803cd48b5f4184a50de2d769889a83">
+                <wire:id>8</wire:id>
+                <ns1:hasPosition>
+                  <ns1:Position rdf:nodeID="Ne5f24a3beb6e483a911029b9d496befc">
+                    <ns1:y>368</ns1:y>
+                    <ns1:x>801</ns1:x>
+                  </ns1:Position>
+                </ns1:hasPosition>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N04fab28d4f3b42159dd7e953921a05a8">
+                    <wire:index>0</wire:index>
+                    <rdfs:label>inputIssue</rdfs:label>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <wire:type>operator</wire:type>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="N0ca86698e8854147820792db6297c1f3">
+                    <wire:index>0</wire:index>
+                    <rdfs:label>outputPoi</rdfs:label>
+                  </ns1:Source>
+                </ns1:hasSource>
+              </ns1:View>
+            </ns1:hasView>
+            <ns1:hasView>
+              <ns1:View rdf:nodeID="N88ef993025c64269ad465cc38681415d">
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N9d638642a6ae487188fb77d45c0633c6">
+                    <rdfs:label>poiInput</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <wire:id>6</wire:id>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="Nbcb0e60759864e02b727e7c7b28cb3eb">
+                    <wire:index>0</wire:index>
+                    <rdfs:label>entityOutput</rdfs:label>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <wire:type>operator</wire:type>
+                <ns1:hasPosition>
+                  <ns1:Position rdf:nodeID="Nefb5a17a2f6a46b3bd144a931ddf0d1a">
+                    <ns1:x>772</ns1:x>
+                    <ns1:y>215</ns1:y>
+                  </ns1:Position>
+                </ns1:hasPosition>
+              </ns1:View>
+            </ns1:hasView>
+            <ns1:hasView>
+              <ns1:View rdf:nodeID="N93a18b1bea5d4b97892e2ea67b49861d">
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N51f3ab89759046c8873cee6f9d4b2033">
+                    <wire:index>2</wire:index>
+                    <rdfs:label>markDeleteInput</rdfs:label>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="N33ec9c74a8b1486a8e7f2c1ce05c868f">
+                    <rdfs:label>selectedMarkOutput</rdfs:label>
+                    <wire:index>1</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N72f15165032747bbb0da44ea79326c5b">
+                    <rdfs:label>markSelectInput</rdfs:label>
+                    <wire:index>1</wire:index>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N236698a58ce540d6a0c1fb14033ec826">
+                    <wire:index>0</wire:index>
+                    <rdfs:label>markInsertInput</rdfs:label>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <wire:type>widget</wire:type>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="N0ea0f7e29d10456788888ea1fcf71200">
+                    <wire:index>0</wire:index>
+                    <rdfs:label>timeIntervalOutput</rdfs:label>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <wire:id>133</wire:id>
+                <ns1:hasPosition>
+                  <ns1:Position rdf:nodeID="N88c57ffecb804265a5962c5962bb175d">
+                    <ns1:x>1046</ns1:x>
+                    <ns1:y>918</ns1:y>
+                  </ns1:Position>
+                </ns1:hasPosition>
+              </ns1:View>
+            </ns1:hasView>
+            <ns1:hasView>
+              <ns1:View rdf:nodeID="N715808251e6c49bdbc5d6a0b26530751">
+                <wire:id>131</wire:id>
+                <wire:type>widget</wire:type>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N44a1a42f3a59446aae65011ead986de0">
+                    <rdfs:label>inputInsertProfile</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasPosition>
+                  <ns1:Position rdf:nodeID="Nb2eb7a7796c54d9f9081f2ac02d1d647">
+                    <ns1:y>719</ns1:y>
+                    <ns1:x>708</ns1:x>
+                  </ns1:Position>
+                </ns1:hasPosition>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="N7a4783c0eb52480a91fd26dcd1624d7d">
+                    <rdfs:label>outputProfile</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="Nefa17e1b34a94524965206b7ebe204bf">
+                    <rdfs:label>inputSelectProfile</rdfs:label>
+                    <wire:index>1</wire:index>
+                  </ns1:Target>
+                </ns1:hasTarget>
+              </ns1:View>
+            </ns1:hasView>
+            <ns1:hasView>
+              <ns1:View rdf:nodeID="Na91843665cdd4445997cf5c0c2843293">
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="Ndb50a5548e2245aa814138b3f18bd391">
+                    <rdfs:label>outputIssue</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <wire:id>136</wire:id>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N8fe3fe2514474c5f8487ca285c29a73d">
+                    <rdfs:label>inputIssue</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="N3079f9b3d5d948749aeaafc2d24e0cd4">
+                    <wire:index>3</wire:index>
+                    <rdfs:label>outputPhotoURL</rdfs:label>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <ns1:hasPosition>
+                  <ns1:Position rdf:nodeID="Nb520138c412a4fc5b57326792a3a9732">
+                    <ns1:x>8</ns1:x>
+                    <ns1:y>751</ns1:y>
+                  </ns1:Position>
+                </ns1:hasPosition>
+                <wire:type>widget</wire:type>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N3ccbf0978f1c48b1b7cdd245aee72e52">
+                    <wire:index>1</wire:index>
+                    <rdfs:label>inputVcard</rdfs:label>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="N0e61f660bd0e4802b4a256337674255d">
+                    <rdfs:label>outputRoute</rdfs:label>
+                    <wire:index>2</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="N79d49bb010914d9d91305289ae011988">
+                    <rdfs:label>outputTechnicianVCard</rdfs:label>
+                    <wire:index>1</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+              </ns1:View>
+            </ns1:hasView>
+            <ns1:hasView>
+              <ns1:View rdf:nodeID="Ne2c56906ee2c46c69b818792b628795e">
+                <wire:id>130</wire:id>
+                <ns1:hasPosition>
+                  <ns1:Position rdf:nodeID="Nb31478e7de3e43058e68dbb0c9a3de97">
+                    <ns1:x>1189</ns1:x>
+                    <ns1:y>497</ns1:y>
+                  </ns1:Position>
+                </ns1:hasPosition>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N9e57df8c3ddb4d4f81a4b0417dde98d4">
+                    <rdfs:label>inputProfile</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <wire:type>widget</wire:type>
+              </ns1:View>
+            </ns1:hasView>
+            <ns1:hasView>
+              <ns1:View rdf:nodeID="N6f5f91a135f34a7aa9dc4945193e5860">
+                <wire:id>139</wire:id>
+                <ns1:hasPosition>
+                  <ns1:Position rdf:nodeID="N9d72537ad5a840d180907ec181d2cd54">
+                    <ns1:x>1157</ns1:x>
+                    <ns1:y>77</ns1:y>
+                  </ns1:Position>
+                </ns1:hasPosition>
+                <wire:type>widget</wire:type>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N6c78612ee69d4c38987b6c0308b079d3">
+                    <rdfs:label>input</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Target>
+                </ns1:hasTarget>
+              </ns1:View>
+            </ns1:hasView>
+            <ns1:hasView>
+              <ns1:View rdf:nodeID="Nc6c7bc2b95034aad833a1c6e54d6556d">
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="Ndc95e0ffcce04c0a81914e80a95871a2">
+                    <rdfs:label>lamppost</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <ns1:hasPosition>
+                  <ns1:Position rdf:nodeID="N3245b381dd5544628454170dbd1e6f9e">
+                    <ns1:x>1048</ns1:x>
+                    <ns1:y>226</ns1:y>
+                  </ns1:Position>
+                </ns1:hasPosition>
+                <wire:type>widget</wire:type>
+                <wire:id>140</wire:id>
+              </ns1:View>
+            </ns1:hasView>
+            <ns1:hasView>
+              <ns1:View rdf:nodeID="N0414a7184e6346318d51578eef464cf5">
+                <wire:id>3</wire:id>
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="Neb2d79237c1045df9693498bb00bd985">
+                    <rdfs:label>outputPoi</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <ns1:hasPosition>
+                  <ns1:Position rdf:nodeID="N20ee3a32cc504e30bd1a8e46a9fab0db">
+                    <ns1:y>802</ns1:y>
+                    <ns1:x>446</ns1:x>
+                  </ns1:Position>
+                </ns1:hasPosition>
+                <wire:type>operator</wire:type>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="Na1048ddd8e664e619f0e41a327c07f60">
+                    <rdfs:label>inputVcard</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Target>
+                </ns1:hasTarget>
+              </ns1:View>
+            </ns1:hasView>
+            <ns1:hasView>
+              <ns1:View rdf:nodeID="N936f7102606d4e2fa2d61407de476d60">
+                <ns1:hasSource>
+                  <ns1:Source rdf:nodeID="Nad6a8c0d19e34234a3538730d37b846a">
+                    <rdfs:label>markOutput</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Source>
+                </ns1:hasSource>
+                <ns1:hasTarget>
+                  <ns1:Target rdf:nodeID="N021693ea5412463ea693edd18dfe969f">
+                    <rdfs:label>issueInput</rdfs:label>
+                    <wire:index>0</wire:index>
+                  </ns1:Target>
+                </ns1:hasTarget>
+                <wire:type>operator</wire:type>
+                <ns1:hasPosition>
+                  <ns1:Position rdf:nodeID="Ne7b54860d8b64346951da3bda8a3a133">
+                    <ns1:y>875</ns1:y>
+                    <ns1:x>773</ns1:x>
+                  </ns1:Position>
+                </ns1:hasPosition>
+                <wire:id>2</wire:id>
+              </ns1:View>
+            </ns1:hasView>
+          </ns1:WiringView>
+        </ns1:hasWiringView>
+        <wire:hasOutputEndpoint>
+          <wire:OutputEndpoint rdf:nodeID="N25129deea5994bddbe2f76e00b76af03">
+            <wire:friendcode>url</wire:friendcode>
+            <dcterms:title>urlRouteMapOutput</dcterms:title>
+            <rdfs:label>URL Route Map</rdfs:label>
+            <wire:type>S</wire:type>
+            <dcterms:description>None</dcterms:description>
+          </wire:OutputEndpoint>
+        </wire:hasOutputEndpoint>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="N2b60c3eb932942b5a9b56cdb588bf102">
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="N7a5dfb3f349441b58edc8666a065966e">
+                <wire:type>ioperator</wire:type>
+                <ns1:endpoint>markInput</ns1:endpoint>
+                <ns1:targetId>7</ns1:targetId>
+              </ns1:Target>
+            </ns1:hasTarget>
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="Nf96b89fe8dae4fdba4574f28bdca7d8f">
+                <wire:type>iwidget</wire:type>
+                <ns1:sourceId>133</ns1:sourceId>
+                <ns1:endpoint>selectedMarkOutput</ns1:endpoint>
+              </ns1:Source>
+            </ns1:hasSource>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="N1542f68837dd4cb6af645de6c3407139">
+            <rdfs:label>Insert/Update Centered PoI</rdfs:label>
+            <wire:friendcode>poi</wire:friendcode>
+            <wire:inputActionLabel>Map Viewer Centered PoI</wire:inputActionLabel>
+            <dcterms:title>poiInputCenter</dcterms:title>
+            <wire:type>S</wire:type>
+            <dcterms:description>None</dcterms:description>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="N1d425a8844ce4679890bfd11466b64a7">
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N9665e307488b4b39b2b018f3ca045feb">
+                <ns1:sourceId>10</ns1:sourceId>
+                <wire:type>ioperator</wire:type>
+                <ns1:endpoint>poiOutput</ns1:endpoint>
+              </ns1:Source>
+            </ns1:hasSource>
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="N313c3600ac7c4e4ebbbf64ec062cef16">
+                <ns1:targetId>137</ns1:targetId>
+                <wire:type>iwidget</wire:type>
+                <ns1:endpoint>poiInput</ns1:endpoint>
+              </ns1:Target>
+            </ns1:hasTarget>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="Ne2b6073b1c4f4621ba63004288321eb2">
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N253b7342c37f4dbfa778aa05817ab534">
+                <ns1:endpoint>outputTechnicianVCard</ns1:endpoint>
+                <wire:type>iwidget</wire:type>
+                <ns1:sourceId>136</ns1:sourceId>
+              </ns1:Source>
+            </ns1:hasSource>
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="Ne38404ad90da447c981f81d8fa522a8e">
+                <wire:type>iwidget</wire:type>
+                <ns1:targetId>131</ns1:targetId>
+                <ns1:endpoint>inputSelectProfile</ns1:endpoint>
+              </ns1:Target>
+            </ns1:hasTarget>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="Nd24a5fdad1ce4bd3a0550c03911cf82f">
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="Ndb85a75fcbdc4f29a7fd10967d9f6fcc">
+                <ns1:targetId>4</ns1:targetId>
+                <ns1:endpoint>issueInput</ns1:endpoint>
+                <wire:type>ioperator</wire:type>
+              </ns1:Target>
+            </ns1:hasTarget>
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N64d4f52e853b4c6ca3bf581add3b7681">
+                <ns1:sourceId>1</ns1:sourceId>
+                <wire:type>ioperator</wire:type>
+                <ns1:endpoint>outputIssue</ns1:endpoint>
+              </ns1:Source>
+            </ns1:hasSource>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <wire:hasOutputEndpoint>
+          <wire:OutputEndpoint rdf:nodeID="N301cfd2f1cab40338e0907fcaa406261">
+            <wire:type>S</wire:type>
+            <dcterms:description>None</dcterms:description>
+            <dcterms:title>poiOutput</dcterms:title>
+            <rdfs:label>PoI selected</rdfs:label>
+            <wire:friendcode>poi</wire:friendcode>
+          </wire:OutputEndpoint>
+        </wire:hasOutputEndpoint>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="Nb2b3174c6a83480881210c15c61f3637">
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="N73dc4401d90b4ff19d3beeb8725c213d">
+                <ns1:endpoint>inputIssue</ns1:endpoint>
+                <wire:type>iwidget</wire:type>
+                <ns1:targetId>136</ns1:targetId>
+              </ns1:Target>
+            </ns1:hasTarget>
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N99f8457fd1d74255829e475f453ba28b">
+                <wire:type>ioperator</wire:type>
+                <ns1:endpoint>outputIssue</ns1:endpoint>
+                <ns1:sourceId>1</ns1:sourceId>
+              </ns1:Source>
+            </ns1:hasSource>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="Nf373271d989c416c88b7acc79cee30de">
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="N341d6f24dee8432795b1d4bccfab83bc">
+                <ns1:endpoint>poiInput</ns1:endpoint>
+                <ns1:targetId>132</ns1:targetId>
+                <wire:type>iwidget</wire:type>
+              </ns1:Target>
+            </ns1:hasTarget>
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N9a62d89742df49158cbaa1fdb919d876">
+                <ns1:endpoint>poiOutput</ns1:endpoint>
+                <ns1:sourceId>10</ns1:sourceId>
+                <wire:type>ioperator</wire:type>
+              </ns1:Source>
+            </ns1:hasSource>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="N36e6bb0e1d004231b0f89e871ad76138">
+            <dcterms:description>None</dcterms:description>
+            <wire:inputActionLabel>Map Viewer Insert/Update PoI</wire:inputActionLabel>
+            <wire:type>S</wire:type>
+            <wire:friendcode>poi</wire:friendcode>
+            <dcterms:title>poiInput</dcterms:title>
+            <rdfs:label>Insert/Update PoI</rdfs:label>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="Nc5e5fca3403f4cdda2f251c76739de1a">
+            <wire:friendcode>entity</wire:friendcode>
+            <wire:type>S</wire:type>
+            <rdfs:label>Show lamp post</rdfs:label>
+            <wire:inputActionLabel>Show lamp post status</wire:inputActionLabel>
+            <dcterms:description>None</dcterms:description>
+            <dcterms:title>lamppost</dcterms:title>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="N4cfe8fa0d3de432ab372101595ea9c91">
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="Nbd5f43897f194b2090e2fd256a7cf870">
+                <wire:type>iwidget</wire:type>
+                <ns1:sourceId>132</ns1:sourceId>
+                <ns1:endpoint>poiOutput</ns1:endpoint>
+              </ns1:Source>
+            </ns1:hasSource>
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="N3db1cc53ca0f48f69c6c7b19912d4408">
+                <ns1:endpoint>poiInput</ns1:endpoint>
+                <wire:type>ioperator</wire:type>
+                <ns1:targetId>15</ns1:targetId>
+              </ns1:Target>
+            </ns1:hasTarget>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <wire:hasOutputEndpoint>
+          <wire:OutputEndpoint rdf:nodeID="N5c64926a18d1477592d5f4f6b7a9de6b">
+            <dcterms:title>addressOutput</dcterms:title>
+            <wire:friendcode>address</wire:friendcode>
+            <dcterms:description>None</dcterms:description>
+            <rdfs:label>Address</rdfs:label>
+            <wire:type>S</wire:type>
+          </wire:OutputEndpoint>
+        </wire:hasOutputEndpoint>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="N9b92555aeef2418aa7644c5895d0d877">
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N309ab8df6c02468a994a3fbb3526c5b9">
+                <wire:type>ioperator</wire:type>
+                <ns1:endpoint>entityOutput</ns1:endpoint>
+                <ns1:sourceId>13</ns1:sourceId>
+              </ns1:Source>
+            </ns1:hasSource>
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="N1a95f4053ad5490b96812a7ba7ba9205">
+                <ns1:endpoint>entityInput</ns1:endpoint>
+                <wire:type>ioperator</wire:type>
+                <ns1:targetId>10</ns1:targetId>
+              </ns1:Target>
+            </ns1:hasTarget>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="N8bc93d1fc8004ec1b02dd57850209496">
+            <wire:inputActionLabel>Map Viewer Select PoI</wire:inputActionLabel>
+            <wire:type>S</wire:type>
+            <dcterms:title>selectPoiInput</dcterms:title>
+            <dcterms:description>None</dcterms:description>
+            <wire:friendcode>poi</wire:friendcode>
+            <rdfs:label>Select PoI</rdfs:label>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <ns1:hasiOperator>
+          <ns1:iOperator rdf:nodeID="N0d201ada9b96450bab84821a801585f9">
+            <dcterms:title>CoNWeT/vcard2poi/2.3.2</dcterms:title>
+            <ns1:iOperatorId>5</ns1:iOperatorId>
+          </ns1:iOperator>
+        </ns1:hasiOperator>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="Na4a5302f28c044e28173bab690ddd10a">
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N29350a086c0d41d4a0833912e8fa6482">
+                <ns1:sourceId>131</ns1:sourceId>
+                <ns1:endpoint>outputProfile</ns1:endpoint>
+                <wire:type>iwidget</wire:type>
+              </ns1:Source>
+            </ns1:hasSource>
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="Nd21bb33e66474bc5baed47cb648463dc">
+                <wire:type>ioperator</wire:type>
+                <ns1:targetId>5</ns1:targetId>
+                <ns1:endpoint>inputVcard</ns1:endpoint>
+              </ns1:Target>
+            </ns1:hasTarget>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="N88d601ca52b5453fbbc6debe58ecdcb9">
+            <wire:friendcode>detailStep</wire:friendcode>
+            <dcterms:description>None</dcterms:description>
+            <dcterms:title>routeStepInput</dcterms:title>
+            <wire:inputActionLabel>Map Viewer Details Steps Route</wire:inputActionLabel>
+            <rdfs:label>Route Step</rdfs:label>
+            <wire:type>S</wire:type>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="Nf54c8c470b8e43008e2e34bd1e155da2">
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N56d9f0f9866a417fbd9a923e542eb877">
+                <ns1:endpoint>vCardOutput</ns1:endpoint>
+                <wire:type>ioperator</wire:type>
+                <ns1:sourceId>15</ns1:sourceId>
+              </ns1:Source>
+            </ns1:hasSource>
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="N87af33bef9ae4b95b23a9e675d80a24d">
+                <wire:type>iwidget</wire:type>
+                <ns1:targetId>130</ns1:targetId>
+                <ns1:endpoint>inputProfile</ns1:endpoint>
+              </ns1:Target>
+            </ns1:hasTarget>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="Ne6072b12e0ab42078eb3e8b91ce11ef9">
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="N8801fac338ff432ca6b2741a69bb986f">
+                <wire:type>iwidget</wire:type>
+                <ns1:targetId>130</ns1:targetId>
+                <ns1:endpoint>inputProfile</ns1:endpoint>
+              </ns1:Target>
+            </ns1:hasTarget>
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N9be1378558ae48418e828b602ac7ac06">
+                <wire:type>iwidget</wire:type>
+                <ns1:endpoint>outputProfile</ns1:endpoint>
+                <ns1:sourceId>131</ns1:sourceId>
+              </ns1:Source>
+            </ns1:hasSource>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="N3c6c965bedbb4345add83dd8eb421339">
+            <rdfs:label>Route</rdfs:label>
+            <wire:type>S</wire:type>
+            <dcterms:description>None</dcterms:description>
+            <dcterms:title>routeInput</dcterms:title>
+            <wire:friendcode>route</wire:friendcode>
+            <wire:inputActionLabel>Map Viewer Route</wire:inputActionLabel>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <wire:hasOutputEndpoint>
+          <wire:OutputEndpoint rdf:nodeID="N986c86185d4940dbb8a6d9837aaa401d">
+            <wire:type>S</wire:type>
+            <wire:friendcode>viewport</wire:friendcode>
+            <rdfs:label>Change Viewport</rdfs:label>
+            <dcterms:title>boundsOutput</dcterms:title>
+            <dcterms:description>None</dcterms:description>
+          </wire:OutputEndpoint>
+        </wire:hasOutputEndpoint>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="N2b4ff34a44354c89866263a225c0688e">
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="N0003872050be486992a612842e1fe5a0">
+                <ns1:targetId>131</ns1:targetId>
+                <ns1:endpoint>inputSelectProfile</ns1:endpoint>
+                <wire:type>iwidget</wire:type>
+              </ns1:Target>
+            </ns1:hasTarget>
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N897ff9b10bc24141a1622f663fbced5e">
+                <ns1:endpoint>vCardOutput</ns1:endpoint>
+                <wire:type>ioperator</wire:type>
+                <ns1:sourceId>15</ns1:sourceId>
+              </ns1:Source>
+            </ns1:hasSource>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <ns1:hasiOperator>
+          <ns1:iOperator rdf:nodeID="N413d848c9dce4807944b7c11dc4cb03c">
+            <ns1:iOperatorId>6</ns1:iOperatorId>
+            <dcterms:title>CoNWeT/poi2entity/2.3.2</dcterms:title>
+          </ns1:iOperator>
+        </ns1:hasiOperator>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="N8b26d47deb794946b75c63edbc65e8ed">
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="Nc02a2da1ef684f0c834d66a65ca0c992">
+                <ns1:endpoint>SensorIdInput</ns1:endpoint>
+                <wire:type>ioperator</wire:type>
+                <ns1:targetId>12</ns1:targetId>
+              </ns1:Target>
+            </ns1:hasTarget>
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="Nf16b00ef7a404b15a851468f2a4175f7">
+                <wire:type>iwidget</wire:type>
+                <ns1:endpoint>poiOutput</ns1:endpoint>
+                <ns1:sourceId>137</ns1:sourceId>
+              </ns1:Source>
+            </ns1:hasSource>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="Nd9a0fc79f81a42a882dbc9fd3dc48281">
+            <wire:inputActionLabel>Map Viewer Address</wire:inputActionLabel>
+            <wire:friendcode>address</wire:friendcode>
+            <dcterms:description>None</dcterms:description>
+            <rdfs:label>Address</rdfs:label>
+            <dcterms:title>addressInput</dcterms:title>
+            <wire:type>S</wire:type>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="N5a97f09fbc384df1b394acba65505b96">
+            <wire:inputActionLabel>Contact Profile (Vcard)</wire:inputActionLabel>
+            <dcterms:title>inputProfile</dcterms:title>
+            <wire:friendcode>vCard</wire:friendcode>
+            <wire:type>S</wire:type>
+            <dcterms:description>None</dcterms:description>
+            <rdfs:label>Technician</rdfs:label>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="N32b129f9aaec423fb71823143c933229">
+            <dcterms:title>markSelectInput</dcterms:title>
+            <rdfs:label>Select mark</rdfs:label>
+            <wire:inputActionLabel>Select a Mark from TimeLine</wire:inputActionLabel>
+            <wire:type>S</wire:type>
+            <dcterms:description>None</dcterms:description>
+            <wire:friendcode>mark</wire:friendcode>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <wire:hasOutputEndpoint>
+          <wire:OutputEndpoint rdf:nodeID="N438c4585329d4ac7b6fe486d104d682c">
+            <dcterms:title>decimalCoordOutput</dcterms:title>
+            <wire:friendcode>decimalCoord</wire:friendcode>
+            <dcterms:description>None</dcterms:description>
+            <rdfs:label>Decimal Coordinates</rdfs:label>
+            <wire:type>S</wire:type>
+          </wire:OutputEndpoint>
+        </wire:hasOutputEndpoint>
+        <wire:hasOutputEndpoint>
+          <wire:OutputEndpoint rdf:nodeID="Ncb739fc991f149779b931242eb3851e2">
+            <rdfs:label>Address</rdfs:label>
+            <wire:type>S</wire:type>
+            <dcterms:description>None</dcterms:description>
+            <wire:friendcode>address</wire:friendcode>
+            <dcterms:title>addressOutput</dcterms:title>
+          </wire:OutputEndpoint>
+        </wire:hasOutputEndpoint>
+        <ns1:hasiOperator>
+          <ns1:iOperator rdf:nodeID="Nd057c11c9fd94fbca9d402a2c994d334">
+            <dcterms:title>CoNWeT/issue-service/2.3.2</dcterms:title>
+            <ns1:iOperatorId>1</ns1:iOperatorId>
+          </ns1:iOperator>
+        </ns1:hasiOperator>
+        <wire:hasOutputEndpoint>
+          <wire:OutputEndpoint rdf:nodeID="N50bcf891b2cf49fd8e258cc31a93589b">
+            <rdfs:label>Select Issue</rdfs:label>
+            <dcterms:description>None</dcterms:description>
+            <wire:friendcode>issue</wire:friendcode>
+            <dcterms:title>outputIssue</dcterms:title>
+            <wire:type>S</wire:type>
+          </wire:OutputEndpoint>
+        </wire:hasOutputEndpoint>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="N90adf41e27494e508eaefe362ae1ec15">
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="N76f7a471ef064b12b5d188520f05e968">
+                <wire:type>iwidget</wire:type>
+                <ns1:targetId>136</ns1:targetId>
+                <ns1:endpoint>inputIssue</ns1:endpoint>
+              </ns1:Target>
+            </ns1:hasTarget>
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N082db69d176c448b86d1c3032e1cc062">
+                <ns1:sourceId>7</ns1:sourceId>
+                <wire:type>ioperator</wire:type>
+                <ns1:endpoint>issueOutput</ns1:endpoint>
+              </ns1:Source>
+            </ns1:hasSource>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <ns1:hasiOperator>
+          <ns1:iOperator rdf:nodeID="N3266d77696af4673851fb4ad0bdcd36a">
+            <dcterms:title>CoNWeT/technician-service/2.3.2</dcterms:title>
+            <ns1:iOperatorId>4</ns1:iOperatorId>
+          </ns1:iOperator>
+        </ns1:hasiOperator>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="Nf03a0d103add43a2bc3090838c438741">
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N4745639f505941028809f084af4e6ce5">
+                <wire:type>ioperator</wire:type>
+                <ns1:endpoint>photoOutput</ns1:endpoint>
+                <ns1:sourceId>9</ns1:sourceId>
+              </ns1:Source>
+            </ns1:hasSource>
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="Na10c8b59ecda470e9c6cdd5d8f964b0c">
+                <ns1:targetId>134</ns1:targetId>
+                <ns1:endpoint>urlSlot</ns1:endpoint>
+                <wire:type>iwidget</wire:type>
+              </ns1:Target>
+            </ns1:hasTarget>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <wire:hasOutputEndpoint>
+          <wire:OutputEndpoint rdf:nodeID="Na1cdb5da0aed4302a533c9721414ad24">
+            <wire:type>S</wire:type>
+            <dcterms:description>None</dcterms:description>
+            <dcterms:title>poiOutput</dcterms:title>
+            <rdfs:label>PoI selected</rdfs:label>
+            <wire:friendcode>poi</wire:friendcode>
+          </wire:OutputEndpoint>
+        </wire:hasOutputEndpoint>
+        <wire:hasOutputEndpoint>
+          <wire:OutputEndpoint rdf:nodeID="N17ada04f0e6343fb9e2395b2c02dc7f2">
+            <dcterms:description>None</dcterms:description>
+            <wire:type>S</wire:type>
+            <dcterms:title>decimalCoordOutput</dcterms:title>
+            <wire:friendcode>decimalCoord</wire:friendcode>
+            <rdfs:label>Decimal Coordinates</rdfs:label>
+          </wire:OutputEndpoint>
+        </wire:hasOutputEndpoint>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="Nd4de444c4ae040238c6faf6ea322c60f">
+            <dcterms:title>inputSelectIssue</dcterms:title>
+            <wire:type>S</wire:type>
+            <dcterms:description>None</dcterms:description>
+            <rdfs:label>Select Issue</rdfs:label>
+            <wire:inputActionLabel></wire:inputActionLabel>
+            <wire:friendcode>issue</wire:friendcode>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <wire:hasOutputEndpoint>
+          <wire:OutputEndpoint rdf:nodeID="Nf40aaa0febcd4290bbb5748888cedd5b">
+            <rdfs:label>Route Description</rdfs:label>
+            <wire:friendcode>routeDescription</wire:friendcode>
+            <dcterms:description>None</dcterms:description>
+            <dcterms:title>routeDescriptionOutput</dcterms:title>
+            <wire:type>S</wire:type>
+          </wire:OutputEndpoint>
+        </wire:hasOutputEndpoint>
+        <wire:hasOutputEndpoint>
+          <wire:OutputEndpoint rdf:nodeID="N60695319128143b18ca304acaf049f93">
+            <dcterms:title>utmCoordOutput</dcterms:title>
+            <dcterms:description>None</dcterms:description>
+            <wire:friendcode>utmCoord</wire:friendcode>
+            <wire:type>S</wire:type>
+            <rdfs:label>UTM Coordinates</rdfs:label>
+          </wire:OutputEndpoint>
+        </wire:hasOutputEndpoint>
+        <ns1:hasiOperator>
+          <ns1:iOperator rdf:nodeID="N3f423f523d034976bde70da251a67724">
+            <ns1:iOperatorId>10</ns1:iOperatorId>
+            <dcterms:title>CoNWeT/entity2poi/2.3.2</dcterms:title>
+          </ns1:iOperator>
+        </ns1:hasiOperator>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="Nf2dfa7d010ad48eeb5cfe68b68cf64fc">
+            <rdfs:label>Select Technician</rdfs:label>
+            <dcterms:description>None</dcterms:description>
+            <wire:inputActionLabel>Select Technician</wire:inputActionLabel>
+            <wire:type>S</wire:type>
+            <dcterms:title>inputSelectProfile</dcterms:title>
+            <wire:friendcode>vCard</wire:friendcode>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="Nee617befd86242f7832d9d8aeb6d1a52">
+            <wire:type>S</wire:type>
+            <dcterms:description>None</dcterms:description>
+            <wire:inputActionLabel>Map Viewer Centered PoI</wire:inputActionLabel>
+            <rdfs:label>Insert/Update Centered PoI</rdfs:label>
+            <wire:friendcode>poi</wire:friendcode>
+            <dcterms:title>poiInputCenter</dcterms:title>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <wire:hasOutputEndpoint>
+          <wire:OutputEndpoint rdf:nodeID="Nc2d7bd8758d74a6298d73e7e5d82fbb1">
+            <rdfs:label>Time Interval</rdfs:label>
+            <wire:type>S</wire:type>
+            <wire:friendcode>timeInterval</wire:friendcode>
+            <dcterms:description>None</dcterms:description>
+            <dcterms:title>timeIntervalOutput</dcterms:title>
+          </wire:OutputEndpoint>
+        </wire:hasOutputEndpoint>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="N309da280b29e431fb2f37334f3789deb">
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="Nc0be9edb78b846689f88da7794333c8c">
+                <wire:type>iwidget</wire:type>
+                <ns1:endpoint>outputPhotoURL</ns1:endpoint>
+                <ns1:sourceId>136</ns1:sourceId>
+              </ns1:Source>
+            </ns1:hasSource>
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="N03027a5ef4214130a9e0dac6184fceeb">
+                <ns1:targetId>9</ns1:targetId>
+                <wire:type>ioperator</wire:type>
+                <ns1:endpoint>issueInput</ns1:endpoint>
+              </ns1:Target>
+            </ns1:hasTarget>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <wire:hasOutputEndpoint>
+          <wire:OutputEndpoint rdf:nodeID="N026cabc307244b26a6b3943e080e563f">
+            <dcterms:title>selectedMarkOutput</dcterms:title>
+            <dcterms:description>None</dcterms:description>
+            <wire:type>S</wire:type>
+            <wire:friendcode>mark</wire:friendcode>
+            <rdfs:label>Selected mark</rdfs:label>
+          </wire:OutputEndpoint>
+        </wire:hasOutputEndpoint>
+        <wire:hasOutputEndpoint>
+          <wire:OutputEndpoint rdf:nodeID="N5e8325ac56ea4bda9c293f5e45d162a0">
+            <dcterms:title>outputPhotoURL</dcterms:title>
+            <dcterms:description>None</dcterms:description>
+            <rdfs:label>Pick Photo</rdfs:label>
+            <wire:friendcode>issue</wire:friendcode>
+            <wire:type>S</wire:type>
+          </wire:OutputEndpoint>
+        </wire:hasOutputEndpoint>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="N8845b1279ccb4e16be13ac682c42c7cf">
+            <wire:type>S</wire:type>
+            <dcterms:description>None</dcterms:description>
+            <rdfs:label>Insert/Update PoI</rdfs:label>
+            <wire:friendcode>poi</wire:friendcode>
+            <wire:inputActionLabel>Map Viewer Insert/Update PoI</wire:inputActionLabel>
+            <dcterms:title>poiInput</dcterms:title>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <ns1:hasiOperator>
+          <ns1:iOperator rdf:nodeID="N284426b79f60408b9f1aae54299d91d2">
+            <ns1:iOperatorId>9</ns1:iOperatorId>
+            <dcterms:title>CoNWeT/issue2url/2.3.2</dcterms:title>
+          </ns1:iOperator>
+        </ns1:hasiOperator>
+        <wire:hasOutputEndpoint>
+          <wire:OutputEndpoint rdf:nodeID="Nc63353feabcb42aa9660cb8375b4298d">
+            <dcterms:title>urlRouteMapOutput</dcterms:title>
+            <rdfs:label>URL Route Map</rdfs:label>
+            <dcterms:description>None</dcterms:description>
+            <wire:friendcode>url</wire:friendcode>
+            <wire:type>S</wire:type>
+          </wire:OutputEndpoint>
+        </wire:hasOutputEndpoint>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="N34f5c4cefdf94e0a91470fa5c9714221">
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N80a839c154cb4671842a59f956e26ee9">
+                <wire:type>ioperator</wire:type>
+                <ns1:endpoint>outputTechnician</ns1:endpoint>
+                <ns1:sourceId>4</ns1:sourceId>
+              </ns1:Source>
+            </ns1:hasSource>
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="N6721fd3cadb14176b6c0c642b02cfffc">
+                <ns1:endpoint>inputInsertProfile</ns1:endpoint>
+                <wire:type>iwidget</wire:type>
+                <ns1:targetId>131</ns1:targetId>
+              </ns1:Target>
+            </ns1:hasTarget>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="N544f3e07a79f428b932faadf4b5755b0">
+            <wire:inputActionLabel></wire:inputActionLabel>
+            <dcterms:title>input</dcterms:title>
+            <wire:friendcode>graphData</wire:friendcode>
+            <rdfs:label>Data in</rdfs:label>
+            <dcterms:description>None</dcterms:description>
+            <wire:type>S</wire:type>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="Nd6f585e093c349958fd535c7f3a7e80b">
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N6c29808d4fa64b51857fab086c0cb71f">
+                <wire:type>iwidget</wire:type>
+                <ns1:endpoint>outputIssue</ns1:endpoint>
+                <ns1:sourceId>136</ns1:sourceId>
+              </ns1:Source>
+            </ns1:hasSource>
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="Ne0ef3d4ab51946ef81a6e69be73ea192">
+                <ns1:endpoint>inputIssue</ns1:endpoint>
+                <wire:type>ioperator</wire:type>
+                <ns1:targetId>8</ns1:targetId>
+              </ns1:Target>
+            </ns1:hasTarget>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="Ndc37307eb1174c6dbd2d19d915383ba2">
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N782110a4ec3c4bbf8abb703c031b9678">
+                <ns1:sourceId>11</ns1:sourceId>
+                <wire:type>ioperator</wire:type>
+                <ns1:endpoint>markOutput</ns1:endpoint>
+              </ns1:Source>
+            </ns1:hasSource>
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="N37f8a634887c47258bccad00fc661c74">
+                <ns1:endpoint>markSelectInput</ns1:endpoint>
+                <ns1:targetId>133</ns1:targetId>
+                <wire:type>iwidget</wire:type>
+              </ns1:Target>
+            </ns1:hasTarget>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="Nd4035ef4311144b3955db39077808382">
+            <wire:type>S</wire:type>
+            <dcterms:description>None</dcterms:description>
+            <wire:inputActionLabel>Map Viewer Details Steps Route</wire:inputActionLabel>
+            <dcterms:title>routeStepInput</dcterms:title>
+            <rdfs:label>Route Step</rdfs:label>
+            <wire:friendcode>detailStep</wire:friendcode>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="N877e0ee2afd2487793af907280def682">
+            <dcterms:title>selectPoiInput</dcterms:title>
+            <wire:type>S</wire:type>
+            <dcterms:description>None</dcterms:description>
+            <wire:inputActionLabel>Map Viewer Select PoI</wire:inputActionLabel>
+            <rdfs:label>Select PoI</rdfs:label>
+            <wire:friendcode>poi</wire:friendcode>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="N0a381397c3bb4f7789edccae765a8c3d">
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="Nc9964021214241d2afdb96e1ee88c443">
+                <wire:type>ioperator</wire:type>
+                <ns1:sourceId>12</ns1:sourceId>
+                <ns1:endpoint>OutputStatus</ns1:endpoint>
+              </ns1:Source>
+            </ns1:hasSource>
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="Nf87d7c9f091a49d380615a09bee8cfa4">
+                <ns1:endpoint>input</ns1:endpoint>
+                <ns1:targetId>139</ns1:targetId>
+                <wire:type>iwidget</wire:type>
+              </ns1:Target>
+            </ns1:hasTarget>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <ns1:hasiOperator>
+          <ns1:iOperator rdf:nodeID="N001391d5e2574a8c9f3121d0cf51dcc5">
+            <dcterms:title>CoNWeT/issue2mark/2.3.2</dcterms:title>
+            <ns1:iOperatorId>11</ns1:iOperatorId>
+          </ns1:iOperator>
+        </ns1:hasiOperator>
+        <wire:hasOutputEndpoint>
+          <wire:OutputEndpoint rdf:nodeID="N586ea764513542899d8e7cbe65caa9b9">
+            <wire:type>S</wire:type>
+            <rdfs:label>PoI visibility change</rdfs:label>
+            <dcterms:description>None</dcterms:description>
+            <dcterms:title>poiListOutput</dcterms:title>
+            <wire:friendcode>poiList</wire:friendcode>
+          </wire:OutputEndpoint>
+        </wire:hasOutputEndpoint>
+        <ns1:hasiOperator>
+          <ns1:iOperator rdf:nodeID="N3fc94a4af06840069a00da6fe197d8cf">
+            <ns1:iOperatorId>3</ns1:iOperatorId>
+            <dcterms:title>CoNWeT/vcard2poi/2.3.2</dcterms:title>
+          </ns1:iOperator>
+        </ns1:hasiOperator>
+        <ns1:hasiOperator>
+          <ns1:iOperator rdf:nodeID="N6c5179b60e204b24937735a43b4c0a4d">
+            <ns1:iOperatorId>2</ns1:iOperatorId>
+            <dcterms:title>CoNWeT/issue2mark/2.3.2</dcterms:title>
+          </ns1:iOperator>
+        </ns1:hasiOperator>
+        <ns1:hasiOperator>
+          <ns1:iOperator rdf:nodeID="N4960d3d1c5b84db9847e8abf23fc1974">
+            <dcterms:title>CoNWeT/issue2poi/2.3.2</dcterms:title>
+            <ns1:iOperatorId>8</ns1:iOperatorId>
+          </ns1:iOperator>
+        </ns1:hasiOperator>
+        <ns1:hasiOperator>
+          <ns1:iOperator rdf:nodeID="Ne3d79b55e28649069317e6137363d120">
+            <ns1:iOperatorId>7</ns1:iOperatorId>
+            <dcterms:title>CoNWeT/mark2issue/2.3.2</dcterms:title>
+          </ns1:iOperator>
+        </ns1:hasiOperator>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="Nef30fc21cf844bea9620d24ab0bbc506">
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N921e837905cf41ad8802e6ac3fd75add">
+                <ns1:sourceId>2</ns1:sourceId>
+                <ns1:endpoint>markOutput</ns1:endpoint>
+                <wire:type>ioperator</wire:type>
+              </ns1:Source>
+            </ns1:hasSource>
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="N21e0563f975a4293bef6835acfe59472">
+                <ns1:targetId>133</ns1:targetId>
+                <ns1:endpoint>markInsertInput</ns1:endpoint>
+                <wire:type>iwidget</wire:type>
+              </ns1:Target>
+            </ns1:hasTarget>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="N42e8aad72fbb4028a3016ff72b56c55d">
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N55990373fc284c2b8da4ca37ff7f532d">
+                <ns1:sourceId>137</ns1:sourceId>
+                <ns1:endpoint>poiOutput</ns1:endpoint>
+                <wire:type>iwidget</wire:type>
+              </ns1:Source>
+            </ns1:hasSource>
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="N5f0f53ce098e46e083cc9bad0299e388">
+                <wire:type>ioperator</wire:type>
+                <ns1:endpoint>poiInput</ns1:endpoint>
+                <ns1:targetId>6</ns1:targetId>
+              </ns1:Target>
+            </ns1:hasTarget>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <wire:hasOutputEndpoint>
+          <wire:OutputEndpoint rdf:nodeID="N682d28d32744451cb281b7d9fd1d53cf">
+            <dcterms:title>utmCoordOutput</dcterms:title>
+            <wire:type>S</wire:type>
+            <wire:friendcode>utmCoord</wire:friendcode>
+            <rdfs:label>UTM Coordinates</rdfs:label>
+            <dcterms:description>None</dcterms:description>
+          </wire:OutputEndpoint>
+        </wire:hasOutputEndpoint>
+        <wire:hasOutputEndpoint>
+          <wire:OutputEndpoint rdf:nodeID="N8af2051c02f3498caf0aa57bc3a6bcf2">
+            <dcterms:title>outputRoute</dcterms:title>
+            <wire:friendcode>route</wire:friendcode>
+            <wire:type>S</wire:type>
+            <rdfs:label>Selected Route</rdfs:label>
+            <dcterms:description>None</dcterms:description>
+          </wire:OutputEndpoint>
+        </wire:hasOutputEndpoint>
+        <wire:hasOutputEndpoint>
+          <wire:OutputEndpoint rdf:nodeID="Nc4d0b48403a2446a8ef0d1abaeef163e">
+            <dcterms:title>poiListOutput</dcterms:title>
+            <wire:type>S</wire:type>
+            <rdfs:label>PoI visibility change</rdfs:label>
+            <wire:friendcode>poiList</wire:friendcode>
+            <dcterms:description>None</dcterms:description>
+          </wire:OutputEndpoint>
+        </wire:hasOutputEndpoint>
+        <wire:hasOutputEndpoint>
+          <wire:OutputEndpoint rdf:nodeID="Nb82c2b2c3896489ea2c8544b067748e0">
+            <rdfs:label>Change Viewport</rdfs:label>
+            <wire:type>S</wire:type>
+            <dcterms:description>None</dcterms:description>
+            <dcterms:title>boundsOutput</dcterms:title>
+            <wire:friendcode>viewport</wire:friendcode>
+          </wire:OutputEndpoint>
+        </wire:hasOutputEndpoint>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="N6edcb769e3e847ca8e7797df1202c92c">
+            <dcterms:description>None</dcterms:description>
+            <dcterms:title>routeInput</dcterms:title>
+            <wire:friendcode>route</wire:friendcode>
+            <wire:inputActionLabel>Map Viewer Route</wire:inputActionLabel>
+            <wire:type>S</wire:type>
+            <rdfs:label>Route</rdfs:label>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="Na60df684fde84eb99efb6f512b032aa0">
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="N44d389d3ede543aabc87bfa6bbbeb693">
+                <ns1:endpoint>issueInput</ns1:endpoint>
+                <wire:type>ioperator</wire:type>
+                <ns1:targetId>2</ns1:targetId>
+              </ns1:Target>
+            </ns1:hasTarget>
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N149caec19c924629aa70175963d82e17">
+                <wire:type>ioperator</wire:type>
+                <ns1:endpoint>outputIssue</ns1:endpoint>
+                <ns1:sourceId>1</ns1:sourceId>
+              </ns1:Source>
+            </ns1:hasSource>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="N1a170fada46340f183d2f32efbf3a96e">
+            <dcterms:title>inputInsertProfile</dcterms:title>
+            <rdfs:label>Insert/Update Technician</rdfs:label>
+            <wire:inputActionLabel>Insert Technician</wire:inputActionLabel>
+            <wire:type>S</wire:type>
+            <wire:friendcode>vCard</wire:friendcode>
+            <dcterms:description>None</dcterms:description>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="N8ecbe764261c45b1917d1eac595b0547">
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="N169d4ebc80b543c1819817bb5fb89be0">
+                <ns1:targetId>11</ns1:targetId>
+                <wire:type>ioperator</wire:type>
+                <ns1:endpoint>issueInput</ns1:endpoint>
+              </ns1:Target>
+            </ns1:hasTarget>
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N181a1b3c7087499cb78a1b5fd2595c05">
+                <ns1:sourceId>136</ns1:sourceId>
+                <wire:type>iwidget</wire:type>
+                <ns1:endpoint>outputIssue</ns1:endpoint>
+              </ns1:Source>
+            </ns1:hasSource>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="N5ea6b9b1b3bd4e4a8504cca7394c3893">
+            <wire:type>S</wire:type>
+            <rdfs:label>Address</rdfs:label>
+            <wire:friendcode>address</wire:friendcode>
+            <dcterms:description>None</dcterms:description>
+            <wire:inputActionLabel>Map Viewer Address</wire:inputActionLabel>
+            <dcterms:title>addressInput</dcterms:title>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="Nbac4e1bcce334c63a10fe10bbcfcc1c4">
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N51ab4632387f431eb86b42c2cd48e3cc">
+                <ns1:endpoint>entityOutput</ns1:endpoint>
+                <ns1:sourceId>6</ns1:sourceId>
+                <wire:type>ioperator</wire:type>
+              </ns1:Source>
+            </ns1:hasSource>
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="Ncfee4454c3e9471385b12d5861128a90">
+                <ns1:targetId>140</ns1:targetId>
+                <ns1:endpoint>lamppost</ns1:endpoint>
+                <wire:type>iwidget</wire:type>
+              </ns1:Target>
+            </ns1:hasTarget>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="N8c0e6e101fd741bbbb564e7341eabb24">
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="Nc1d41126ff35429eaa466c3a416c1514">
+                <wire:type>ioperator</wire:type>
+                <ns1:sourceId>4</ns1:sourceId>
+                <ns1:endpoint>outputTechnician</ns1:endpoint>
+              </ns1:Source>
+            </ns1:hasSource>
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="N614f3e1330774815ba5906b0ba09dcfb">
+                <wire:type>iwidget</wire:type>
+                <ns1:endpoint>inputVcard</ns1:endpoint>
+                <ns1:targetId>136</ns1:targetId>
+              </ns1:Target>
+            </ns1:hasTarget>
+          </ns1:Connection>
+        </ns1:hasConnection>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="N40a57aa4cd2f4313bb4ed7275eb79aff">
+            <rdfs:label>Coordinates</rdfs:label>
+            <dcterms:title>coordsInput</dcterms:title>
+            <wire:friendcode>Coords</wire:friendcode>
+            <dcterms:description>None</dcterms:description>
+            <wire:inputActionLabel>Map Viewer Coordinates</wire:inputActionLabel>
+            <wire:type>S</wire:type>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <wire:hasInputEndpoint>
+          <wire:InputEndpoint rdf:nodeID="N4c24fe3415f54909bc3f5fca09eeff8b">
+            <rdfs:label>Delete mark</rdfs:label>
+            <dcterms:title>markDeleteInput</dcterms:title>
+            <wire:type>S</wire:type>
+            <wire:inputActionLabel>Delete Mark from TimeLine</wire:inputActionLabel>
+            <dcterms:description>None</dcterms:description>
+            <wire:friendcode>mark</wire:friendcode>
+          </wire:InputEndpoint>
+        </wire:hasInputEndpoint>
+        <ns1:hasConnection>
+          <ns1:Connection rdf:nodeID="N670400cf3ea2487dbfd18b1949502610">
+            <ns1:hasTarget>
+              <ns1:Target rdf:nodeID="Nd7012e7a74564fe3b1a7a0b5d680d510">
+                <ns1:endpoint>issueInput</ns1:endpoint>
+                <wire:type>ioperator</wire:type>
+                <ns1:targetId>13</ns1:targetId>
+              </ns1:Target>
+            </ns1:hasTarget>
+            <ns1:hasSource>
+              <ns1:Source rdf:nodeID="N13379b4dbb834cfe81b7cbdd153374bc">
+                <ns1:sourceId>1</ns1:sourceId>
+                <wire:type>ioperator</wire:type>
+                <ns1:endpoint>outputIssue</ns1:endpoint>
+              </ns1:Source>
+            </ns1:hasSource>
+          </ns1:Connection>
+        </ns1:hasConnection>
+      </wire:PlatformWiring>
+    </ns1:hasMashupWiring>
+    <vcard:addr>
+      <vcard:Work rdf:nodeID="N381cf994e0074fb39598eda8538f9f07">
+        <vcard:email>aarranz@conwet.com</vcard:email>
+      </vcard:Work>
+    </vcard:addr>
+    <wire:hasImageUri rdf:resource="images/catalogue.png"/>
+    <ns1:hasTab>
+      <ns1:Tab rdf:nodeID="Ncc627f45dc794c3b9c087939ff345304">
+        <ns1:hasiWidget>
+          <ns1:iWidget rdf:nodeID="Ne5d39dcb7ae9499eb01a6f7309b06814">
+            <usdl:hasProvider>
+              <ns2:BussisnessEntity rdf:nodeID="N3470a3af0d374864bcc94f5da0df89fd">
+                <foaf:name>CoNWeT</foaf:name>
+              </ns2:BussisnessEntity>
+            </usdl:hasProvider>
+            <ns1:hasiWidgetRendering>
+              <ns1:iWidgetRendering rdf:nodeID="N55932ed8514647248ca06cfb54322f1b">
+                <ns1:layout>0</ns1:layout>
+                <ns1:fullDragboard>False</ns1:fullDragboard>
+                <wire:renderingHeight>28</wire:renderingHeight>
+                <wire:renderingWidth>4</wire:renderingWidth>
+                <ns1:minimized>False</ns1:minimized>
+              </ns1:iWidgetRendering>
+            </ns1:hasiWidgetRendering>
+            <usdl:versionInfo>2.3.2</usdl:versionInfo>
+            <dcterms:title>Technician List</dcterms:title>
+            <ns1:hasPosition>
+              <ns1:Position rdf:nodeID="Nc2be4c173635408791aa7fb94d2d8095">
+                <ns1:x>0</ns1:x>
+                <ns1:y>22</ns1:y>
+                <ns1:z>0</ns1:z>
+              </ns1:Position>
+            </ns1:hasPosition>
+            <rdfs:label>technician-list</rdfs:label>
+            <ns1:iWidgetId>131</ns1:iWidgetId>
+          </ns1:iWidget>
+        </ns1:hasiWidget>
+        <ns1:hasiWidget>
+          <ns1:iWidget rdf:nodeID="N45a9b837de4842279eb85c29c2cba794">
+            <usdl:versionInfo>2.5.3</usdl:versionInfo>
+            <ns1:hasiWidgetPreference>
+              <ns1:iWidgetPreference rdf:nodeID="Nc269731cf31142f080bf721cef312064">
+                <wire:value>13</wire:value>
+                <dcterms:title>zoomPreference</dcterms:title>
+              </ns1:iWidgetPreference>
+            </ns1:hasiWidgetPreference>
+            <usdl:hasProvider>
+              <ns2:BussisnessEntity rdf:nodeID="Ne5cbaf3eabb34294b04903cf49153fb9">
+                <foaf:name>CoNWeT</foaf:name>
+              </ns2:BussisnessEntity>
+            </usdl:hasProvider>
+            <ns1:hasPosition>
+              <ns1:Position rdf:nodeID="N5223180231884de1833b89a10b6a6e1f">
+                <ns1:z>1</ns1:z>
+                <ns1:y>0</ns1:y>
+                <ns1:x>13</ns1:x>
+              </ns1:Position>
+            </ns1:hasPosition>
+            <ns1:iWidgetId>132</ns1:iWidgetId>
+            <rdfs:label>map-viewer</rdfs:label>
+            <dcterms:title>Map Viewer</dcterms:title>
+            <ns1:hasiWidgetPreference>
+              <ns1:iWidgetPreference rdf:nodeID="N87c0d1eb7dcb4f4ca3997ee3fc129730">
+                <dcterms:title>centerPreference</dcterms:title>
+                <wire:value>Santander</wire:value>
+              </ns1:iWidgetPreference>
+            </ns1:hasiWidgetPreference>
+            <ns1:hasiWidgetPreference>
+              <ns1:iWidgetPreference rdf:nodeID="Nd9e179ee062a4a5aa8a2ee690c8d75fe">
+                <dcterms:title>radiusPreference</dcterms:title>
+                <wire:value>10</wire:value>
+              </ns1:iWidgetPreference>
+            </ns1:hasiWidgetPreference>
+            <ns1:hasiWidgetRendering>
+              <ns1:iWidgetRendering rdf:nodeID="N36ba753a7d584614b5f6c96457b2d7a8">
+                <ns1:layout>0</ns1:layout>
+                <wire:renderingHeight>50</wire:renderingHeight>
+                <wire:renderingWidth>7</wire:renderingWidth>
+                <ns1:fullDragboard>False</ns1:fullDragboard>
+                <ns1:minimized>False</ns1:minimized>
+              </ns1:iWidgetRendering>
+            </ns1:hasiWidgetRendering>
+          </ns1:iWidget>
+        </ns1:hasiWidget>
+        <wire:index>0</wire:index>
+        <ns1:hasiWidget>
+          <ns1:iWidget rdf:nodeID="Na7a8089b5a8a4ac5877f79adea00e843">
+            <ns1:iWidgetId>130</ns1:iWidgetId>
+            <dcterms:title>Technician Info</dcterms:title>
+            <ns1:hasPosition>
+              <ns1:Position rdf:nodeID="N9ac9d792bcef4c31ba6bc5f85762254e">
+                <ns1:y>22</ns1:y>
+                <ns1:x>4</ns1:x>
+                <ns1:z>2</ns1:z>
+              </ns1:Position>
+            </ns1:hasPosition>
+            <usdl:hasProvider>
+              <ns2:BussisnessEntity rdf:nodeID="N095fd4ce61e3498c88520a630f56c677">
+                <foaf:name>CoNWeT</foaf:name>
+              </ns2:BussisnessEntity>
+            </usdl:hasProvider>
+            <usdl:versionInfo>2.3.2</usdl:versionInfo>
+            <ns1:hasiWidgetRendering>
+              <ns1:iWidgetRendering rdf:nodeID="N53c930131ed74cf2b99be95fd8a7803d">
+                <ns1:layout>0</ns1:layout>
+                <ns1:minimized>False</ns1:minimized>
+                <ns1:fullDragboard>False</ns1:fullDragboard>
+                <wire:renderingHeight>28</wire:renderingHeight>
+                <wire:renderingWidth>4</wire:renderingWidth>
+              </ns1:iWidgetRendering>
+            </ns1:hasiWidgetRendering>
+            <rdfs:label>technician-info</rdfs:label>
+          </ns1:iWidget>
+        </ns1:hasiWidget>
+        <ns1:hasiWidget>
+          <ns1:iWidget rdf:nodeID="N26ab0069fa7c4c3ea4f905ae064d7a45">
+            <ns1:hasiWidgetPreference>
+              <ns1:iWidgetPreference rdf:nodeID="Nab06dc37271c4c2385aebbef0b512fe5">
+                <dcterms:title>clustering</dcterms:title>
+                <wire:value>true</wire:value>
+              </ns1:iWidgetPreference>
+            </ns1:hasiWidgetPreference>
+            <usdl:hasProvider>
+              <ns2:BussisnessEntity rdf:nodeID="N2618801fb1e6498883a4fa6a8163c4a7">
+                <foaf:name>CoNWeT</foaf:name>
+              </ns2:BussisnessEntity>
+            </usdl:hasProvider>
+            <ns1:hasiWidgetRendering>
+              <ns1:iWidgetRendering rdf:nodeID="N6729475740044736b0ef054036771711">
+                <ns1:fullDragboard>False</ns1:fullDragboard>
+                <ns1:minimized>False</ns1:minimized>
+                <wire:renderingWidth>20</wire:renderingWidth>
+                <wire:renderingHeight>26</wire:renderingHeight>
+                <ns1:layout>0</ns1:layout>
+              </ns1:iWidgetRendering>
+            </ns1:hasiWidgetRendering>
+            <usdl:versionInfo>1.3.0</usdl:versionInfo>
+            <ns1:hasPosition>
+              <ns1:Position rdf:nodeID="N59828fec424c4359af97ae9977171b58">
+                <ns1:z>3</ns1:z>
+                <ns1:x>0</ns1:x>
+                <ns1:y>50</ns1:y>
+              </ns1:Position>
+            </ns1:hasPosition>
+            <dcterms:title>Time Slider</dcterms:title>
+            <ns1:hasiWidgetPreference>
+              <ns1:iWidgetPreference rdf:nodeID="Nd1a7e9d6b5a64adc9a7a43747e6946ff">
+                <wire:value>4</wire:value>
+                <dcterms:title>time</dcterms:title>
+              </ns1:iWidgetPreference>
+            </ns1:hasiWidgetPreference>
+            <ns1:iWidgetId>133</ns1:iWidgetId>
+            <rdfs:label>TimeSlider</rdfs:label>
+          </ns1:iWidget>
+        </ns1:hasiWidget>
+        <dcterms:title>Issue Management</dcterms:title>
+        <ns1:hasiWidget>
+          <ns1:iWidget rdf:nodeID="N66128add6e914a898f3ffacede72623d">
+            <ns1:hasiWidgetRendering>
+              <ns1:iWidgetRendering rdf:nodeID="N8866f47fa9984382bccecf25926546b9">
+                <wire:renderingHeight>22</wire:renderingHeight>
+                <ns1:minimized>False</ns1:minimized>
+                <ns1:fullDragboard>False</ns1:fullDragboard>
+                <wire:renderingWidth>13</wire:renderingWidth>
+                <ns1:layout>0</ns1:layout>
+              </ns1:iWidgetRendering>
+            </ns1:hasiWidgetRendering>
+            <dcterms:title>Issue List</dcterms:title>
+            <usdl:hasProvider>
+              <ns2:BussisnessEntity rdf:nodeID="N19b1dd68d9ba43f9ab95de6ff666ee59">
+                <foaf:name>CoNWeT</foaf:name>
+              </ns2:BussisnessEntity>
+            </usdl:hasProvider>
+            <ns1:hasPosition>
+              <ns1:Position rdf:nodeID="N25c6c3021db148f2b4ead2ebd2372861">
+                <ns1:x>0</ns1:x>
+                <ns1:y>0</ns1:y>
+                <ns1:z>5</ns1:z>
+              </ns1:Position>
+            </ns1:hasPosition>
+            <rdfs:label>issue-list</rdfs:label>
+            <ns1:hasiWidgetPreference>
+              <ns1:iWidgetPreference rdf:nodeID="N471159d4997c4be18d0fb9c8e71383b6">
+                <wire:value>http://130.206.82.140:1026/</wire:value>
+                <dcterms:title>ngsi_server</dcterms:title>
+              </ns1:iWidgetPreference>
+            </ns1:hasiWidgetPreference>
+            <ns1:iWidgetId>136</ns1:iWidgetId>
+            <usdl:versionInfo>2.3.2</usdl:versionInfo>
+          </ns1:iWidget>
+        </ns1:hasiWidget>
+        <ns1:hasiWidget>
+          <ns1:iWidget rdf:nodeID="Nec059d8daf6e41a587dbdaf3e21824a3">
+            <ns1:hasiWidgetRendering>
+              <ns1:iWidgetRendering rdf:nodeID="N5fea1d606d83466998d0cd7b1734d8ff">
+                <ns1:layout>0</ns1:layout>
+                <ns1:fullDragboard>False</ns1:fullDragboard>
+                <ns1:minimized>False</ns1:minimized>
+                <wire:renderingHeight>28</wire:renderingHeight>
+                <wire:renderingWidth>5</wire:renderingWidth>
+              </ns1:iWidgetRendering>
+            </ns1:hasiWidgetRendering>
+            <rdfs:label>photo-viewer</rdfs:label>
+            <usdl:versionInfo>1.5.2</usdl:versionInfo>
+            <ns1:iWidgetId>134</ns1:iWidgetId>
+            <ns1:hasPosition>
+              <ns1:Position rdf:nodeID="N8019b26d7b954283ace54f80077993da">
+                <ns1:y>22</ns1:y>
+                <ns1:x>8</ns1:x>
+                <ns1:z>4</ns1:z>
+              </ns1:Position>
+            </ns1:hasPosition>
+            <usdl:hasProvider>
+              <ns2:BussisnessEntity rdf:nodeID="N49de6cdf41b145b7a6efe1e656163111">
+                <foaf:name>CoNWeT</foaf:name>
+              </ns2:BussisnessEntity>
+            </usdl:hasProvider>
+            <dcterms:title>Photo Viewer</dcterms:title>
+          </ns1:iWidget>
+        </ns1:hasiWidget>
+      </ns1:Tab>
+    </ns1:hasTab>
+    <dcterms:description>Smart City Management is an application that allows the management and analysis of Smart City entities status.</dcterms:description>
+    <ns1:hasTab>
+      <ns1:Tab rdf:nodeID="N6984016d100d41049c37dac60e492fc3">
+        <ns1:hasiWidget>
+          <ns1:iWidget rdf:nodeID="N6d2e3e54588544189404e98de3ffc428">
+            <ns1:hasiWidgetRendering>
+              <ns1:iWidgetRendering rdf:nodeID="N120e2bacb1d04654b2254e5a5017bfbe">
+                <wire:renderingHeight>31</wire:renderingHeight>
+                <ns1:minimized>False</ns1:minimized>
+                <ns1:fullDragboard>False</ns1:fullDragboard>
+                <ns1:layout>0</ns1:layout>
+                <wire:renderingWidth>10</wire:renderingWidth>
+              </ns1:iWidgetRendering>
+            </ns1:hasiWidgetRendering>
+            <ns1:hasPosition>
+              <ns1:Position rdf:nodeID="N847ee5c7eb0f48e7b2c122bb3de616b7">
+                <ns1:x>10</ns1:x>
+                <ns1:y>0</ns1:y>
+                <ns1:z>1</ns1:z>
+              </ns1:Position>
+            </ns1:hasPosition>
+            <ns1:iWidgetId>139</ns1:iWidgetId>
+            <ns1:hasiWidgetPreference>
+              <ns1:iWidgetPreference rdf:nodeID="N5e49443ed780478abd5162af5349087f">
+                <wire:value>true</wire:value>
+                <dcterms:title>legend</dcterms:title>
+              </ns1:iWidgetPreference>
+            </ns1:hasiWidgetPreference>
+            <usdl:versionInfo>2.3.2</usdl:versionInfo>
+            <dcterms:title>Linear Graph</dcterms:title>
+            <rdfs:label>linear-graph</rdfs:label>
+            <usdl:hasProvider>
+              <ns2:BussisnessEntity rdf:nodeID="Ne2c75dcaacb84ceead5cee2bdd23c613">
+                <foaf:name>CoNWeT</foaf:name>
+              </ns2:BussisnessEntity>
+            </usdl:hasProvider>
+          </ns1:iWidget>
+        </ns1:hasiWidget>
+        <dcterms:title>History Info</dcterms:title>
+        <wire:index>1</wire:index>
+        <ns1:hasiWidget>
+          <ns1:iWidget rdf:nodeID="Nb9e1fc899fe34524b1b3f2c582237241">
+            <dcterms:title>Lamppost Status</dcterms:title>
+            <ns1:hasPosition>
+              <ns1:Position rdf:nodeID="N5283d002aa0946c4a728ee32629b6447">
+                <ns1:z>2</ns1:z>
+                <ns1:x>10</ns1:x>
+                <ns1:y>31</ns1:y>
+              </ns1:Position>
+            </ns1:hasPosition>
+            <usdl:versionInfo>2.3.2</usdl:versionInfo>
+            <rdfs:label>lamp-post-status</rdfs:label>
+            <ns1:hasiWidgetRendering>
+              <ns1:iWidgetRendering rdf:nodeID="N16f94322265f4322a99db4188f750742">
+                <wire:renderingHeight>25</wire:renderingHeight>
+                <ns1:layout>0</ns1:layout>
+                <ns1:minimized>False</ns1:minimized>
+                <ns1:fullDragboard>False</ns1:fullDragboard>
+                <wire:renderingWidth>6</wire:renderingWidth>
+              </ns1:iWidgetRendering>
+            </ns1:hasiWidgetRendering>
+            <ns1:hasiWidgetPreference>
+              <ns1:iWidgetPreference rdf:nodeID="N4ee817d3fbe14aeea0f20f7ff5d5874a">
+                <dcterms:title>ngsi_server</dcterms:title>
+                <wire:value>http://130.206.82.140:1026/</wire:value>
+              </ns1:iWidgetPreference>
+            </ns1:hasiWidgetPreference>
+            <usdl:hasProvider>
+              <ns2:BussisnessEntity rdf:nodeID="Nd4735974718e44aa8cb731f46a0ef524">
+                <foaf:name>CoNWeT</foaf:name>
+              </ns2:BussisnessEntity>
+            </usdl:hasProvider>
+            <ns1:iWidgetId>140</ns1:iWidgetId>
+          </ns1:iWidget>
+        </ns1:hasiWidget>
+        <ns1:hasiWidget>
+          <ns1:iWidget rdf:nodeID="Ne60c03ff99944ddb9d334dff1d0ff88f">
+            <rdfs:label>map-viewer</rdfs:label>
+            <usdl:hasProvider>
+              <ns2:BussisnessEntity rdf:nodeID="Nb6b2a9dc5be94c2abe24d8172c1b79a0">
+                <foaf:name>CoNWeT</foaf:name>
+              </ns2:BussisnessEntity>
+            </usdl:hasProvider>
+            <usdl:versionInfo>2.5.3</usdl:versionInfo>
+            <ns1:hasPosition>
+              <ns1:Position rdf:nodeID="N16a9bdd9586440f0ac5a31f3b66239a4">
+                <ns1:z>0</ns1:z>
+                <ns1:y>0</ns1:y>
+                <ns1:x>0</ns1:x>
+              </ns1:Position>
+            </ns1:hasPosition>
+            <ns1:hasiWidgetPreference>
+              <ns1:iWidgetPreference rdf:nodeID="N01eeca03e6d4440dafc3132257f9a668">
+                <dcterms:title>zoomPreference</dcterms:title>
+                <wire:value>13</wire:value>
+              </ns1:iWidgetPreference>
+            </ns1:hasiWidgetPreference>
+            <ns1:hasiWidgetPreference>
+              <ns1:iWidgetPreference rdf:nodeID="N95fda907c6a5417693e283f20088a107">
+                <dcterms:title>centerPreference</dcterms:title>
+                <wire:value>Santander</wire:value>
+              </ns1:iWidgetPreference>
+            </ns1:hasiWidgetPreference>
+            <ns1:hasiWidgetPreference>
+              <ns1:iWidgetPreference rdf:nodeID="Nb416ec15fe8e49dc9c099adcee6181db">
+                <dcterms:title>radiusPreference</dcterms:title>
+                <wire:value>10</wire:value>
+              </ns1:iWidgetPreference>
+            </ns1:hasiWidgetPreference>
+            <ns1:hasiWidgetRendering>
+              <ns1:iWidgetRendering rdf:nodeID="Nc982e1e8331a41ee95667460c8550200">
+                <ns1:layout>0</ns1:layout>
+                <wire:renderingWidth>10</wire:renderingWidth>
+                <wire:renderingHeight>42</wire:renderingHeight>
+                <ns1:fullDragboard>False</ns1:fullDragboard>
+                <ns1:minimized>False</ns1:minimized>
+              </ns1:iWidgetRendering>
+            </ns1:hasiWidgetRendering>
+            <ns1:iWidgetId>137</ns1:iWidgetId>
+            <dcterms:title>Map Viewer</dcterms:title>
+          </ns1:iWidget>
+        </ns1:hasiWidget>
+        <ns1:hasiWidget>
+          <ns1:iWidget rdf:nodeID="N6309a64e43f84840b0676335e1a9e1e4">
+            <usdl:hasProvider>
+              <ns2:BussisnessEntity rdf:nodeID="Nf2b4cd5805f446049fb39ffb538b3ad2">
+                <foaf:name>CoNWeT</foaf:name>
+              </ns2:BussisnessEntity>
+            </usdl:hasProvider>
+            <rdfs:label>webcam-lamp</rdfs:label>
+            <ns1:hasPosition>
+              <ns1:Position rdf:nodeID="N33d4b1e0ef664d4693535b9fe38041b6">
+                <ns1:x>16</ns1:x>
+                <ns1:z>3</ns1:z>
+                <ns1:y>31</ns1:y>
+              </ns1:Position>
+            </ns1:hasPosition>
+            <ns1:hasiWidgetRendering>
+              <ns1:iWidgetRendering rdf:nodeID="N7414931e08f9496f8e2a6a60663b2d61">
+                <wire:renderingHeight>25</wire:renderingHeight>
+                <wire:renderingWidth>4</wire:renderingWidth>
+                <ns1:minimized>False</ns1:minimized>
+                <ns1:layout>0</ns1:layout>
+                <ns1:fullDragboard>False</ns1:fullDragboard>
+              </ns1:iWidgetRendering>
+            </ns1:hasiWidgetRendering>
+            <dcterms:title>Webcam</dcterms:title>
+            <ns1:iWidgetId>138</ns1:iWidgetId>
+            <usdl:versionInfo>2.3.2</usdl:versionInfo>
+          </ns1:iWidget>
+        </ns1:hasiWidget>
+      </ns1:Tab>
+    </ns1:hasTab>
+    <dcterms:title>SmartCityManagement</dcterms:title>
+  </ns1:Mashup>
+</rdf:RDF>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:usdl-core="http://www.linked-usdl.org/ns/usdl-core#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:wire="http://wirecloud.conwet.fi.upm.es/ns/widget#"
+    xmlns:vCard = "http://www.w3.org/2006/vcard/ns#"
+    xmlns:gr="http://purl.org/goodrelations/v1#">
+
+    <wire:Operator rdf:about="http://wirecloud.com/test">
+        <dcterms:title>simple-history-module2linear-graph</dcterms:title>
+        <wire:displayName>History Module to Linear Graph</wire:displayName>
+        <dcterms:description>Produces data from Historical Mod to feed a line graph.</dcterms:description>
+        <dcterms:creator rdf:resource="http://creatoruri/"/>
+        <usdl-core:versionInfo>2.3.2</usdl-core:versionInfo>
+        <wire:hasImageUri rdf:resource="images/catalogue.png"/>
+        <usdl-core:utilizedResource rdf:resource="js/main.js"/>
+        <usdl-core:utilizedResource rdf:resource="js/AUXdata.js"/>
+        <foaf:page rdf:resource="http://conwet.fi.upm.es/docs/display/wirecloud"/>
+        <usdl-core:hasProvider rdf:resource="http://vendoruri/"/>
+
+        <vCard:addr>
+            <vCard:Work>
+                <vCard:email>cblanco@conwet.com</vCard:email>
+            </vCard:Work>
+        </vCard:addr>
+
+        <wire:hasPlatformPreference>
+            <wire:PlatformPreference rdf:ID="preference_1">
+                <wire:index>1</wire:index>
+                <dcterms:title>historymod_server</dcterms:title>
+                <wire:type>text</wire:type>
+                <dcterms:description>Maximum number of days for which historical information request</dcterms:description>
+                <rdfs:label>HistoryMod Server URL</rdfs:label>
+                <wire:default>http://130.206.82.141:80</wire:default>
+            </wire:PlatformPreference>
+        </wire:hasPlatformPreference>
+
+        <wire:hasPlatformPreference>
+            <wire:PlatformPreference rdf:ID="preference_2">
+                <wire:index>2</wire:index>
+                <dcterms:title>number_of_days</dcterms:title>
+                <wire:type>text</wire:type>
+                <dcterms:description>Maximum number of days for which historical information request</dcterms:description>
+                <rdfs:label>Number of days requested</rdfs:label>
+                <wire:default>10</wire:default>
+            </wire:PlatformPreference>
+        </wire:hasPlatformPreference>
+
+        <wire:hasPlatformWiring>
+            <wire:PlatformWiring rdf:ID="wiring">
+                <wire:hasInputEndpoint>
+                    <wire:InputEndpoint rdf:ID="input_1">
+                        <dcterms:title>SensorIdInput</dcterms:title>
+                        <dcterms:description>The Sensor to observe</dcterms:description>
+                        <wire:actionLabel>Sensor Id</wire:actionLabel>
+                        <wire:type>text</wire:type>
+                        <rdfs:label>Sensor Id</rdfs:label>
+                        <wire:friendcode>SensorId</wire:friendcode>
+                    </wire:InputEndpoint>
+                </wire:hasInputEndpoint>
+                <wire:hasOutputEndpoint>
+                    <wire:OutputEndpoint rdf:ID="output1">
+                        <dcterms:title>OutputStatus</dcterms:title>
+                        <dcterms:description>Historic Sensor information</dcterms:description>
+                        <wire:type>text</wire:type>
+                        <rdfs:label>Historic Info</rdfs:label>
+                        <wire:friendcode>graphData</wire:friendcode>
+                    </wire:OutputEndpoint>
+                </wire:hasOutputEndpoint>
+            </wire:PlatformWiring>
+        </wire:hasPlatformWiring>
+    </wire:Operator>
+
+    <foaf:Person rdf:about="http://creatoruri/">
+        <foaf:name>cblanco</foaf:name>
+    </foaf:Person>
+
+    <gr:BusinessEntity rdf:about="http://vendoruri/">
+        <foaf:name>CoNWeT</foaf:name>
+    </gr:BusinessEntity>
+
+    <foaf:Image rdf:about="images/catalogue.png">
+        <dcterms:title>ImageURI</dcterms:title>
+    </foaf:Image>
+
+    <usdl-core:Resource rdf:about="js/AUXdata.js">
+        <wire:index>1</wire:index>
+    </usdl-core:Resource>
+
+    <usdl-core:Resource rdf:about="js/main.js">
+        <wire:index>2</wire:index>
+    </usdl-core:Resource>
+
+</rdf:RDF>

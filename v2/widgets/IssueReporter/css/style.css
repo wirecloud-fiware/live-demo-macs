@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.styled_button > button > i {
+    visibility: hidden;
+}
+
+.styled_button.disabled > button > i {
+    visibility: visible;
+}
+
+.styled_form td > .styled_select {
+    width: 100%;
+}
+
+.alert-warning {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    left: 5px;
+}

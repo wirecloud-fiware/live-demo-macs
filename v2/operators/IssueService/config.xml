@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:usdl-core="http://www.linked-usdl.org/ns/usdl-core#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:wire="http://wirecloud.conwet.fi.upm.es/ns/widget#"
+    xmlns:vCard = "http://www.w3.org/2006/vcard/ns#"
+    xmlns:gr="http://purl.org/goodrelations/v1#">
+
+    <wire:Operator rdf:about="http://wirecloud.com/test">
+        <dcterms:title>issue-service</dcterms:title>
+        <wire:displayName>Issue Service</wire:displayName>
+        <dcterms:description>Subscribe to this service to receive real-time issues from any entity</dcterms:description>
+        <dcterms:creator rdf:resource="http://creatoruri/"/>
+        <usdl-core:versionInfo>2.3.2</usdl-core:versionInfo>
+        <wire:hasImageUri rdf:resource="images/catalogue.png"/>
+        <usdl-core:utilizedResource rdf:resource="js/main.js"/>
+        <foaf:page rdf:resource="http://conwet.fi.upm.es/docs/display/wirecloud"/>
+        <usdl-core:hasProvider rdf:resource="http://vendoruri/"/>
+
+        <vCard:addr>
+            <vCard:Work>
+                <vCard:email>sblanco@conwet.com jserrano@conwet.com</vCard:email>
+            </vCard:Work>
+        </vCard:addr>
+
+        <wire:hasRequirement>
+            <wire:Feature>
+                <rdfs:label>ObjectStorage</rdfs:label>
+            </wire:Feature>
+        </wire:hasRequirement>
+
+        <wire:hasPlatformPreference>
+            <wire:PlatformPreference rdf:ID="preference_1">
+                <wire:index>1</wire:index>
+                <dcterms:title>ngsi_server</dcterms:title>
+                <wire:type>text</wire:type>
+                <dcterms:description>URL of the PubSub Context Broker where the entities are going to be created</dcterms:description>
+                <rdfs:label>NGSI server URL</rdfs:label>
+                <wire:default>http://130.206.82.140:1026/</wire:default>
+            </wire:PlatformPreference>
+        </wire:hasPlatformPreference>
+        <wire:hasPlatformPreference>
+            <wire:PlatformPreference rdf:ID="preference_2">
+                <wire:index>2</wire:index>
+                <dcterms:title>ngsi_proxy</dcterms:title>
+                <wire:type>text</wire:type>
+                <dcterms:description>URL of the PubSub Context Broker proxy</dcterms:description>
+                <rdfs:label>NGSI proxy URL</rdfs:label>
+                <wire:default>http://wirecloud.ld.testbed.fi-ware.eu:3000/</wire:default>
+            </wire:PlatformPreference>
+        </wire:hasPlatformPreference>
+        <wire:hasPlatformPreference>
+            <wire:PlatformPreference rdf:ID="preference_3">
+                <wire:index>3</wire:index>
+                <dcterms:title>objectstorage_server</dcterms:title>
+                <wire:type>text</wire:type>
+                <dcterms:description>Object Storage server where issue images can be found</dcterms:description>
+                <rdfs:label>Object Storage server URL</rdfs:label>
+                <wire:default>http://130.206.80.102:8080/v1/AUTH_86ca53b6d21b4cfe98a4e0c49e2931af/</wire:default>
+            </wire:PlatformPreference>
+        </wire:hasPlatformPreference>
+        <wire:hasPlatformPreference>
+            <wire:PlatformPreference rdf:ID="preference_4">
+                <wire:index>4</wire:index>
+                <dcterms:title>objectstorage_project</dcterms:title>
+                <wire:type>text</wire:type>
+                <dcterms:description>Object Storage project</dcterms:description>
+                <rdfs:label>Object Storage project</rdfs:label>
+                <wire:default></wire:default>
+            </wire:PlatformPreference>
+        </wire:hasPlatformPreference>
+        <wire:hasPlatformPreference>
+            <wire:PlatformPreference rdf:ID="preference_5">
+                <wire:index>5</wire:index>
+                <dcterms:title>objectstorage_user</dcterms:title>
+                <wire:type>text</wire:type>
+                <dcterms:description>Object Storage user</dcterms:description>
+                <rdfs:label>Object Storage user</rdfs:label>
+                <wire:default></wire:default>
+            </wire:PlatformPreference>
+        </wire:hasPlatformPreference>
+        <wire:hasPlatformPreference>
+            <wire:PlatformPreference rdf:ID="preference_6">
+                <wire:index>6</wire:index>
+                <dcterms:title>objectstorage_pass</dcterms:title>
+                <wire:type>password</wire:type>
+                <dcterms:description>Object Storage password</dcterms:description>
+                <rdfs:label>Object Storage password</rdfs:label>
+                <wire:default></wire:default>
+            </wire:PlatformPreference>
+        </wire:hasPlatformPreference>
+        <wire:hasPlatformPreference>
+            <wire:PlatformPreference rdf:ID="preference_7">
+                <wire:index>7</wire:index>
+                <dcterms:title>objectstorage_tenant_id</dcterms:title>
+                <wire:type>text</wire:type>
+                <dcterms:description>Object Storage tenant ID</dcterms:description>
+                <rdfs:label>Object Storage tenant ID</rdfs:label>
+                <wire:default>86ca53b6d21b4cfe98a4e0c49e2931af</wire:default>
+            </wire:PlatformPreference>
+        </wire:hasPlatformPreference>
+        <wire:hasPlatformPreference>
+            <wire:PlatformPreference rdf:ID="preference_8">
+                <wire:index>8</wire:index>
+                <dcterms:title>objectstorage_token_url</dcterms:title>
+                <wire:type>text</wire:type>
+                <dcterms:description>Object Storage token URL</dcterms:description>
+                <rdfs:label>Object Storage token URL</rdfs:label>
+                <wire:default>http://130.206.80.100:5000/v2.0/tokens</wire:default>
+            </wire:PlatformPreference>
+        </wire:hasPlatformPreference>
+        <wire:hasPlatformPreference>
+            <wire:PlatformPreference rdf:ID="preference_9">
+                <wire:index>9</wire:index>
+                <dcterms:title>objectstorage_container</dcterms:title>
+                <wire:type>text</wire:type>
+                <dcterms:description>Object Storage container used for uploading images</dcterms:description>
+                <rdfs:label>Object Storage container</rdfs:label>
+                <wire:default>IssueImages</wire:default>
+            </wire:PlatformPreference>
+        </wire:hasPlatformPreference>
+
+        <wire:hasPlatformWiring>
+            <wire:PlatformWiring rdf:ID="wiring">
+                <wire:hasOutputEndpoint>
+                    <wire:OutputEndpoint rdf:ID="output_1">
+                        <dcterms:title>outputIssue</dcterms:title>
+                        <dcterms:description>Launches an event on every issue status change (an issue is created, modified, closed, ...)</dcterms:description>
+                        <wire:type>text</wire:type>
+                        <rdfs:label>Issue Change</rdfs:label>
+                        <wire:friendcode>issue</wire:friendcode>
+                    </wire:OutputEndpoint>
+                </wire:hasOutputEndpoint>
+            </wire:PlatformWiring>
+        </wire:hasPlatformWiring>
+    </wire:Operator>
+
+    <foaf:Person rdf:about="http://creatoruri/">
+        <foaf:name>sblanco</foaf:name>
+    </foaf:Person>
+
+    <gr:BusinessEntity rdf:about="http://vendoruri/">
+        <foaf:name>CoNWeT</foaf:name>
+    </gr:BusinessEntity>
+
+    <foaf:Image rdf:about="images/catalogue.png">
+        <dcterms:title>ImageURI</dcterms:title>
+    </foaf:Image>
+
+    <usdl-core:Resource rdf:about="js/main.js">
+        <wire:index>0</wire:index>
+    </usdl-core:Resource>
+
+</rdf:RDF>

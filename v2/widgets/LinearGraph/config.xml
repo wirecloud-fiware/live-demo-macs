@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Template xmlns="http://wirecloud.conwet.fi.upm.es/ns/template#">
+
+    <Catalog.ResourceDescription>
+        <Vendor>CoNWeT</Vendor>
+        <Name>linear-graph</Name>
+        <Version>2.3.2</Version>
+        <DisplayName>Linear Graph</DisplayName>
+        <Author>cblanco</Author>
+        <Mail>cblanco@conwet.com</Mail>
+        <Description>Generic linear graph.</Description>
+        <ImageURI>images/catalogue.png</ImageURI>
+        <WikiURI>doc/index.html</WikiURI>
+    </Catalog.ResourceDescription>
+
+    <Platform.Preferences>
+        <Preference name="legend" type="boolean" description="Mark this option if you want to see a legend box near the graph" label="Display graph legend"  default="true" />
+    </Platform.Preferences>
+
+    <Platform.Wiring>
+        <InputEndpoint name="input"
+                type="text"
+                label="Data in"
+                description="Data Input. See the documentation for more information"
+                friendcode="graphData"/>
+    </Platform.Wiring>
+
+    <Platform.Link>
+        <XHTML href="index.html" use-platform-style="true"/>
+
+    </Platform.Link>
+
+    <Platform.Rendering width="8" height="32"/>
+
+</Template>

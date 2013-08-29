@@ -1,0 +1,186 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: #333;
+    overflow: hidden;
+    padding: 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+body .flotr-canvas, body .flotr-overlay{
+    z-index: 0;
+}
+
+body .leyendBox {
+    position: absolute;
+    border: 1px solid #777;
+    box-shadow: 2px 2px 5px #686868;
+    font-size: 1.4ex;
+    font-weight: bold;
+    z-index: 1;
+}
+
+body .leyendBox:hover {
+    opacity: 1;
+}
+
+body .leyendBox .backLayer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.75;
+    z-index: -1;
+}
+
+body .leyendBox.ne {
+    right: 2ex;
+    top: -1ex;
+}
+
+body .leyendBox.no {
+    left: 2ex;
+    top: -1ex;
+}
+
+body .leyendBox.se {
+    right: 2ex;
+    bottom: 1ex;
+}
+
+body .leyendBox.so {
+    left: 2ex;
+    bottom: 1ex;
+}
+
+body .mainLeyendLine {
+    display: block;
+    white-space: nowrap;
+}
+
+body .leyendBox .lineLeyend {
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+body .leyendBox .lineLeyend:hover {
+    color: black;
+    opacity: 1;
+}
+
+body .leyendBox .lineLeyend.off:hover {
+    color: black;
+    opacity: 1;
+}
+
+body .leyendBox .lineLeyend.off {
+    opacity: 0.4;
+}
+
+body .leyendBox .colorBox {
+    width: 15px;
+    height: 10px;
+    display: inline-block;
+    margin: 2px 3px;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+body .leyendBox .lineLeyend:hover .colorBox {
+    -moz-box-shadow: 0 0 2px 1px #4674AD;
+    -webkit-box-shadow: 0 0 2px 1px #4674AD;
+    box-shadow: 0 0 2px 1px #4674AD;
+    border-color: white;
+}
+
+body .leyendBox .leyendLabel {
+    margin-left: 5px;
+    margin-right: 2px;
+}
+
+body .leyendBox .pointsSelect {
+    font-family: FontAwesome;
+    display: inline-block;
+    margin: 2px;
+    vertical-align: middle;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+body .leyendBox .pointsSelect.off{
+    opacity: 1;
+}
+
+body .leyendBox .lineLeyend .pointsSelect:hover {
+    -moz-box-shadow: 0 0 2px 1px #4674AD;
+    -webkit-box-shadow: 0 0 2px 1px #4674AD;
+    box-shadow: 0 0 2px 1px #4674AD;
+}
+
+body .button {
+    display: inline-block;
+    text-align: center;
+    width: 24%;
+    height: 100%;
+    cursor: pointer;
+    background: #5A5151;
+    border-radius: 9px;
+    margin: 0 3px;
+    border: 1px solid #FFF;
+}
+
+body .button.on{
+    background: #807EB1;
+}
+body .button:hover {
+    color: #9CB4F1;
+    -moz-box-shadow: 0 0 2px 1px #9CB4F1;
+    -webkit-box-shadow: 0 0 2px 1px #9CB4F1;
+    box-shadow: 0 0 2px 1px #9CB4F1;
+}
+
+#controlBar {
+    width: 100%;
+    height: 35px;
+    display: inline-block;
+}
+
+#controlBar .buttonContainer {
+    display: block;
+    width: 60%;
+    margin: auto;
+    color: #F5F5F5;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+#linearGraphContainer {
+
+}
+
+#loadLayer {
+    font-family: FontAwesome;
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FAFAFA;;
+    z-index: 2;
+    opacity: 0.7;
+}
+
+#loadLayer.on {
+    display: inline;
+}
+
+#loadingAnimation {
+    position: relative;
+    font-size: 5ex;
+    color: #10027E;
+    margin: 10px;
+}

@@ -1,0 +1,49 @@
+{"id":"1","severity":"high","type":"Failed","vmId":"VM-1024-234","technician":"","description":"Status has changed to FAILED. Technician attendance required", "coordinates":{"lat":"50.814245", "lng":"4.411200"}}
+{"id":"2","severity":"warning","type":"Out of milk","vmId":"VM-1024-227","technician":"","description":"The level of milk is under 10%. It needs to be replaced asap", "coordinates":{"lat":"50.814300", "lng":"4.412282"}}
+{"id":"3","severity":"warning","type":"Gather cash","vmId":"VM-0231-123","technician":"","description":"Cash box is almost full", "coordinates":{"lat":"50.814500", "lng":"4.412282"}}
+{"id":"4","severity":"warning","type":"Out of coffee","vmId":"VM-3916-177","technician":"","description":"Coffee tank is almost empty.", "coordinates":{"lat":"50.814390", "lng":"4.412670"}}
+{"id":"5","severity":"high","type":"Failed","vmId":"VM-5327-511","technician":"","description":"Status has changed to FAILED. Technician attendance required", "coordinates":{"lat":"50.814190", "lng":"4.412670"}}
+{"id":"6","severity":"ok","type":"Ok","vmId":"VM-0651-484","technician":"","description":"Status OK", "coordinates":{"lat":"50.814220", "lng":"4.411850"}}
+{"id":"7","severity":"ok","type":"Ok","vmId":"VM-8798-578","technician":"","description":"Status OK", "coordinates":{"lat":"50.814445", "lng":"4.412790"}}
+
+
+Conservo las Issues que ya existían alrededor del edificio y simplemente añado nuevas issues. De esta manera, si cambian de opinión para la demo, tienen las Issues que pidieron hace una semana (alrededor del edificio) y las nuevas que están pidiendo ahora.
+
+
+{
+    "id":"8",
+    "severity":"high",
+    "type":"Failed",
+    "vmId":"VM-9119-211",
+    "technician":"",
+    "description":"Status has changed to FAILED. Technician attendance required",
+    "coordinates": {
+        "lat":"50.8259350",
+        "lng":"4.3835250"
+    }
+}
+{"id":"9","severity":"ok","type":"Ok","vmId":"VM-6443-384","technician":"","description":"Status OK", "coordinates":{"lat":"50.854445", "lng":"4.399500"}}
+{"id":"10","severity":"warning","type":"Out of coffee","vmId":"VM-9218-147","technician":"","description":"Coffee tank is almost empty.", "coordinates":{"lat":"50.842445", "lng":"4.345650"}}
+{"id":"11","severity":"ok","type":"Ok","vmId":"VM-0542-410","technician":"","description":"Status OK", "coordinates":{"lat":"50.853945", "lng":"4.345930"}}
+{"id":"12","severity":"warning","type":"Gather cash","vmId":"VM-0936-213","technician":"","description":"Cash box is almost full", "coordinates":{"lat":"50.846300", "lng":"4.353000"}}
+{"id":"13","severity":"high","type":"Failed","vmId":"VM-6879-195","technician":"","description":"Status has changed to FAILED. Technician attendance required", "coordinates":{"lat":"50.846470", "lng":"4.357720"}}
+{"id":"14","severity":"warning","type":"Gather cash","vmId":"VM-2385-354","technician":"","description":"Cash box is almost full", "coordinates":{"lat":"50.855750", "lng":"4.357720"}}
+
+50.814300,4.411200
+50.814300, 4.412282
+50.814500, 4.412282
+50.814390, 4.412670
+50.814190, 4.412670
+50.814220, 4.411850
+
+
+50.814445, 4.412790 --> Reposicionada sobre el edificio.
+50.8259350, 4.3835250 --> Resposicionada
+50.842445, 4.345650
+50.846300, 4.353000
+50.853945, 4.399500
+50.842445, 4.345650
+50.853945, 4.345930
+50.846300, 4.353000
+50.846470, 4.357720
+50.855750, 4.357720

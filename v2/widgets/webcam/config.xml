@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Template xmlns="http://wirecloud.conwet.fi.upm.es/ns/template#">
+    <Catalog.ResourceDescription>
+        <Vendor>CoNWeT</Vendor>
+        <Name>webcam-lamp</Name>
+        <DisplayName>Webcam</DisplayName>
+        <Author>aarranz</Author>
+        <Version>2.3.2</Version>
+        <Mail>aarranz@conwet.com</Mail>
+        <Description>This widget show the webcam image from TI.</Description>
+        <ImageURI>images/catalogue.png</ImageURI>
+        <iPhoneImageURI>images/catalogue.png</iPhoneImageURI>
+        <WikiURI></WikiURI>
+    </Catalog.ResourceDescription>
+    <Platform.Link>
+        <XHTML href="index.html" contenttype="application/xhtml+xml"/>
+    </Platform.Link>
+    <Platform.Rendering width="5" height="20"/>
+</Template>

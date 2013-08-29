@@ -1,0 +1,58 @@
+Tipo documento: Requisitos.
+Widget: IssuesInbox.
+Autor: sblanco
+
+
+Requisitos generales:
+    A. Al iniciar el widget se debe mostrar un mensaje para alertar al usuario de que debe comunicarse por wiring.
+    B. Se debe poder recibir una Issue y ser mostrada en una lista de Issues.
+    C. Cada Issue de la lista debe poseer una lista de Workers.
+    D. En toda Issue, todo Worker debe poder ser asignado por el usuario de la lista de Worker (de dicha Issue).
+    E. Se debe poder recibir un Worker y ser mostrado en cada lista de Workers.
+    F. Cuando se seleccione una Issue de la lista, se envía la información de la Issue.
+    G. Cuando se asigne un Worker a una Issue, se envía la información del Worker y la ruta desde el Worker hasta la Issue.
+
+Definiciones:
+    - Issue: Es una tupla: (Identificador, Descripción, Tipo, Estado)
+    - Route: Es una cadena de texto de la forma "from: origin to: destination". Donde origin es el origen y destination es el destino.
+    - Worker: Es un string en formato vCard (3.0 ó 4.0).
+
+
+Requisitos especificos:
+
+1. Visuales:
+    1.1. Al iniciar el widget se debe mostrar un mensaje para alertar al usuario de que debe hacer el wiring.
+    1.2. Si llega una Issue, se muestra una tabla que contiene las incidencias recibidas y el técnico asignado en cada momento.
+
+2. Funcionalidad:
+    2.1. Secuencial:
+        2.1.1. Crear la lista de Issues.
+        2.1.2. Crear la lista de Workers.
+        2.1.3. Crear la tabla que muestra la información.
+        2.1.4. Mostrar un mensaje de alerta.
+    
+    2.2. Eventos:
+        2.2.1. Llega una Issue por el wiring:
+            Se agrega la Issue a la lista de Issues y se muestra en la tabla.
+        2.2.2. Llega un Worker por el wiring.
+            Se agrega el Worker a la lista de Workers y se muestra en cada una de las listas de Workers de cada Issue.
+        2.2.3. Click sobre una Issue.
+            Se envía la información de la Issue por wiring.
+        2.2.4. Selección de un Worker en una Issue.
+            Se envía la información del Worker por wiring.
+            Se construye y se envía la ruta por wiring.
+
+
+3. Comunicacion:
+    3.1. Entrada:
+        3.1.1. Issue. 
+        3.1.2. Worker. 
+    3.2 Salida: 
+        3.2.1. Route.
+        3.2.2. Worker. 
+
+4. Settings:
+    - No procede.
+
+5. Persistencia:
+    - No procede.
