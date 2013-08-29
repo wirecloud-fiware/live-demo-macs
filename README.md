@@ -22,17 +22,6 @@ Related docs
     * 1st version of the Live Demo:
         * (http://youtu.be/DSon3TSO9T8). Explains how to upload a new widget to the Wirecloud's catalogue, how to build the mashup (including the wiring of the different widgets and operators used). 
 * [**Wirecloud website**](http://conwet.fi.upm.es/wirecloud)
-* [**Wirecloud entry in the FIWARE catalogue**](http://catalogue.fi-ware.eu/enablers/application-mashup-wirecloud)
-* [**Application Mashup Open Specs**](https://forge.fi-ware.eu/plugins/mediawiki/wiki/fiware/index.php/FIWARE.OpenSpecification.Apps.ApplicationMashup)
-* Resources for end users
-    * [**Wirecloud platform user guide**](https://forge.fi-ware.eu/plugins/mediawiki/wiki/fiware/index.php/Application_Mashup_-_Wirecloud_-_User_and_Programmer_Guide%23User_Guide)
-    * [**Demo videos**](http://catalogue.fi-ware.eu/enablers/documentation-10)
-    * [**Wirecloud instance in the FI-WARE testbed**](http://catalogue.fi-ware.eu/enablers/application-mashup-wirecloud/instances)
-* Resources for administrators
-    * [**Wirecloud platform installation and administration guide**](https://forge.fi-ware.eu/plugins/mediawiki/wiki/fiware/index.php/Application_Mashup_-_Wirecloud_-_Installation_and_Administration_Guide)
-    * [**Most updated version of the documentation**](https://wirecloud.conwet.fi.upm.es/docs/)
-    * [**Most recent version of the platform**](https://pypi.python.org/pypi/wirecloud)
-* Resources for programmers
-    * [**Wirecloud platform programmers guide**](https://forge.fi-ware.eu/plugins/mediawiki/wiki/fiware/index.php/Application_Mashup_-_Wirecloud_-_User_and_Programmer_Guide%23Programmer_Guide)
-    * [**Tutorials on how to develop a Widget from scratch**](http://conwet.fi.upm.es/docs/display/wirecloud/Widget+Development)
-    * [**Most updated version of the documentation**](https://wirecloud.conwet.fi.upm.es/docs/)
+* [**Wirecloud entry in the FIWARE catalogue**](http://catalogue.fi-ware.eu/enablers/application-mashup-wirecloud). In this page, you will find the most updated references to the Open Specs, Documentation (user and programmer guides, intallation and administration guides, etc.), available instances (testbed, FI-LAB, etc.), and videos.
+* [**Tutorials on how to develop a Widget from scratch**](http://conwet.fi.upm.es/docs/display/wirecloud/Widget+Development)
+* [**A living wiki version of the documentation**](https://wirecloud.conwet.fi.upm.es/docs/)
