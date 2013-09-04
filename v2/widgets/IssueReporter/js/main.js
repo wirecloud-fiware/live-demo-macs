@@ -41,9 +41,6 @@
  
     "use strict";
 
-    var url = 'http://130.206.82.140:1026';
-    var connection = new NGSI.Connection(url);
-
 /******************************************************************************/
 /********************************* PUBLIC *************************************/
 /******************************************************************************/
@@ -116,7 +113,7 @@
     };
 
     IssueReporter.prototype.updateAvailableEntities = function updateAvailableEntities() {
-        connection.query([{
+        this.ngsi.query([{
                 type: 'Node',
                 isPattern: true,
                 id: 'OUTSMART\\..*'
@@ -178,7 +175,7 @@
             });
         }
 
-        connection.updateAttributes([{
+        this.ngsi.updateAttributes([{
                 entity: {
                     id: id,
                     type: 'Issue'
