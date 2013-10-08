@@ -57,7 +57,7 @@
     var theLeyend = [];
     var leyendStatus = {};
     var lastData;
-    var showLeyend, graphContainer;
+    var graphContainer;
     var oneData;
     var lastTimestamp;
     var verticalAxisLeft;
@@ -91,7 +91,6 @@
     var drawGraph = function drawGraph(new_data) {
 
         // preferences
-        showLeyend = MashupPlatform.prefs.get("legend").toLowerCase() === "true";
         graphContainer = document.getElementById('linearGraphContainer');
 
         var info, x, i, j, id, value, theFill, theLabel, mainLeyendLine, lineLeyendDiv,
@@ -421,10 +420,8 @@
         }
 
         // Ad hoc leyend
-        if (!isEmpty(theLeyend)) {
-            if (showLeyend) {
-                graphContainer.appendChild(theLeyend);
-            }
+        if (!isEmpty(theLeyend) && MashupPlatform.prefs.get("legend")) {
+            graphContainer.appendChild(theLeyend);
         }
         //loadLayer.classList.remove('on');
     };
@@ -476,10 +473,8 @@
             options
         );
         // Ad hoc leyend
-        if (!isEmpty(theLeyend)) {
-            if (showLeyend) {
-                graphContainer.appendChild(theLeyend);
-            }
+        if (!isEmpty(theLeyend) && MashupPlatform.prefs.get("legend")) {
+            graphContainer.appendChild(theLeyend);
         }
         return gr;
     };
