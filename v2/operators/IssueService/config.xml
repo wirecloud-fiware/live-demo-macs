@@ -27,6 +27,11 @@
         </vCard:addr>
 
         <wire:hasRequirement>
+            <wire:Feature rdf:nodeID="N3470abb159864542b08cadb3616c062d">
+                <rdfs:label>NGSI</rdfs:label>
+            </wire:Feature>
+        </wire:hasRequirement>
+        <wire:hasRequirement>
             <wire:Feature>
                 <rdfs:label>ObjectStorage</rdfs:label>
             </wire:Feature>

@@ -26,6 +26,12 @@
             </vCard:Work>
         </vCard:addr>
 
+        <wire:hasRequirement>
+            <wire:Feature rdf:nodeID="N3470abb159864542b08cadb3616c062d">
+                <rdfs:label>NGSI</rdfs:label>
+            </wire:Feature>
+        </wire:hasRequirement>
+
         <wire:hasPlatformPreference>
             <wire:PlatformPreference rdf:ID="preference_1">
                 <dcterms:title>ngsi_server</dcterms:title>
