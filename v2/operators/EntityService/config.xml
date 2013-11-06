@@ -12,7 +12,7 @@
     <wire:Operator rdf:about="http://wirecloud.com/test">
         <dcterms:title>entity-service</dcterms:title>
         <wire:displayName>Entity Service</wire:displayName>
-        <dcterms:description>This operator permits us gather information about several entities from any NGSI service.</dcterms:description>
+        <dcterms:description>This operator permits us gather information about several entities (Lamp posts, AMMSs and Regulators) from any NGSI service.</dcterms:description>
         <dcterms:creator rdf:resource="http://creatoruri/"/>
         <usdl-core:versionInfo>2.3.2</usdl-core:versionInfo>
         <wire:hasImageUri rdf:resource="images/catalogue.png"/>
@@ -48,15 +48,6 @@
                 <dcterms:description>URL of the PubSub Context Broker proxy</dcterms:description>
                 <rdfs:label>NGSI proxy URL</rdfs:label>
                 <wire:default>http://wirecloud.ld.testbed.fi-ware.eu:3000/</wire:default>
-            </wire:PlatformPreference>
-        </wire:hasPlatformPreference>
-        <wire:hasPlatformPreference>
-            <wire:PlatformPreference rdf:ID="preference_3">
-                <dcterms:title>entity_type</dcterms:title>
-                <wire:type>text</wire:type>
-                <dcterms:description>Entity type to find in the NGSI service</dcterms:description>
-                <rdfs:label>Entity type</rdfs:label>
-                <wire:default>Sensor</wire:default>
             </wire:PlatformPreference>
         </wire:hasPlatformPreference>
 

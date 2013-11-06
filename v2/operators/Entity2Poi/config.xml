@@ -12,7 +12,7 @@
     <wire:Operator rdf:about="http://wirecloud.com/test">
         <dcterms:title>entity2poi</dcterms:title>
         <wire:displayName>Entity To PoI</wire:displayName>
-        <dcterms:description>This operator transforms entities to Points of Interest</dcterms:description>
+        <dcterms:description>This operator transforms entities (Lamp posts, AMMSs and regulators) to Points of Interest</dcterms:description>
         <dcterms:creator rdf:resource="http://creatoruri/"/>
         <usdl-core:versionInfo>2.3.2</usdl-core:versionInfo>
         <wire:hasImageUri rdf:resource="images/catalogue.png"/>
@@ -25,16 +25,6 @@
                 <vCard:email>sblanco@conwet.com</vCard:email>
             </vCard:Work>
         </vCard:addr>
-
-        <wire:hasPlatformPreference>
-            <wire:PlatformPreference rdf:ID="preference_1">
-                <dcterms:title>entity_type</dcterms:title>
-                <wire:type>text</wire:type>
-                <dcterms:description></dcterms:description>
-                <rdfs:label></rdfs:label>
-                <wire:default></wire:default>
-            </wire:PlatformPreference>
-        </wire:hasPlatformPreference>
 
         <wire:hasPlatformWiring>
             <wire:PlatformWiring rdf:ID="wiring">
