@@ -49,7 +49,7 @@
         this.ngsi = new NGSI.Connection(MashupPlatform.prefs.get('ngsi_server'));
     };
 
-    var create_ngsi_connection = function create_ngsi_connection() {
+    var create_objectstorage_connection = function create_objectstorage_connection() {
         this.os_connection = new ObjectStorageAPI(MashupPlatform.prefs.get('objectstorage_server'));
     };
 
@@ -59,8 +59,8 @@
 
         /* Preferences */
         create_ngsi_connection.call(this);
-        MashupPlatform.prefs.registerCallback(function (new_value) {
-            if ('ngsi_server' in new_valuea) {
+        MashupPlatform.prefs.registerCallback(function (new_values) {
+            if ('ngsi_server' in new_values) {
                 create_ngsi_connection.call(this);
             }
 
