@@ -120,7 +120,7 @@
                 'axisConfig': [
                     {
                         axisId: 0,
-                        label: 'Batery %',
+                        label: 'Battery %',
                         color: '#00A8F0',
                         max: 100,
                         min: -15,
