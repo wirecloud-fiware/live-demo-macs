@@ -83,10 +83,6 @@
         <foaf:name>CoNWeT</foaf:name>
     </gr:BusinessEntity>
 
-    <foaf:Image rdf:about="images/catalogue.png">
-        <dcterms:title>ImageURI</dcterms:title>
-    </foaf:Image>
-
     <usdl-core:Resource rdf:about="js/main.js">
         <wire:index>0</wire:index>
     </usdl-core:Resource>
