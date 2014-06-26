@@ -50,24 +50,25 @@
     };
 
     var create_objectstorage_connection = function create_objectstorage_connection() {
-        this.os_connection = new ObjectStorageAPI(MashupPlatform.prefs.get('objectstorage_server'));
+        this.os_connection = new ObjectStorageAPI(MashupPlatform.prefs.get('objectstorage_server'), {
+            token: MashupPlatform.prefs.get('objectstorage_token')
+        });
     };
 
     var IssueReporter = function IssueReporter() {
 
-        this.authToken = null;
-
         /* Preferences */
         create_ngsi_connection.call(this);
+        create_objectstorage_connection.call(this);
         MashupPlatform.prefs.registerCallback(function (new_values) {
             if ('ngsi_server' in new_values) {
                 create_ngsi_connection.call(this);
             }
 
-            if ('objectstorage_server' in new_values) {
+            if ('objectstorage_server' in new_values || 'objectstorage_token' in new_values) {
                 create_objectstorage_connection.call(this);
             }
-        });
+        }.bind(this));
 
         /* Context */
         MashupPlatform.widget.context.registerCallback(function (newValues) {
@@ -150,9 +151,12 @@
         this.formUploadFile.fieldInterfaces.entity.inputElement.addEntries(entries);
     };
 
-    var create_msg = function create_msg(msg) {
+    var create_msg = function create_msg(msg, success) {
         var element = document.createElement('div');
         element.className = 'alert alert-block';
+        if (success) {
+            element.classList.add('alert-success');
+        }
         element.textContent = msg;
         document.body.appendChild(element);
         setTimeout(function () {
@@ -183,7 +187,7 @@
                 attributes: attributes
             }], {
                 onSuccess: function () {
-                    create_msg('Issue reported successfuly');
+                    create_msg('Issue reported successfuly', true);
                 }.bind(this),
                 onFailure: function () {
                     create_msg('Error reporting the issue');
@@ -197,11 +201,16 @@
 
     var create_issue = function create_issue(entity, file, description, position) {
         var url = 'http://130.206.82.141:5000/new_issue/' + entity + '/CitizenReport/Warning';
+
+        if (position != null && !('coords' in position)) {
+            position = null;
+        }
+
         MashupPlatform.http.makeRequest(url, {
                 onSuccess: function (transport) {
                     var id = transport.responseText;
-                    update_issue(id, file, description, position);
-                },
+                    update_issue.call(this, id, file, description, position);
+                }.bind(this),
                 onFailure: function () {
                     create_msg('Error reporting the issue');
                 },
@@ -216,38 +225,20 @@
 
         form.disable();
 
-        var uploadFile = function uploadFile(token) {
-            var callback = create_issue.bind(this, data.entity, data.file.name, data.description);
-            var wrapper;
-            if (navigator.geolocation) {
-                wrapper = function () {
-                    navigator.geolocation.getCurrentPosition(callback);
-                };
-            } else {
-                wrapper = callback;
-            }
+        var callback = create_issue.bind(this, data.entity, data.file.name, data.description);
+        var wrapper;
+        if (navigator.geolocation) {
+            wrapper = function () {
+                navigator.geolocation.getCurrentPosition(callback, callback);
+            };
+        } else {
+            wrapper = callback;
+        }
 
-            this.os_connection.uploadFile(MashupPlatform.prefs.get('objectstorage_container'), data.file, token, {
-                onSuccess: wrapper,
-                onFailure: function () {
-                    create_msg('Error uploading image file');
-                    this.formUploadFile.enable();
-                }.bind(this)
-            });
-        };
-
-        var ObjectStorageAuth = {
-            PROJECT: MashupPlatform.prefs.get('objectstorage_project'),
-            USER: MashupPlatform.prefs.get('objectstorage_user'),
-            PASS: MashupPlatform.prefs.get('objectstorage_pass'),
-            TENANT_ID: MashupPlatform.prefs.get('objectstorage_tenant_id'),
-            TOKEN_REQUEST_URL: MashupPlatform.prefs.get('objectstorage_token_url')
-        };
-
-        this.os_connection.getAuthToken(ObjectStorageAuth, {
-            onSuccess: uploadFile.bind(this),
+        this.os_connection.uploadFile(MashupPlatform.prefs.get('objectstorage_container'), data.file, {
+            onSuccess: wrapper,
             onFailure: function () {
-                create_msg('Error authenticating throw the Object Storage GE');
+                create_msg('Error uploading image file');
                 this.formUploadFile.enable();
             }.bind(this)
         });
