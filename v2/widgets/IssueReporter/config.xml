@@ -5,7 +5,7 @@
         <Name>issue-reporter</Name>
         <DisplayName>Issue Reporter</DisplayName>
         <Author>aarranz</Author>
-        <Version>2.3.3</Version>
+        <Version>2.3.4</Version>
         <Mail>aarranz@conwet.com</Mail>
         <Description>Upload a photo from an Issue</Description>
         <ImageURI>images/catalogue.png</ImageURI>
