@@ -200,7 +200,11 @@
     };
 
     var create_issue = function create_issue(entity, file, description, position) {
-        var url = 'http://130.206.82.141:5000/new_issue/' + entity + '/CitizenReport/Warning';
+        var url = MashupPlatform.prefs.get('event2issue_server');
+        if (url[url.length - 1] !== '/') {
+            url += '/';
+        }
+        url += '/new_issue/' + entity + '/CitizenReport/Warning';
 
         if (position != null && !('coords' in position)) {
             position = null;
