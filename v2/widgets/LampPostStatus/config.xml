@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Template xmlns="http://morfeo-project.org/2007/Template">
+<Template xmlns="http://wirecloud.conwet.fi.upm.es/ns/template#">
     <Catalog.ResourceDescription>
         <Vendor>CoNWeT</Vendor>
         <Name>lamp-post-status</Name>
@@ -10,7 +10,6 @@
         <Description>It displays the status of a lamp post. This widget should be used by a technician.</Description>
         <ImageURI>images/catalogue.png</ImageURI>
         <iPhoneImageURI>images/catalogue.png</iPhoneImageURI>
-        <WikiURI></WikiURI>
         <Requirements>
             <Feature name="NGSI"/>
         </Requirements>
