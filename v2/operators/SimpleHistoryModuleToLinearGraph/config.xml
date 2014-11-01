@@ -14,7 +14,7 @@
         <wire:displayName>History Module to Linear Graph</wire:displayName>
         <dcterms:description>Produces data from Historical Mod to feed a line graph.</dcterms:description>
         <dcterms:creator rdf:resource="http://creatoruri/"/>
-        <usdl-core:versionInfo>2.3.2</usdl-core:versionInfo>
+        <usdl-core:versionInfo>2.3.3</usdl-core:versionInfo>
         <wire:hasImageUri rdf:resource="images/catalogue.png"/>
         <usdl-core:utilizedResource rdf:resource="js/main.js"/>
         <usdl-core:utilizedResource rdf:resource="js/AUXdata.js"/>
@@ -32,9 +32,9 @@
                 <wire:index>1</wire:index>
                 <dcterms:title>historymod_server</dcterms:title>
                 <wire:type>text</wire:type>
-                <dcterms:description>Maximum number of days for which historical information request</dcterms:description>
+                <dcterms:description>URL of the HistoryMod server to use</dcterms:description>
                 <rdfs:label>HistoryMod Server URL</rdfs:label>
-                <wire:default>http://130.206.82.141:80</wire:default>
+                <wire:default>http://historymod.ld.testbed.fi-ware.org</wire:default>
             </wire:PlatformPreference>
         </wire:hasPlatformPreference>
 
