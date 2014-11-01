@@ -54,9 +54,9 @@
     var graphData;
     var defaultColors = ['#00A8F0', '#93a600', '#CB4B4B', '#4DA74D', '#9440ED'];
     var userColors;
-    var theLeyend = [];
+    var theLeyend = null;
     var leyendStatus = {};
-    var lastData;
+    var lastData = null;
     var graphContainer;
     var oneData;
     var lastTimestamp;
@@ -71,6 +71,7 @@
         'hour': null
     };
     var activateButton = null;
+    var timeout = null;
 
     var toggle_points_lines = function toggle_points_lines(id) {
         loadLayer.classList.add('on');
@@ -86,6 +87,12 @@
             changeLeyendStatus(id);
             loadLayer.classList.remove('on');
         }, 300);
+    };
+
+    var resize = function resize() {
+        document.getElementById('linearGraphContainer').style.height = (MashupPlatform.widget.context.get('heightInPixels') - document.getElementById('controlBar').offsetHeight - 10) + 'px';
+        document.getElementById('linearGraphContainer').style.width = (MashupPlatform.widget.context.get('widthInPixels') - 10) + 'px';
+        drawGraph();
     };
 
     var drawGraph = function drawGraph(new_data) {
@@ -127,7 +134,7 @@
                 lastTimestamp = 0;
 
                 // Basic leyenc
-                if (!isEmpty(theLeyend)) {
+                if (theLeyend != null && theLeyend.parentNode != null) {
                     graphContainer.removeChild(theLeyend);
                 }
                 theLeyend = document.createElement('div');
@@ -420,23 +427,10 @@
         }
 
         // Ad hoc leyend
-        if (!isEmpty(theLeyend) && MashupPlatform.prefs.get("legend")) {
+        if (MashupPlatform.prefs.get("legend") && theLeyend != null) {
             graphContainer.appendChild(theLeyend);
         }
         //loadLayer.classList.remove('on');
-    };
-
-    /**
-     * @Private
-     * is empty object?
-     */
-    var isEmpty = function isEmpty(obj) {
-        var key;
-
-        for (key in obj) {
-            return false;
-        }
-        return true;
     };
 
     var changeLeyendStatus = function changeLeyendStatus(id) {
@@ -450,12 +444,12 @@
         } else {
             leyendStatus[id].show = !leyendStatus[id].show;
         }
-        drawGraph(lastData);
+        drawGraph();
     };
 
     var changeLeyendStatusPoints = function changeLeyendStatusPoints(id) {
         leyendStatus[id].points = !leyendStatus[id].points;
-        drawGraph(lastData);
+        drawGraph();
     };
 
     // method for select and zoom with mouse
@@ -473,7 +467,7 @@
             options
         );
         // Ad hoc leyend
-        if (!isEmpty(theLeyend) && MashupPlatform.prefs.get("legend")) {
+        if (MashupPlatform.prefs.get("legend") && theLeyend != null) {
             graphContainer.appendChild(theLeyend);
         }
         return gr;
@@ -483,41 +477,28 @@
         var hasChanged;
 
         if ('heightInPixels' in new_values) {
-            if (document.getElementById('linearGraphContainer').style.height === '') {
-                document.getElementById('linearGraphContainer').style.height = (new_values.heightInPixels - document.getElementById('controlBar').getBoundingClientRect().height) + 'px';
-            } else {
-                if (Math.abs(parseInt(document.getElementById('linearGraphContainer').style.height, 10) + document.getElementById('controlBar').getBoundingClientRect().height - new_values.heightInPixels) > 7) {
-                    document.getElementById('linearGraphContainer').style.height = (new_values.heightInPixels - document.getElementById('controlBar').getBoundingClientRect().height) + 'px';
-                    hasChanged = true;
-                }
-            }
+            hasChanged = true;
         }
 
         if ('widthInPixels' in new_values) {
-            if (document.getElementById('linearGraphContainer').style.width === '') {
-                document.getElementById('linearGraphContainer').style.width = (new_values.widthInPixels - 4) + 'px';
-            } else {
-                if (Math.abs(parseInt(document.getElementById('linearGraphContainer').style.width, 10) - new_values.widthInPixels) > 12) {
-                    document.getElementById('linearGraphContainer').style.width = (new_values.widthInPixels - 4) + 'px';
-                    hasChanged = true;
-                }
-            }
+            hasChanged = true;
         }
         if (hasChanged) {
-            drawGraph(null);
+            if (timeout != null) {
+                clearTimeout(timeout);
+            }
+            setTimeout(resize, 300);
         }
     });
 
     // Preference change handler
     MashupPlatform.prefs.registerCallback(function () {
-        drawGraph(lastData);
+        drawGraph();
     });
 
     window.addEventListener('load', function () {
         // Resize the linearGraphContainer
-        document.getElementById('linearGraphContainer').style.height = (MashupPlatform.widget.context.get('heightInPixels')) - document.getElementById('controlBar').getBoundingClientRect().height + 'px';
-        document.getElementById('linearGraphContainer').style.width = (MashupPlatform.widget.context.get('widthInPixels')) + 'px';
-        drawGraph();
+        resize();
 
         // Zoom handler
         Flotr.EventAdapter.observe(document.getElementById('linearGraphContainer'), 'flotr:select', function (area) {

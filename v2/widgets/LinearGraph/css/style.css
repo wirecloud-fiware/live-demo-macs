@@ -145,9 +145,9 @@ body .button:hover {
 }
 
 #controlBar {
-    width: 100%;
+    width: auto;
     height: 35px;
-    display: inline-block;
+    display: block;
 }
 
 #controlBar .buttonContainer {
