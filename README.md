@@ -24,6 +24,6 @@ Related docs
     * 1st version of the Live Demo:
         * (http://youtu.be/DSon3TSO9T8). Explains how to upload a new widget to the WireCloud's catalogue, how to build the mashup (including the wiring of the different widgets and operators used).
 * [**WireCloud website**](http://conwet.fi.upm.es/wirecloud)
-* [**WireCloud entry in the FIWARE catalogue**](https://catalogue.fiware.org/enablers/application-mashup-wirecloud). In this page, you will find the most updated references to the Open Specs, Documentation (user and programmer guides, intallation and administration guides, etc.), available instances (testbed, FI-LAB, etc.), and videos.
-* [**Tutorials on how to develop a Widget from scratch**](https://edu.fiware.org/course/view.php?id=53)
-* [**A living wiki version of the documentation**](https://wirecloud.conwet.fi.upm.es/docs/)
+* [**WireCloud entry in the FIWARE catalogue**](https://catalogue.fiware.org/enablers/application-mashup-wirecloud). In this page, you will find the most updated references to the Open Specs, Documentation (user and programmer guides, intallation and administration guides, etc.), public instances, and videos.
+* [**WireCloud course at the FIWARE Academy**](https://edu.fiware.org/course/view.php?id=53)
+* [**WireCloud's documentation**](https://wirecloud.readthedocs.io)
